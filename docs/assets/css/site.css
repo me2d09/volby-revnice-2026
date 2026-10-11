@@ -375,7 +375,7 @@ table.data tr.is-hl td { background: color-mix(in srgb, var(--gold-soft) 60%, tr
 .precinct-map text { font-family: var(--font-serif); font-weight: 650; pointer-events: none; }
 .precinct-map .lbl-n { font-size: 44px; fill: #fff; paint-order: stroke; stroke: rgba(0,0,0,.25); stroke-width: 3px; }
 .precinct-map .lbl-t { font-family: var(--font-sans); font-size: 15px; font-weight: 600; fill: var(--ink-2); }
-.precinct-map .river { fill: none; stroke: var(--water); stroke-width: 14; stroke-linecap: round; }
+.precinct-map .river { fill: none; stroke: var(--water); stroke-width: 13; stroke-linecap: round; opacity: .92; }
 .precinct-map .river-t { font-family: var(--font-sans); font-style: italic; font-weight: 500; font-size: 14px; fill: var(--river); }
 
 /* ---------- hlasovací lístek (vysvětlení) ---------- */
