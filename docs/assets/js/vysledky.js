@@ -412,7 +412,6 @@
   let calcSeats = realSeats;
   function calc() {
     const n = +nEl.value, from = fromEl.value, to = toEl.value;
-    document.getElementById("calc-n-out").textContent = n;
     document.querySelector('label[for="calc-n"]').innerHTML = `<strong>${n}</strong> ${RV.plural(n, "volič", "voliči", "voličů")} (${RV.int(n * 15)} hlasů)`;
     const v = Object.assign({}, real);
     if (from !== to) { const m = Math.min(n * 15, v[from]); v[from] -= m; v[to] += m; }
