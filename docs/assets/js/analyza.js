@@ -29,7 +29,7 @@
         <strong>2&nbsp;897</strong> (našel ho GPT a nezávisle jsme ho ověřili). Obě čísla jsou správné dolní meze, 2&nbsp;897 je těsnější.`,
       extraTitle: "Voliči bez stranického křížku",
       extra: (h) => `Voliči v Řevnicích nevyužili <strong>1&nbsp;246</strong> hlasů <span class="tag tag-fact">fakt</span>. To jde jen na lístku bez zakřížkované strany,
-        takže takových lístků bylo nejméně 89 <span class="tag tag-bound">jisté minimum</span>. Claude navíc využil známý počet platných lístků (1&nbsp;679)
+        takže takových lístků bylo nejméně 89 <span class="tag tag-bound">jisté minimum</span>. Claude navíc využil počet lístků s platným hlasem (1&nbsp;679)
         a odhaduje, že bez stranického křížku volilo asi <strong>${RV.int(h.no_party_ballots)}</strong> voličů (90&nbsp;%: ${RV.int(h.no_party_lo)}–${RV.int(h.no_party_hi)})
         <span class="tag tag-model">model</span>. Tahle část je ze všech odhadů nejméně jistá – a právě v ní se Claude a GPT nejvíc liší.`,
     },
@@ -39,9 +39,13 @@
       boundNote: `GPT spočítal přesné celočíselné minimum a sestavil k němu i konkrétní sadu platných lístků, která ho dosahuje – mez je tedy
         <strong>nejlepší možná</strong> z těchto dat. Claude dospěl ke 2&nbsp;890 přes spojitou relaxaci; obě čísla platí, 2&nbsp;897 je těsnější (nezávisle ověřeno).`,
       extraTitle: "Co GPT nepoužil",
-      extra: () => `GPT pracoval jen se 480 okrskovými čísly a <strong>nevyužil známý počet platných lístků</strong> (1&nbsp;679), protože ho považoval za neznámý.
-        Model proto připouští víc voličů, kteří zakřížkovali celou kandidátku, a méně voličů bez stranického křížku – a vychází mu
-        o něco méně osobních křížků než Claudovi, hlavně u lídrů velkých kandidátek. Podrobnosti v <a href="souhrn.html#rozdil">souhrnu</a>.`,
+      extra: () => {
+        const bc = A.ballot_check;
+        return `GPT pracoval jen se 480 okrskovými čísly a <strong>nevyužil počet lístků s platným hlasem</strong> (1&nbsp;679), protože ho považoval za neznámý.
+        Jeho výsledek s tímto číslem přesto <strong>není v rozporu</strong> – ověřili jsme všechny jeho vzorky. Vychází z něj ale jiný obrázek voličů:
+        asi ${RV.int(bc.party_ballots[1])} lístků se zakřížkovanou stranou a jen asi ${RV.int(bc.no_party_ballots[1])} lístků bez strany
+        (Claude jich má asi dvakrát víc). Proto GPT přisuzuje méně osobních křížků lídrům velkých kandidátek. Podrobnosti v <a href="souhrn.html#rozdil">souhrnu</a>.`;
+      },
     },
   }[KEY];
 

@@ -110,6 +110,7 @@ ROBUST = {"stabilní": "stabilní", "střední": "středně jisté", "nestabiln�
           "top10_p_ge_0.8_all_models": "jistě v top 10", "scenario_rank_span_le_10": "stabilní",
           "scenario_rank_unstable": "nejisté"}
 GPT_TOTALS_CACHE = ROOT / "scripts" / "derived" / "gpt_reference_totals.json"
+VALID_BALLOTS = 1679   # lístky s platným hlasem (ČSÚ); 1 689 odevzdaných a 1 690 vydaných obálek
 
 
 def exact_budget_bound() -> dict:
@@ -222,10 +223,22 @@ def gpt_reference_totals() -> dict:
         C = np.load(npz)["C"].astype(np.int64)            # (řetězec, los, okrsek, strana, pozice)
         C = C.reshape(-1, *C.shape[2:])
         q = lambda x: [int(round(v)) for v in np.quantile(x, [0.05, 0.5, 0.95])]
+        # Je výsledek GPT slučitelný se známým počtem lístků s platným hlasem (1 679), který GPT nepoužil?
+        # Účinné stranické lístky B = stranické hlasy na 1. místě; zbytek lístků M = 1679 − B je bez strany
+        # a musí nést 23 939 − 15·B hlasů, tj. průměr 1–15 křížků na lístek, a M ≥ 1 246/14 (nevyužité hlasy).
+        H = np.zeros(C.shape[1:])
+        for r in read_csv(ROOT / "input" / "data" / "processed" / "precinct_candidates_2026.csv"):
+            H[int(r["precinct"]) - 1, int(r["party_id"]) - 1, int(r["position"]) - 1] = int(r["votes"])
+        B = (H[None, :, :, 0] - C[:, :, :, 0]).sum(axis=(1, 2))
+        M = VALID_BALLOTS - B
+        mbar = (H.sum() - 15 * B) / M
+        qf = lambda x: [round(float(v), 1) for v in np.quantile(x, [0.05, 0.5, 0.95])]
         out = {"total": q(C.sum(axis=(1, 2, 3))),
                "party": [q(C[:, :, s, :].sum(axis=(1, 2))) for s in range(C.shape[2])],
                "precinct": [q(C[:, p].sum(axis=(1, 2))) for p in range(C.shape[1])],
-               "n_draws": int(C.shape[0])}
+               "n_draws": int(C.shape[0]),
+               "party_ballots": q(B), "no_party_ballots": q(M), "no_party_mean_marks": qf(mbar),
+               "compatible_with_valid_ballots": float(np.mean((M >= 1246 / 14) & (mbar >= 1) & (mbar <= 15)))}
         GPT_TOTALS_CACHE.parent.mkdir(parents=True, exist_ok=True)
         GPT_TOTALS_CACHE.write_text(json.dumps(out, indent=1), encoding="utf-8")
         return out
@@ -303,6 +316,7 @@ def build_gpt(basic: dict) -> dict | None:
                      "diagnostics": f"hlavní R̂ ≤ {RVfmt(float(ref['max_rhat']), 3)}; ostatní varianty: "
                                     f"{sum(r['mcmc_gate_pass'] == 'True' for r in sens_scen if r['label'] != 'reference')} z {len(sens_scen) - 1} prošlo kontrolou"},
         "n_draws": tot.get("n_draws"),
+        "ballot_check": {k: tot[k] for k in ("party_ballots", "no_party_ballots", "no_party_mean_marks", "compatible_with_valid_ballots")},
     }
     write_data("gpt", out)
     return out

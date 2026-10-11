@@ -11,6 +11,7 @@
  "turnout": {
   "registered_voters": 2819,
   "envelopes": 1690,
+  "envelopes_submitted": 1689,
   "valid_ballots": 1679,
   "turnout_pct": 59.95,
   "turnout_2022_pct": 56.14,

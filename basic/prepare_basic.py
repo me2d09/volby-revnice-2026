@@ -27,8 +27,9 @@ BALLOT_VOTES = 15           # zakřížkování celé kandidátky = 15 hlasů
 # 10. 10. 2026) a input/context/CO_UZ_VIME.md.
 TURNOUT = {
     "registered_voters": 2819,
-    "envelopes": 1690,
-    "valid_ballots": 1679,
+    "envelopes": 1690,              # vydané obálky (účast 59,95 % = 1 690 / 2 819)
+    "envelopes_submitted": 1689,    # odevzdané obálky
+    "valid_ballots": 1679,          # lístky s platným hlasem
     "turnout_pct": 59.95,
     "turnout_2022_pct": 56.14,
 }

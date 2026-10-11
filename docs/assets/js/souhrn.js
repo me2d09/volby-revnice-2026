@@ -147,14 +147,17 @@
       osobních křížků (${st.cl_lo}–${st.cl_hi}), GPT jen ≈&nbsp;${st.gp} (${st.gp_lo}–${st.gp_hi}); Michalu Uhlíkovi ≈&nbsp;${uh.cl} oproti ≈&nbsp;${uh.gp}.
       Menší, ale stejným směrem jdoucí rozdíl je u lídrů ŠANCE a Perspektivy. U kandidátů na 11.–15. místech se modely skoro shodují
       (${RV.int(tail.cl)} vs. ${RV.int(tail.gp)} křížků), na 1. místech už ne (${RV.int(pos1.cl)} vs. ${RV.int(pos1.gp)}).</p>
-    <p><strong>Proč:</strong> modely se liší v tom, <em>kolik voličů zakřížkovalo celou kandidátku</em>. Claude využil počet platných lístků
-      (1&nbsp;679), který dohledal v otevřených datech ČSÚ, a odhaduje asi ${RV.int(ballotsCl)} stranických lístků. GPT tento údaj považoval
-      za neznámý a odhaduje jich asi ${RV.int(ballotsGp)}. Víc stranických lístků znamená víc „automatických“ hlasů pro horní pozice velkých
-      kandidátek – a tedy méně osobních křížků u jejich lídrů.</p>
-    <p><strong>Kdo má pravdu:</strong> z dodaných čísel to rozhodnout nejde – oba rozklady jsou s výsledky voleb slučitelné.
-      Claude má v tomhle bodě o jednu skutečnou informaci víc, GPT zase lépe obstál v testech na simulovaných volbách.
-      Rozhodl by počet platných lístků v jednotlivých okrscích nebo anonymní vzorek vyplněných lístků. Pro lídry velkých kandidátek
-      proto berte jako realistické celé rozpětí obou modelů.</p>`);
+    <p><strong>Proč:</strong> modely se liší v tom, <em>kolik voličů zakřížkovalo celou kandidátku</em>. Víc stranických lístků znamená víc
+      „automatických“ hlasů pro horní pozice velkých kandidátek – a tedy méně osobních křížků u jejich lídrů.
+      Claude odhaduje asi ${RV.int(ballotsCl)} lístků se zakřížkovanou stranou a ${RV.int(CL.headline.no_party_ballots)} bez strany,
+      GPT asi ${RV.int(GP.ballot_check.party_ballots[1])} se stranou a jen ${RV.int(GP.ballot_check.no_party_ballots[1])} bez strany.</p>
+    <p><strong>Pomůže počet lístků?</strong> Víme přesně, kolik lístků bylo: ${RV.int(B.turnout.envelopes)} vydaných a ${RV.int(B.turnout.envelopes_submitted)} odevzdaných obálek,
+      <strong>${RV.int(B.turnout.valid_ballots)} lístků s platným hlasem</strong>. Claude toto číslo v modelu použil, GPT ne. Ověřili jsme ale, že výsledek GPT
+      s ním <strong>není v rozporu</strong> (sedí ${RV.pct(100 * GP.ballot_check.compatible_with_valid_ballots, 0)} jeho vzorků): zbylé lístky bez strany by prostě nesly
+      v průměru asi ${RV.fmt(GP.ballot_check.no_party_mean_marks[1], 0)} křížků místo Claudových ~12. Počet lístků tedy spor nerozhodne.</p>
+    <p><strong>Kdo má pravdu:</strong> z veřejných čísel to rozhodnout nejde – oba rozklady jsou s výsledky voleb slučitelné a liší se
+      předpoklady o tom, jak se volí bez stranického křížku. Rozhodl by počet lístků po okrscích nebo anonymní vzorek vyplněných lístků.
+      Pro lídry velkých kandidátek proto berte jako realistické celé rozpětí obou modelů.</p>`);
   RV.plot("#pos-chart", () => {
     const r = S.by_position;
     return {
@@ -175,7 +178,7 @@
   const okGp = GP.sensitivity.filter((s) => !s.main && s.ok).length, nGp = GP.sensitivity.filter((s) => !s.main).length;
   const rows = [
     ["Dokazatelná dolní mez", `${RV.int(CL.headline.lb_budget)} – spojitá relaxace; platí, ale není nejtěsnější`, `${RV.int(GP.headline.lb_budget)} – přesné minimum a k němu sestavené platné lístky`, "gpt"],
-    ["Využití dostupných údajů", "použil i počet platných lístků (1 679), dohledaný v otevřených datech ČSÚ", "počet platných lístků nepoužil, považoval ho za neznámý", "claude"],
+    ["Využití dostupných údajů", "použil i počet lístků s platným hlasem (1 679) z výsledků ČSÚ", "počet lístků nepoužil, považoval ho za neznámý (výsledek s ním ale není v rozporu)", "claude"],
     ["Test na simulovaných volbách", `pravda uvnitř intervalu ve ${recCl} ze ${CL.recovery.length} testů; intervaly kandidátů spíš příliš úzké`, `pravda uvnitř intervalu ve ${recGp} ze ${GP.recovery.length} testů; pokrytí kandidátů 97,5&nbsp;%`, "gpt"],
     ["Kvalita výpočtu (MCMC)", "hlavní model R̂ 1,014 a 1 divergence; některé varianty výrazně hůř (R̂ až 1,06)", `hlavní model prošel (R̂ 1,009); varianty hraniční, ${okGp} z ${nGp} prošlo`, "gpt"],
     ["Šíře prověření předpokladů", `${CL.sensitivity.length - 1} variant modelu (${RV.int(CL.headline.sens_min)}–${RV.int(CL.headline.sens_max)})`, `${GP.sensitivity.length - 1} variant modelu (${RV.int(GP.headline.sens_min)}–${RV.int(GP.headline.sens_max)})`, "claude"],
@@ -193,7 +196,7 @@
       <p class="ink-2" style="margin:0">Skóre ${nG} : ${nC} (${nT}× remíza). GPT odvedl matematicky pečlivější práci: přesnou dolní mez, lépe kalibrované intervaly,
       čistší výpočet a víc kontrol. Jeho odhady jsou spíš opatrnější.</p></div>`,
     `<div class="card reveal in"><span class="tag" style="background:var(--warm-soft);color:var(--warm)">silná stránka Claude</span><h3 style="margin-top:10px">Víc informací, širší prověření</h3>
-      <p class="ink-2" style="margin:0">Claude dohledal a zapojil počet platných lístků, prověřil víc variant modelu a jeho osobní efekt lze porovnávat napříč kandidátkami.
+      <p class="ink-2" style="margin:0">Claude zapojil i počet lístků s platným hlasem, prověřil víc variant modelu a jeho osobní efekt lze porovnávat napříč kandidátkami.
       Jeho intervaly ale bývají příliš úzké.</p></div>`,
     `<div class="card reveal in"><span class="tag tag-model">pro čtenáře</span><h3 style="margin-top:10px">Čemu věřit</h3>
       <p class="ink-2" style="margin:0">Tomu, na čem se oba shodnou: pořadí kandidátů, osobnosti voleb, rozdíly mezi kandidátkami a okrsky. U celkového počtu

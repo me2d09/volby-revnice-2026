@@ -19,7 +19,7 @@
   const tiles = [
     ["Volební účast", RV.pct(TU.turnout_pct, 2), `<span class="delta-up">${RV.pp(TU.turnout_change_pp)}</span> proti 2022 (${RV.pct(TU.turnout_2022_pct, 2)})`],
     ["Platné hlasy", RV.int(T.votes_2026), `<span class="delta-up">${RV.signed(T.change_votes)}</span> proti 2022 (${RV.signed(T.change_pct, 2)}&nbsp;%)`],
-    ["Platné hlasovací lístky", RV.int(TU.valid_ballots), `z ${RV.int(TU.registered_voters)} voličů v seznamu`],
+    ["Lístky s platným hlasem", RV.int(TU.valid_ballots), `${RV.int(TU.envelopes)} vydaných a ${RV.int(TU.envelopes_submitted)} odevzdaných obálek, ${RV.int(TU.registered_voters)} voličů v seznamu`],
     ["Hlasů na jeden lístek", RV.fmt(T.votes_per_ballot, 2) + " <small>z 15</small>", `voliči nevyužili ${RV.int(T.unused_votes)} hlasů`],
     ["Hlasy bez zastoupení", RV.int(T.unrepresented_votes), `${RV.pct(T.unrepresented_pct, 2)} · ODS a Srdce Řevnic pod 5&nbsp;%`],
     ["Nejvíc preferenčních hlasů", RV.int(top.votes), `${RV.esc(top.name)} (${RV.esc(top.party)}, 1. místo)`],

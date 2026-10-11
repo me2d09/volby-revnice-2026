@@ -68,5 +68,21 @@
    1666
   ]
  ],
- "n_draws": 6400
+ "n_draws": 6400,
+ "party_ballots": [
+  1338,
+  1460,
+  1543
+ ],
+ "no_party_ballots": [
+  136,
+  219,
+  341
+ ],
+ "no_party_mean_marks": [
+  5.8,
+  9.3,
+  11.3
+ ],
+ "compatible_with_valid_ballots": 1.0
 }
