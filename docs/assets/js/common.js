@@ -111,7 +111,7 @@
       <div>
         <h4>O projektu</h4>
         <p>Neoficiální analýza komunálních voleb v Řevnicích 9.–10. října 2026. Analýzy vytvořily jazykové modely
-        <strong>Claude</strong> (Anthropic) a <strong>GPT</strong> (OpenAI); zadání a prompty připravil <strong>Petr Čermák</strong>.</p>
+        <strong>Claude</strong> (Anthropic) a <strong>GPT</strong> (OpenAI); zadání a prompty připravil <strong>Petr Čermák</strong> (sám kandidoval za PRO Řevnice; data i kód jsou veřejné).</p>
         <p class="muted" style="margin:0">Oficiální výsledky najdete na <a href="https://www.volby.cz/" rel="noopener">volby.cz</a>.
         Modelové odhady nejsou změřená data – vždy jsou označené.</p>
       </div>

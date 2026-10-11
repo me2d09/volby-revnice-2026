@@ -32,50 +32,48 @@
     `<div class="card stat reveal in"><div class="stat-icon ${t.cls}">${t.icon}</div><span class="label">${t.label}</span>` +
     `<span class="value">${t.value}</span><span class="sub">${t.sub}</span></div>`).join("");
 
-  /* ---------- půlkruh zastupitelstva ---------- */
-  const seatParties = parties.filter((p) => p.seats_2026 > 0);
+  /* ---------- zastupitelstvo: zasedací pořádek do písmene U ---------- */
+  // Pořadí kandidátek podél U (levé rameno shora dolů, spodek zleva doprava, pravé rameno zdola nahoru).
+  const U_ORDER = ["ŠANCE", "DOBŘE", "Naše Řevnice", "PRO", "TOP 09", "Perspektiva"];
+  const seatParties = U_ORDER.map((s) => byShort[s]).filter((p) => p && p.seats_2026 > 0);
   const elected = D.elected;
-  function hemicycle(width) {
-    const rows = [1.22, 1.6, 1.98], counts = [4, 5, 6];
-    const seats = [];
-    rows.forEach((r, i) => {
-      const n = counts[i];
-      for (let k = 0; k < n; k++) {
-        const a = Math.PI - (k * Math.PI) / (n - 1);
-        seats.push({ a, r, x: r * Math.cos(a), y: r * Math.sin(a) });
-      }
-    });
-    seats.sort((s, t) => (t.a - s.a) || (s.r - t.r));
+  const N = D.meta.seats, ARM = 5;                     // 5 + 5 + 5 křesel
+  const uSeats = [];
+  for (let k = 0; k < ARM; k++) uSeats.push({ x: 0, y: ARM - k });          // levé rameno
+  for (let k = 0; k < N - 2 * ARM; k++) uSeats.push({ x: 1 + k, y: 0 });    // spodek
+  const W = N - 2 * ARM + 1;
+  for (let k = 0; k < ARM; k++) uSeats.push({ x: W, y: 1 + k });            // pravé rameno
+  function seatingU(width) {
     let i = 0;
-    const traces = [];
-    seatParties.forEach((p) => {
+    const traces = seatParties.map((p) => {
       const people = elected.filter((e) => e.party === p.short);
       const xs = [], ys = [], texts = [];
       for (let k = 0; k < p.seats_2026; k++, i++) {
-        xs.push(seats[i].x); ys.push(seats[i].y);
+        xs.push(uSeats[i].x); ys.push(uSeats[i].y);
         const e = people[k];
         texts.push(`<b>${RV.esc(e.name)}</b><br>${RV.esc(p.short)} · ${e.position}. místo<br>${RV.int(e.votes)} hlasů`);
       }
-      traces.push({
-        type: "scatter", mode: "markers", x: xs, y: ys, text: texts, hovertemplate: "%{text}<extra></extra>",
-        marker: { size: Math.max(18, Math.min(46, width / 12.5)), color: RV.color(p.short), line: { color: RV.token("surface"), width: 2 } },
-        name: p.short,
-      });
+      return {
+        type: "scatter", mode: "markers", x: xs, y: ys, text: texts, hovertemplate: "%{text}<extra></extra>", name: p.short,
+        marker: { size: Math.max(20, Math.min(40, width / 10)), color: RV.color(p.short), line: { color: RV.token("surface"), width: 2 } },
+      };
     });
-    const h = Math.round(Math.min(420, Math.max(220, width * 0.62)));
+    const t = 0.62;                                     // stůl uvnitř U, křesla sedí zvenku
+    const table = `M ${t} ${ARM + 0.45} L ${t} ${t} L ${W - t} ${t} L ${W - t} ${ARM + 0.45}`;
     return {
       data: traces,
       layout: {
-        height: h,
-        margin: { l: 0, r: 0, t: 6, b: 0 },
-        xaxis: { visible: false, range: [-2.25, 2.25] },
-        yaxis: { visible: false, range: [-0.25, 2.25], scaleanchor: "x" },
-        annotations: [{ x: 0, y: 0.3, text: `<b style="font-size:30px">${D.meta.seats}</b><br>mandátů`, showarrow: false,
+        height: Math.round(Math.min(440, Math.max(260, width * 0.86))),
+        margin: { l: 4, r: 4, t: 4, b: 4 },
+        xaxis: { visible: false, range: [-0.7, W + 0.7] },
+        yaxis: { visible: false, range: [-0.7, ARM + 0.8], scaleanchor: "x" },
+        shapes: [{ type: "path", path: table, line: { color: RV.token("surface-3"), width: Math.max(10, width / 26) }, layer: "below" }],
+        annotations: [{ x: W / 2, y: ARM / 2 + 0.6, text: `<b style="font-size:30px">${N}</b><br>mandátů`, showarrow: false,
           font: { color: RV.token("ink"), size: 13, family: "Inter, system-ui, sans-serif" } }],
       },
     };
   }
-  RV.plot("#hemicycle", hemicycle);
+  RV.plot("#hemicycle", seatingU);
   document.getElementById("hemi-legend").innerHTML = seatParties.map((p) =>
     `<span><span class="sw round" style="--c:${RV.cssColor(p.short)}"></span>${RV.esc(p.short)} <strong>${p.seats_2026}</strong></span>`).join("");
 
