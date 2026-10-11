@@ -213,7 +213,7 @@
       if (votes[p] < threshold * total) continue;
       for (let d = 1; d <= seats; d++) q.push({ p, d, q: votes[p] / d });
     }
-    q.sort((a, b) => b.q - a.q);
+    q.sort((a, b) => (b.q - a.q) || (votes[b.p] - votes[a.p]));   // při rovnosti podílů rozhoduje vyšší počet hlasů
     const res = {};
     for (const p in votes) res[p] = 0;
     q.slice(0, seats).forEach((x) => { res[x.p] += 1; });

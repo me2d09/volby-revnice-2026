@@ -35,14 +35,14 @@ TURNOUT = {
 
 # Krátké názvy, barvy (identita kandidátek z infografiky) a pořadí čísel na lístku.
 PARTIES = {
-    "ŠANCE Řevnice":                       dict(id=1, short="ŠANCE",        color="#e3ad00"),
+    "ŠANCE Řevnice":                       dict(id=1, short="ŠANCE",        color="#e6b000"),
     "TOP 09 a nezávislí kandidáti":        dict(id=2, short="TOP 09",       color="#8256c4"),
     "DOBŘE - Dialog o budoucnosti Řevnic": dict(id=3, short="DOBŘE",        color="#3f9a3a"),
     "Hnutí Srdce Řevnic":                  dict(id=4, short="Srdce Řevnic", color="#946b4a"),
     "PRO Řevnice":                         dict(id=5, short="PRO",          color="#2d86d4"),
     "ODS a nezávislí":                     dict(id=6, short="ODS",          color="#1f3c80"),
     "Perspektiva pro město":               dict(id=7, short="Perspektiva",  color="#df4f97"),
-    "Naše Řevnice":                        dict(id=8, short="Naše Řevnice", color="#ef7a1f"),
+    "Naše Řevnice":                        dict(id=8, short="Naše Řevnice", color="#e5601e"),
     "Řevnice SPOLEČNĚ":                    dict(id=9, short="SPOLEČNĚ",     color="#8f8c84"),
 }
 FULL_DISPLAY = {"DOBŘE - Dialog o budoucnosti Řevnic": "DOBŘE – Dialog o budoucnosti Řevnic"}
@@ -76,8 +76,9 @@ def dhondt(votes: dict[str, int], seats: int = SEATS, threshold: float = THRESHO
     """Vrátí (mandáty, seznam přidělených podílů v pořadí) podle § 45 zák. 491/2001 Sb."""
     total = sum(votes.values())
     qualified = {p: v for p, v in votes.items() if v >= threshold * total}
+    # při rovnosti podílů rozhoduje vyšší celkový počet hlasů (§ 45 odst. 4)
     quotients = sorted(((v / d, p, d) for p, v in qualified.items() for d in range(1, seats + 1)),
-                       key=lambda t: -t[0])
+                       key=lambda t: (-t[0], -qualified[t[1]]))
     result = {p: 0 for p in votes}
     for q, p, d in quotients[:seats]:
         result[p] += 1

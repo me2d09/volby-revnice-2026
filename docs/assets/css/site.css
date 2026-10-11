@@ -452,9 +452,9 @@ table.data tr.is-hl td { background: color-mix(in srgb, var(--gold-soft) 60%, tr
 .calc-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 15.5px; }
 .calc-out { display: grid; gap: 6px; }
 .seat-diff { display: flex; flex-wrap: wrap; gap: 8px; }
-.seat-diff span { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; font-weight: 600; padding: 6px 10px; border-radius: 999px; background: var(--surface-2); }
-.seat-diff .up { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
-.seat-diff .down { background: color-mix(in srgb, var(--bad) 15%, transparent); color: var(--bad); }
+.seat-diff > span { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; font-weight: 600; padding: 6px 10px; border-radius: 999px; background: var(--surface-2); }
+.seat-diff > .up { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
+.seat-diff > .down { background: color-mix(in srgb, var(--bad) 15%, transparent); color: var(--bad); }
 
 /* placeholder */
 .soon-box { text-align: center; padding: clamp(36px, 6vw, 72px) clamp(18px, 4vw, 48px); border: 1.5px dashed var(--line-strong); border-radius: var(--radius); background: var(--surface); }

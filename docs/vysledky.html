@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Výsledky v kostce · Volby Řevnice 2026</title>
+<meta name="description" content="Interaktivní přehled komunálních voleb v Řevnicích 2026: kandidátky, okrsky, změny proti roku 2022, zvolení zastupitelé a těsné momenty.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/common.js"></script>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header data-site-header></header>
+
+<main id="obsah">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Kapitola 1 · pro každého</div>
+      <h1>Výsledky v kostce</h1>
+      <p class="lead">Všechno podstatné z voleb na jedné stránce – stejná čísla jako v infografice, jen si s nimi můžete hrát.
+        Tady nic neodhadujeme: vše je spočítané přímo z výsledků ČSÚ.</p>
+      <nav class="toc" aria-label="Obsah kapitoly">
+        <a href="#cisla">Rychlá čísla</a><a href="#kandidatky">Kandidátky</a><a href="#zmena">Změna proti 2022</a>
+        <a href="#okrsky">Okrsky</a><a href="#zvoleni">Zvolení</a><a href="#kandidati">Kandidáti zblízka</a>
+        <a href="#osobni">Osobní změny</a><a href="#tesne">Těsné momenty</a><a href="#kalkulacka">Kalkulačka</a><a href="#infografika">Infografika</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 1 rychlá čísla -->
+  <section class="section" id="cisla" style="padding-top:clamp(20px,3vw,36px)">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow"><span class="n">1</span>Rychlá čísla</div></div>
+      <div class="grid g4" id="tiles"></div>
+    </div>
+  </section>
+
+  <!-- 2 kandidátky -->
+  <section class="section" id="kandidatky">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">2</span>Kandidátky</div>
+        <h2>Tři silné, tři střední, dvě pod čarou</h2>
+        <p>Podíl hlasů a počet mandátů v patnáctičlenném zastupitelstvu. ODS a Srdce Řevnic zůstaly pod hranicí 5&nbsp;%,
+          a proto nemají žádný mandát.</p>
+      </div>
+      <div class="card chart-card reveal">
+        <header>
+          <div><h3 id="parties-title">Podíl hlasů 2026</h3><p>Svislá čára = hranice 5 %, pod kterou kandidátka nezíská mandát. Srovnání s rokem 2022 najdete o kousek níž.</p></div>
+          <div class="seg" id="parties-seg" role="group" aria-label="Ukazatel">
+            <button type="button" data-v="share" aria-pressed="true">Podíl</button>
+            <button type="button" data-v="votes" aria-pressed="false">Hlasy</button>
+          </div>
+        </header>
+        <div id="parties-chart" class="chart" role="img" aria-label="Podíl hlasů kandidátek"></div>
+        <details class="table-view"><summary>Zobrazit tabulku</summary><div class="table-wrap" id="parties-table"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 změna -->
+  <section class="section" id="zmena">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">3</span>Změna proti roku 2022</div>
+        <h2>DOBŘE přišlo, Perspektiva ztratila nejvíc</h2>
+        <p>Hlasů celkem přibylo (+<span data-k="change_pct"></span>&nbsp;%), přesto téměř všechny zavedené kandidátky oslabily –
+          nová kandidátka DOBŘE si vzala skoro čtvrtinu hlasů. Řevnice SPOLEČNĚ v roce 2026 nekandidovalo.</p>
+      </div>
+      <div class="card chart-card reveal">
+        <header>
+          <div><h3 id="change-title">Změna počtu hlasů</h3></div>
+          <div class="seg" id="change-seg" role="group" aria-label="Ukazatel změny">
+            <button type="button" data-v="votes" aria-pressed="true">Hlasy</button>
+            <button type="button" data-v="pp" aria-pressed="false">Procentní body</button>
+          </div>
+        </header>
+        <div id="change-chart" class="chart" role="img" aria-label="Změna hlasů kandidátek proti roku 2022"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 okrsky -->
+  <section class="section" id="okrsky">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">4</span>Okrsky</div>
+        <h2>Čtyři okrsky, dva různí vítězové</h2>
+        <p>Na severu a ve středu města vyhrála ŠANCE, na západě a hlavně na východě DOBŘE. Klikněte na okrsek ve schématu.
+          Vyberte kandidátku a schéma ukáže, kde byla nejsilnější.</p>
+      </div>
+      <div class="controls reveal">
+        <div class="chips" id="map-mode" role="group" aria-label="Obarvení schématu"></div>
+      </div>
+      <div class="grid g-5-7">
+        <div class="card reveal precinct-map">
+          <svg viewBox="0 0 600 450" id="map" role="group" aria-label="Schéma čtyř volebních okrsků">
+            <path class="river" d="M-10 64C90 40 170 70 260 58S440 20 610 46"/>
+            <text class="river-t" x="452" y="22">Berounka</text>
+            <path class="pc" data-p="1" tabindex="0" d="M170 95L330 80L400 110L380 175L300 200L230 185L175 150Z"/>
+            <path class="pc" data-p="2" tabindex="0" d="M60 170L175 150L230 185L250 260L215 350L150 410L70 362L40 262Z"/>
+            <path class="pc" data-p="3" tabindex="0" d="M230 185L300 200L330 260L360 340L300 402L215 350L250 260Z"/>
+            <path class="pc" data-p="4" tabindex="0" d="M380 175L400 110L482 130L560 200L572 300L522 382L420 392L360 340L330 260L300 200Z"/>
+            <text class="lbl-n" x="282" y="155" text-anchor="middle">1</text>
+            <text class="lbl-n" x="140" y="285" text-anchor="middle">2</text>
+            <text class="lbl-n" x="287" y="320" text-anchor="middle">3</text>
+            <text class="lbl-n" x="460" y="275" text-anchor="middle">4</text>
+            <text class="lbl-t" x="300" y="440" text-anchor="middle" style="font-size:13px;fill:var(--muted);font-weight:500">Zjednodušené schéma, nikoli přesná mapa</text>
+          </svg>
+          <div class="legend" id="map-legend" style="margin-top:6px"></div>
+        </div>
+        <div class="card chart-card reveal">
+          <header>
+            <div><h3 id="pc-title">Okrsek</h3><p id="pc-sub"></p></div>
+            <div class="seg" id="pc-seg" role="group" aria-label="Okrsek">
+              <button type="button" data-v="1" aria-pressed="false">1</button>
+              <button type="button" data-v="2" aria-pressed="false">2</button>
+              <button type="button" data-v="3" aria-pressed="false">3</button>
+              <button type="button" data-v="4" aria-pressed="true">4</button>
+            </div>
+          </header>
+          <div id="pc-chart" class="chart chart-sm" role="img" aria-label="Výsledky v okrsku"></div>
+        </div>
+      </div>
+
+      <div class="grid g2" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="card chart-card reveal">
+          <header><div><h3>Volební účast v okrscích</h3><p>Nejvíc se volilo na východě, nejméně ve středu a na jihu.</p></div></header>
+          <div id="turnout-chart" class="chart chart-sm" role="img" aria-label="Volební účast v okrscích"></div>
+        </div>
+        <div class="card reveal">
+          <h3>Co kdyby…</h3>
+          <p class="ink-2" style="font-size:15.5px">Okrsky mají podobný počet hlasů, ale každý volí trochu jinak. Vyberte okrsek a podívejte se,
+            jak by dopadly volby bez něj – nebo kdyby hlasoval jen on.</p>
+          <div class="controls" style="margin-bottom:10px">
+            <div class="seg" id="whatif-mode" role="group" aria-label="Scénář">
+              <button type="button" data-v="without" aria-pressed="true">Celé město bez okrsku</button>
+              <button type="button" data-v="only" aria-pressed="false">Jen tento okrsek</button>
+            </div>
+            <select id="whatif-pc" aria-label="Okrsek"><option value="1">okrsek 1</option><option value="2">okrsek 2</option><option value="3">okrsek 3</option><option value="4" selected>okrsek 4</option></select>
+          </div>
+          <div id="whatif-out"></div>
+        </div>
+      </div>
+
+      <div class="card chart-card reveal" style="margin-top:clamp(14px,2vw,22px)">
+        <header><div><h3>Všechny okrsky v jedné tabulce</h3><p>Podíl hlasů kandidátek v okrscích. Čím sytější políčko, tím silnější výsledek; tučně vítěz okrsku.</p></div></header>
+        <div class="table-wrap" id="pc-table"></div>
+        <p class="chart-note">Pozor: v roce 2022 měly Řevnice jen 2 okrsky s jinými hranicemi, okrsky proto mezi roky přímo srovnávat nelze.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 zvolení -->
+  <section class="section" id="zvoleni">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">5</span>Zvolení zastupitelé</div>
+        <h2>Patnáct jmen, seřazeno podle hlasů</h2>
+        <p><span id="jumped-text">Několik zvolených</span> se do zastupitelstva dostalo z nižšího místa, než by jim „patřilo“ podle pořadí na kandidátce –
+          díky preferenčním hlasům. Klikněte na jméno a uvidíte celou kandidátku.</p>
+      </div>
+      <div class="elected reveal" id="elected"></div>
+    </div>
+  </section>
+
+  <!-- 6 kandidáti -->
+  <section class="section" id="kandidati">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">6</span>Kandidáti zblízka</div>
+        <h2>Jak se z 10. místa stát zastupitelkou</h2>
+        <p>Mandáty uvnitř kandidátky dostávají přednostně ti, kdo mají alespoň o 10&nbsp;% víc hlasů, než je průměr na jednoho
+          kandidáta dané kandidátky (čárkovaná čára). Teprve zbylé mandáty jdou podle pořadí na lístku.</p>
+      </div>
+      <div class="controls reveal"><div class="chips" id="cand-party" role="group" aria-label="Kandidátka"></div></div>
+      <div class="card chart-card reveal">
+        <header><div><h3 id="cand-title"></h3><p id="cand-sub"></p></div>
+          <div class="seg" id="cand-scope" role="group" aria-label="Rozsah">
+            <button type="button" data-v="city" aria-pressed="true">Celé město</button>
+            <button type="button" data-v="pc" aria-pressed="false">Po okrscích</button>
+          </div>
+        </header>
+        <div id="cand-chart" class="chart chart-lg" role="img" aria-label="Hlasy kandidátů vybrané kandidátky"></div>
+        <div class="legend" id="cand-legend"></div>
+      </div>
+      <div class="grid g3" style="margin-top:clamp(14px,2vw,22px)" id="age-facts"></div>
+    </div>
+  </section>
+
+  <!-- 7 osobní změny -->
+  <section class="section" id="osobni">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">7</span>Osobní změny proti roku 2022</div>
+        <h2>Znovu zvolení: kdo posílil a kdo oslabil</h2>
+        <p>Osm zastupitelů bylo zvoleno už v roce 2022. Přestože hlasů celkově přibylo o 10&nbsp;%, lídři Perspektivy osobně ztratili.
+          Nejvíc si polepšili Markéta Sedláčková Davidová (dříve ODS) a Pavel Hartmann z TOP&nbsp;09.</p>
+      </div>
+      <div class="card chart-card reveal">
+        <div id="personal-chart" class="chart" role="img" aria-label="Hlasy znovu zvolených zastupitelů 2022 a 2026"></div>
+        <div class="legend"><span><span class="sw round" style="--c:var(--muted)"></span>2022</span><span><span class="sw round" style="--c:var(--ink)"></span>2026 (barva kandidátky)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 těsné momenty -->
+  <section class="section" id="tesne">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">8</span>Těsné momenty a zajímavosti</div>
+        <h2>O mandátech rozhodovaly desítky hlasů</h2>
+      </div>
+      <div class="grid g3" id="facts"></div>
+
+      <div class="card chart-card reveal" style="margin-top:clamp(14px,2vw,22px)">
+        <header><div><h3>Jak se dělí mandáty: d’Hondtova metoda</h3>
+          <p>Hlasy každé kandidátky nad 5&nbsp;% se vydělí čísly 1, 2, 3… a 15 největších podílů dostane mandát.
+            Poslední mandát vzala Naše Řevnice (2 451 / 2 = 1 225,5), hned pod čarou skončila ŠANCE (4 840 / 4 = 1 210).</p></div></header>
+        <div id="dhondt-chart" class="chart" role="img" aria-label="Největší d'Hondtovy podíly"></div>
+      </div>
+
+      <div class="card reveal" style="margin-top:clamp(14px,2vw,22px)">
+        <h3>Jak daleko od dalšího mandátu</h3>
+        <p class="ink-2" style="font-size:15.5px">Kolik <em>nových</em> hlasů by kandidátka potřebovala k dalšímu mandátu a kolik hlasů by mohla ztratit,
+          než by o jeden přišla (ostatní výsledky beze změny). Jeden volič, který zakřížkuje celou kandidátku, jí dá 15 hlasů.</p>
+        <div class="table-wrap" id="margin-table"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 kalkulačka -->
+  <section class="section" id="kalkulacka">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">9</span>Mandátová kalkulačka</div>
+        <h2>Co kdyby se pár voličů rozhodlo jinak?</h2>
+        <p>Přesuňte voliče od jedné kandidátky k jiné. Počítáme, že každý z nich zakřížkoval celou kandidátku, tedy přesouvá 15 hlasů.</p>
+      </div>
+      <div class="grid g-5-7">
+        <div class="card reveal calc">
+          <div class="calc-row"><label for="calc-n"><strong id="calc-n-out">5</strong> voličů</label></div>
+          <input type="range" id="calc-n" min="0" max="120" value="5" aria-label="Počet voličů">
+          <div class="calc-row"><label for="calc-from">od</label><select id="calc-from"></select></div>
+          <div class="calc-row"><label for="calc-to">ke</label><select id="calc-to"></select></div>
+          <div class="calc-out" id="calc-out"></div>
+          <button class="btn btn-ghost" type="button" id="calc-reset" style="justify-self:start">Zpět na skutečný výsledek</button>
+        </div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Mandáty po přesunu</h3><p>Plná barva = mandát, šrafa = změna oproti skutečnosti.</p></div></header>
+          <div id="calc-chart" class="chart chart-sm" role="img" aria-label="Mandáty po přesunu voličů"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 infografika -->
+  <section class="section" id="infografika">
+    <div class="wrap">
+      <div class="card download reveal">
+        <a href="assets/infografika-revnice-2026.png" target="_blank" rel="noopener"><img src="assets/infografika-revnice-2026.png" alt="Infografika: Komunální volby 2026 – Řevnice" loading="lazy"></a>
+        <div>
+          <div class="eyebrow">Ke stažení</div>
+          <h2 style="margin-top:6px">Infografika na jednom obrázku</h2>
+          <p class="ink-2">Hlavní výsledky, okrsky, změny proti roku 2022, zvolení zastupitelé a těsné momenty – připravené k tisku
+            nebo sdílení. Infografiku vytvořil model GPT ze stejných dat jako tato stránka.</p>
+          <a class="btn btn-primary" href="assets/infografika-revnice-2026.png" download="volby-revnice-2026-infografika.png">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+            Stáhnout PNG</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="vendor/plotly-4.1.1.min.js"></script>
+<script src="data/zakladni.js"></script>
+<script src="assets/js/vysledky.js"></script>
+</body>
+</html>
