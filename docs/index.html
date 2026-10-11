@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volby Řevnice 2026</title>
+<meta name="description" content="Neoficiální, interaktivní analýza komunálních voleb v Řevnicích 2026: výsledky, okrsky, mandáty a osobní křížky kandidátů.">
+<meta property="og:title" content="Volby Řevnice 2026 – kdo vyhrál a díky komu">
+<meta property="og:description" content="Interaktivní přehled komunálních voleb v Řevnicích: výsledky, okrsky, mandáty a osobní křížky.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/infografika-revnice-2026.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/common.js"></script>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header data-site-header></header>
+
+<main id="obsah">
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">Komunální volby · 9.–10. října 2026</div>
+      <h1>Kdo vyhrál v&nbsp;Řevnicích – a&nbsp;<em>díky komu</em></h1>
+      <p class="lead">Patnáct zastupitelů, osm kandidátek, čtyři okrsky a <strong id="h-votes">23 939</strong> hlasů.
+        Přehledně ukazujeme, jak volby dopadly, kde se kterým kandidátkám dařilo a jak velkou roli
+        sehrály osobní křížky u jednotlivých kandidátů.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="vysledky.html">Výsledky v kostce
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="krizky.html">Kdo straně přinesl hlasy?</a>
+      </div>
+    </div>
+    <svg class="landscape" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+      <path class="h1" d="M0 112C110 70 220 58 340 86S560 38 740 66 1020 24 1190 62 1370 58 1440 74V200H0Z"/>
+      <path class="h2" d="M0 138C150 104 290 112 420 124S690 92 870 114 1170 98 1440 118V200H0Z"/>
+      <g class="tree">
+        <path d="M150 128l9-22 9 22z"/><path d="M166 130l7-17 7 17z"/><path d="M1238 120l9-22 9 22z"/><path d="M1254 123l7-16 7 16z"/><path d="M1222 124l6-14 6 14z"/>
+        <path d="M612 120l8-19 8 19z"/><path d="M626 122l6-14 6 14z"/>
+      </g>
+      <path class="h3" d="M0 166C200 140 380 150 560 158S900 138 1100 152 1340 148 1440 158V200H0Z"/>
+      <g class="tree">
+        <rect x="934" y="118" width="12" height="34" rx="1"/><path d="M932 120l8-26 8 26z"/>
+        <path d="M900 152v-16l12-9 12 9v16z"/><path d="M950 152v-12l10-8 10 8v12z"/><path d="M976 152v-14l13-9 13 9v14z"/>
+        <path d="M1010 152v-10l9-7 9 7v10z"/>
+      </g>
+      <path class="water" d="M0 182C240 168 520 194 820 178S1250 188 1440 174V200H0Z"/>
+      <path class="ground" d="M0 196C300 190 700 200 1000 193S1330 196 1440 192V200H0Z"/>
+    </svg>
+  </section>
+
+  <section class="section" style="padding-top:clamp(28px,5vw,56px)">
+    <div class="wrap">
+      <div class="grid g4" id="quick"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Nové zastupitelstvo</div>
+        <h2>Patnáct křesel, šest kandidátek</h2>
+        <p>Mandáty se rozdělují d’Hondtovou metodou mezi kandidátky, které získaly alespoň 5&nbsp;% hlasů.
+          Najeďte myší (nebo ťukněte) na křeslo a uvidíte, kdo v něm bude sedět.</p>
+      </div>
+      <div class="grid g-5-7">
+        <div class="card chart-card reveal">
+          <header><div><h3>Rozdělení mandátů</h3><p>Každá tečka je jeden zastupitel.</p></div></header>
+          <div id="hemicycle" class="chart chart-sm" role="img" aria-label="Rozdělení 15 mandátů mezi kandidátky"></div>
+          <div class="legend" id="hemi-legend"></div>
+        </div>
+        <div class="card reveal">
+          <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <h3 style="margin:0">Hlasy pro kandidátky</h3>
+            <div class="seg" id="year-seg" role="group" aria-label="Rok voleb">
+              <button type="button" data-v="2026" aria-pressed="true">2026</button>
+              <button type="button" data-v="2022" aria-pressed="false">2022</button>
+            </div>
+          </div>
+          <div class="results" id="results"></div>
+          <p class="chart-note" id="results-note">Svislá čárka v pruhu = hranice 5&nbsp;%, pod kterou kandidátka nezíská žádný mandát.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Na první pohled</div>
+        <h2>Tři momenty, které stojí za pozornost</h2>
+      </div>
+      <div class="grid g3" id="moments"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding-top:clamp(48px,8vw,96px)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Kam dál</div>
+        <h2>Od jednoduchých čísel po bayesovský model</h2>
+        <p>Každá kapitola jde o kousek hlouběji. Nemusíte číst všechno – vyberte si, co vás zajímá.</p>
+      </div>
+      <div class="grid g3" id="chapters">
+        <a class="card nav-card reveal" href="vysledky.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><g fill="var(--p-dobre)"><rect x="28" y="22" width="16" height="56" rx="3"/></g><g fill="var(--p-sance)"><rect x="52" y="30" width="16" height="48" rx="3"/></g><g fill="var(--p-perspektiva)"><rect x="76" y="32" width="16" height="46" rx="3"/></g><g fill="var(--p-pro)"><rect x="100" y="54" width="16" height="24" rx="3"/></g><g fill="var(--p-nase)"><rect x="124" y="55" width="16" height="23" rx="3"/></g><g fill="var(--p-top09)"><rect x="148" y="62" width="16" height="16" rx="3"/></g><path d="M20 78h160" stroke="var(--line-strong)" stroke-width="1.5"/></svg></div>
+          <span class="tag tag-fact">Pro každého</span>
+          <h3>Výsledky v kostce</h3>
+          <p>Interaktivní verze infografiky: kandidátky, okrsky, změny proti roku 2022, zvolení zastupitelé a nejtěsnější momenty. Plus mandátová kalkulačka „co kdyby“.</p>
+          <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card nav-card reveal" href="krizky.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><g><rect x="30" y="20" width="110" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="140" y="20" width="30" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="38" width="100" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="130" y="38" width="16" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="56" width="92" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="122" y="56" width="40" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="74" width="88" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="118" y="74" width="8" height="10" rx="3" fill="var(--p-sance)"/></g></svg></div>
+          <span class="tag tag-model">Analýza Claude</span>
+          <h3>Osobní křížky</h3>
+          <p>Kolik hlasů přinesl straně každý kandidát sám za sebe? Co lze dokázat bez modelu a co odhaduje bayesovský model z 480 okrskových čísel.</p>
+          <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card nav-card is-soon reveal" href="gpt.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><circle cx="100" cy="46" r="26" fill="none" stroke="var(--line-strong)" stroke-width="2" stroke-dasharray="4 6"/><path d="M100 32v14l9 6" stroke="var(--warm)" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+          <span class="tag tag-soon">Připravujeme</span>
+          <h3>Analýza GPT</h3>
+          <p>Druhá, nezávislá analýza stejných dat od jiného modelu. Až bude hotová, porovnáme, v čem se obě analýzy shodují.</p>
+          <span class="go">Co v ní bude <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card nav-card is-soon reveal" href="souhrn.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><rect x="52" y="22" width="40" height="50" rx="6" fill="var(--river-soft)" stroke="var(--river)" stroke-width="1.5"/><rect x="108" y="22" width="40" height="50" rx="6" fill="var(--warm-soft)" stroke="var(--warm)" stroke-width="1.5"/><path d="M92 47h16" stroke="var(--ink-2)" stroke-width="2" stroke-dasharray="3 3"/></svg></div>
+          <span class="tag tag-soon">Připravujeme</span>
+          <h3>Souhrn</h3>
+          <p>Shrnutí obou analýz na jednom místě: co je jisté, na čem se modely shodnou a kde se rozcházejí.</p>
+          <span class="go">Co v něm bude <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card nav-card reveal" href="notebooky.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><rect x="40" y="16" width="120" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/><path d="M52 32h18M52 44h40M52 56h28" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/><path d="M104 62c8-2 10-26 18-26s10 18 18 18 8-10 10-12" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+          <span class="tag">Pro fajnšmekry</span>
+          <h3>Notebooky a data</h3>
+          <p>Celé Jupyter notebooky s modelem, diagnostikou MCMC a testy citlivosti – v prohlížeči, s funkčními interaktivními grafy.</p>
+          <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card nav-card reveal" href="vysledky.html#infografika">
+          <div class="art" style="background:var(--surface-2)"><img src="assets/infografika-revnice-2026.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top"></div>
+          <span class="tag tag-fact">Ke stažení</span>
+          <h3>Infografika</h3>
+          <p>Všechny hlavní výsledky na jednom obrázku – na vytištění nebo sdílení.</p>
+          <span class="go">Stáhnout <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(48px,8vw,96px)">
+    <div class="wrap">
+      <div class="grid g-7-5" style="align-items:start">
+        <div class="prose reveal">
+          <div class="eyebrow">Jak to vzniklo</div>
+          <h2>Dva modely, jeden zadavatel</h2>
+          <p>Výsledky voleb jsou veřejné, ale ČSÚ u každého kandidáta zveřejňuje jen <em>součet</em> hlasů – nerozliší, kolik přišlo
+            ze zakřížkované celé kandidátky a kolik z osobních křížků. Proto jsme stejná data a stejné zadání předali dvěma různým
+            jazykovým modelům, aby každý nezávisle navrhl a spočítal vlastní analýzu.</p>
+          <p>Základní čísla na tomto webu jsou přímo z výsledků ČSÚ. Vše, co je <span class="tag tag-model">model</span>,
+            je odhad a je tak vždy označené. Web je neoficiální a nemá nic společného s žádnou kandidující stranou.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Autoři</h3>
+          <div class="authors" style="margin-top:12px">
+            <span class="author"><span class="av" style="background:var(--warm)">C</span><span>Claude<small>Anthropic · bayesovská analýza a tento web</small></span></span>
+            <span class="author"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI · infografika, druhá analýza (brzy)</small></span></span>
+            <span class="author"><span class="av" style="background:var(--accent)">PČ</span><span>Petr Čermák<small>zadání a prompty</small></span></span>
+          </div>
+          <p class="muted" style="font-size:14px;margin:14px 0 0">Zdroj dat: ČSÚ / volby.cz, exporty výsledků po okrscích.
+            Kód a data: <a href="https://github.com/me2d09/volby-revnice-2026" rel="noopener">GitHub</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="vendor/plotly-4.1.1.min.js"></script>
+<script src="data/zakladni.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
