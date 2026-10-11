@@ -1,0 +1,2 @@
+n_chains,n_draws,divergences,max_rhat,min_ess_bulk,min_ess_tail,share_rhat_gt_1_01,share_ess_lt_400,sampling_time_s,max_treedepth_hits,bfmi_min
+4,1000,1,1.0140245847306044,412.6094828983692,643.0437466828004,0.00021199915200339198,0.0,526.9306240081787,0,

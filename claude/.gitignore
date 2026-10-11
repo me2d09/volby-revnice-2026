@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
+.venv/
+# uložené MCMC fity jsou velké (desítky MB) – regenerují se skriptem scripts/run_all_fits.py
+fits/*.nc
+fits/*.npz

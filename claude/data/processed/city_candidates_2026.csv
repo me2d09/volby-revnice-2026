@@ -1,0 +1,121 @@
+﻿year;party_id;party;position;name;age;votes;elected_2026;elected_order;rigorous_min_personal_marks_city;rigorous_min_personal_marks_sum_precincts
+2026;1;ŠANCE Řevnice;1;Chabera Tomáš Ing.;55;402;ANO;1.0;0;0
+2026;1;ŠANCE Řevnice;2;Ullrichová Jiřina Ing.;56;357;NE;3.0;0;0
+2026;1;ŠANCE Řevnice;3;Šůra Josef;51;360;NE;1.0;3;4
+2026;1;ŠANCE Řevnice;4;Flemr Lukáš;50;379;ANO;3.0;22;24
+2026;1;ŠANCE Řevnice;5;Foldynová Renáta;54;304;NE;4.0;0;0
+2026;1;ŠANCE Řevnice;6;Soukupová Květa Ing.;46;358;NE;2.0;54;54
+2026;1;ŠANCE Řevnice;7;Chroust Jan;44;325;NE;5.0;21;26
+2026;1;ŠANCE Řevnice;8;Křivánek Vladimír;75;300;NE;6.0;0;5
+2026;1;ŠANCE Řevnice;9;Sudek Martin Ing.;59;324;NE;7.0;24;29
+2026;1;ŠANCE Řevnice;10;Červená Terezie Ing.;40;383;ANO;2.0;83;88
+2026;1;ŠANCE Řevnice;11;Trnka Jiří;79;286;NE;8.0;0;1
+2026;1;ŠANCE Řevnice;12;Onderková Johana;26;278;NE;9.0;0;2
+2026;1;ŠANCE Řevnice;13;Vyleta Jan;23;273;NE;10.0;0;2
+2026;1;ŠANCE Řevnice;14;Chroust Martin;45;269;NE;11.0;0;3
+2026;1;ŠANCE Řevnice;15;Wagner Richard;44;242;NE;12.0;0;0
+2026;2;TOP 09 a nezávislí kandidáti;1;Tlustý Josef Ing. arch.;49;179;NE;1.0;0;0
+2026;2;TOP 09 a nezávislí kandidáti;2;Hartmann Pavel Ing.;51;223;ANO;1.0;44;44
+2026;2;TOP 09 a nezávislí kandidáti;3;Čapková Pavlína Ing. arch.;52;124;NE;3.0;0;0
+2026;2;TOP 09 a nezávislí kandidáti;4;Mizerovský Radek;49;110;NE;6.0;0;6
+2026;2;TOP 09 a nezávislí kandidáti;5;Beránková Anna Mgr.;40;122;NE;4.0;12;21
+2026;2;TOP 09 a nezávislí kandidáti;6;Holovský Jakub doc. Mgr.;44;119;NE;5.0;9;19
+2026;2;TOP 09 a nezávislí kandidáti;7;Blažková Stanislava Ing. arch.;52;82;NE;7.0;0;0
+2026;2;TOP 09 a nezávislí kandidáti;8;Voloďko Mychajlo;45;78;NE;8.0;0;3
+2026;2;TOP 09 a nezávislí kandidáti;9;Holovská Kateřina Mgr.;42;83;NE;9.0;5;8
+2026;2;TOP 09 a nezávislí kandidáti;10;Beránek Pavel Mgr.;50;87;NE;10.0;9;12
+2026;2;TOP 09 a nezávislí kandidáti;11;Zavadilová Alice Mgr.;53;95;NE;11.0;17;20
+2026;2;TOP 09 a nezávislí kandidáti;12;Masner Ondřej MUDr.;59;137;NE;2.0;59;62
+2026;2;TOP 09 a nezávislí kandidáti;13;Krämer Lukáš Hynek;56;75;NE;12.0;0;4
+2026;2;TOP 09 a nezávislí kandidáti;14;Krejčí Lukáš Mgr.;50;66;NE;13.0;0;1
+2026;2;TOP 09 a nezávislí kandidáti;15;Brodský Tomáš;56;50;NE;14.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;1;Štěpánková Martina Mgr. MPA;52;512;ANO;1.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;2;Uhlík Michal Ing. Ph.D.;46;491;ANO;2.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;3;Nappi Bursík Martina Mgr.;38;437;ANO;3.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;4;Bobek Vladimír Ing.;49;393;ANO;4.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;5;Dudová Renata;45;405;NE;1.0;12;13
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;6;Skripnik Nikola;20;378;NE;2.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;7;Reslová Marie MgA.;68;373;NE;3.0;0;2
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;8;Polášek Jan Ferdinand Mgr.;38;354;NE;4.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;9;Šafařík Petr;52;343;NE;5.0;0;1
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;10;Skovajsová Martina Mgr.;41;354;NE;6.0;11;13
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;11;Bobková Adéla;53;317;NE;7.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;12;Kment Filip Ing.;48;325;NE;8.0;8;8
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;13;Radová Jitka;45;295;NE;9.0;0;0
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;14;Wielgusová Zuzana MgA.;41;296;NE;10.0;1;4
+2026;3;DOBŘE - Dialog o budoucnosti Řevnic;15;Vohryzková Tereza;47;280;NE;11.0;0;1
+2026;4;Hnutí Srdce Řevnic;1;Vyletová Jaroslava;61;158;;;0;0
+2026;4;Hnutí Srdce Řevnic;2;Marek Stanislav;49;88;;;0;0
+2026;4;Hnutí Srdce Řevnic;3;Lednická Eva MUDr.;57;118;;;30;30
+2026;4;Hnutí Srdce Řevnic;4;Pazderková Kateřina;54;72;;;0;1
+2026;4;Hnutí Srdce Řevnic;5;Fasching Kronus Petra;62;66;;;0;4
+2026;4;Hnutí Srdce Řevnic;6;Sudková Michaela Bc.;59;62;;;0;4
+2026;4;Hnutí Srdce Řevnic;7;Babka Martin;49;63;;;1;7
+2026;4;Hnutí Srdce Řevnic;8;Bolart Miroslav Ing.;72;70;;;8;18
+2026;4;Hnutí Srdce Řevnic;9;Svobodová Ivanka;78;52;;;0;1
+2026;4;Hnutí Srdce Řevnic;10;Bolartová Vlasta Ing.;39;61;;;9;10
+2026;4;Hnutí Srdce Řevnic;11;Schneider Jitřenka;77;54;;;2;4
+2026;4;Hnutí Srdce Řevnic;12;Hášová Naděžda;79;52;;;0;4
+2026;4;Hnutí Srdce Řevnic;13;Schusová Michaela Mgr. Ph.D.;49;66;;;14;18
+2026;4;Hnutí Srdce Řevnic;14;Neumannová Monika;61;62;;;10;14
+2026;4;Hnutí Srdce Řevnic;15;Trnka Michal;53;58;;;6;13
+2026;5;PRO Řevnice;1;Kvasnička Libor;63;287;ANO;1.0;0;0
+2026;5;PRO Řevnice;2;Hlaváčková Kateřina Ing.;47;211;NE;1.0;0;0
+2026;5;PRO Řevnice;3;Veselka Jakub Ing. Ph.D.;36;193;NE;2.0;0;0
+2026;5;PRO Řevnice;4;Buchal Jiří Ing.;46;167;NE;3.0;0;0
+2026;5;PRO Řevnice;5;Lánský Ondřej Bc.;46;178;NE;4.0;11;14
+2026;5;PRO Řevnice;6;Lojda Jan Ing. Ph.D.;46;214;ANO;2.0;47;50
+2026;5;PRO Řevnice;7;Pražská Martina Mgr.;54;144;NE;5.0;0;2
+2026;5;PRO Řevnice;8;Doležalová Anna;33;133;NE;6.0;0;3
+2026;5;PRO Řevnice;9;Šimůnek Jan Ing.;52;176;NE;7.0;43;46
+2026;5;PRO Řevnice;10;Krofta Matěj;29;119;NE;8.0;0;0
+2026;5;PRO Řevnice;11;Čermák Petr RNDr. Ph.D.;40;156;NE;9.0;37;37
+2026;5;PRO Řevnice;12;Adam Milan;59;136;NE;10.0;17;17
+2026;5;PRO Řevnice;13;Vyleta Karel;56;126;NE;11.0;7;9
+2026;5;PRO Řevnice;14;Bělohlávek Milan;51;127;NE;12.0;8;11
+2026;5;PRO Řevnice;15;Vejmelka Roman Ing.;48;131;NE;13.0;12;18
+2026;6;ODS a nezávislí;1;Schlindenbuch Anna Mgr.;50;105;;;0;0
+2026;6;ODS a nezávislí;2;Směšný Martin;49;114;;;9;12
+2026;6;ODS a nezávislí;3;Šenk Pavel;50;82;;;0;0
+2026;6;ODS a nezávislí;4;Karas Matyáš;23;84;;;2;7
+2026;6;ODS a nezávislí;5;Hlaváček Jan Ing.;34;81;;;0;8
+2026;6;ODS a nezávislí;6;Krtek Patrik;31;88;;;7;15
+2026;6;ODS a nezávislí;7;Cvanciger Miroslav Bc.;71;122;;;41;49
+2026;6;ODS a nezávislí;8;Hlaváček Václav Ing.;32;64;;;0;2
+2026;6;ODS a nezávislí;9;Sedláčková Rytířová Helena;74;61;;;0;7
+2026;6;ODS a nezávislí;10;Štech Jan;30;56;;;0;2
+2026;6;ODS a nezávislí;11;Černý Miroslav;75;86;;;30;32
+2026;6;ODS a nezávislí;12;Blechová Zuzana;36;65;;;9;13
+2026;6;ODS a nezávislí;13;Slovenčík Jan MgA.;49;63;;;7;12
+2026;6;ODS a nezávislí;14;Benda Tomáš;51;62;;;6;11
+2026;6;ODS a nezávislí;15;Řehák Jan Mgr.;64;49;;;0;4
+2026;7;Perspektiva pro město;1;Smrčka Tomáš Ing.;59;397;ANO;1.0;0;0
+2026;7;Perspektiva pro město;2;Hartmann Petr Ing.;44;377;ANO;2.0;0;3
+2026;7;Perspektiva pro město;3;Veselá Petra;52;344;NE;1.0;0;0
+2026;7;Perspektiva pro město;4;Hrubý Vratislav;34;367;ANO;3.0;23;25
+2026;7;Perspektiva pro město;5;Tamchyna Martin;51;336;NE;2.0;0;7
+2026;7;Perspektiva pro město;6;Benešová Zlata Bc.;36;327;NE;3.0;0;6
+2026;7;Perspektiva pro město;7;Šebesta Karel Mgr.;50;332;NE;4.0;5;26
+2026;7;Perspektiva pro město;8;Kovářová Iveta;50;319;NE;5.0;0;19
+2026;7;Perspektiva pro město;9;Schlindenbuch Jan Mgr.;52;271;NE;6.0;0;0
+2026;7;Perspektiva pro město;10;Martinec Šimon Ing.;34;331;NE;7.0;60;60
+2026;7;Perspektiva pro město;11;Fuchs Vladimír Bc.;39;265;NE;8.0;0;2
+2026;7;Perspektiva pro město;12;Jílek Pavel;57;257;NE;9.0;0;3
+2026;7;Perspektiva pro město;13;Junková Ivana MgA.;52;308;NE;10.0;51;54
+2026;7;Perspektiva pro město;14;Špidla Šimon MgA.;46;229;NE;11.0;0;0
+2026;7;Perspektiva pro město;15;Veselý Lukáš;24;223;NE;12.0;0;0
+2026;8;Naše Řevnice;1;Kozák Petr Ing.;72;262;ANO;1.0;0;0
+2026;8;Naše Řevnice;2;Spěvák Tomáš;56;188;NE;1.0;0;0
+2026;8;Naše Řevnice;3;Sedláčková Davidová Markéta;45;238;ANO;2.0;50;50
+2026;8;Naše Řevnice;4;Navrátilová Jana Dr.;63;177;NE;2.0;0;10
+2026;8;Naše Řevnice;5;Doubek Gabriela;47;142;NE;3.0;0;0
+2026;8;Naše Řevnice;6;Marval Lukáš;28;159;NE;4.0;17;17
+2026;8;Naše Řevnice;7;Grund Jiří MSc.;49;130;NE;5.0;0;6
+2026;8;Naše Řevnice;8;Neuvirt Kateřina Ing.;36;153;NE;6.0;23;29
+2026;8;Naše Řevnice;9;Froňková Pavlína Ing.;55;160;NE;7.0;30;36
+2026;8;Naše Řevnice;10;Bergr Petr;63;130;NE;8.0;0;12
+2026;8;Naše Řevnice;11;Koleňáková Eva;43;132;NE;9.0;2;17
+2026;8;Naše Řevnice;12;Adam Jakub;41;143;NE;10.0;13;28
+2026;8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;35;144;NE;11.0;14;29
+2026;8;Naše Řevnice;14;Ciglerová Barbora Bc.;50;171;NE;12.0;41;56
+2026;8;Naše Řevnice;15;Šarounová Lucie;51;122;NE;13.0;0;9

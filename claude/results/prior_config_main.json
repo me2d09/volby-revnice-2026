@@ -1,0 +1,29 @@
+{
+  "p0_mean": 0.5,
+  "tail_ratio": 0.7,
+  "k_logit_sd": 1.0,
+  "sigma_eta_sd": 0.5,
+  "g_alpha_party": 1.0,
+  "g_alpha_pure": 1.0,
+  "n_valid_ballots": 1679,
+  "mbar_beta": [
+    2.0,
+    2.0
+  ],
+  "r_split_alpha": 2.0,
+  "sigma_a_sd": 1.0,
+  "sigma_e_sd": 0.5,
+  "beta_mu": 0.7,
+  "beta_sd": 0.5,
+  "sigma_psi_sd": 0.25,
+  "sigma_u_sd": 0.75,
+  "sigma_v_sd": 0.3,
+  "candidate_effects": true,
+  "local_effects": true,
+  "conserve": true,
+  "saturation": true,
+  "sat_iter_pure": 4,
+  "likelihood": "normal_mech",
+  "phi_sd": 0.05,
+  "negbin_alpha_mu": 50.0
+}

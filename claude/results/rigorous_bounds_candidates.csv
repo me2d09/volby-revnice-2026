@@ -1,0 +1,121 @@
+﻿party_id;party;position;name;votes;lb_city;lb_precinct_sum;lb_p1;lb_p2;lb_p3;lb_p4
+1;ŠANCE;1;Chabera Tomáš Ing.;402;0;0;0;0;0;0
+1;ŠANCE;2;Ullrichová Jiřina Ing.;357;0;0;0;0;0;0
+1;ŠANCE;3;Šůra Josef;360;3;4;1;0;3;0
+1;ŠANCE;4;Flemr Lukáš;379;22;24;0;13;6;5
+1;ŠANCE;5;Foldynová Renáta;304;0;0;0;0;0;0
+1;ŠANCE;6;Soukupová Květa Ing.;358;54;54;16;12;16;10
+1;ŠANCE;7;Chroust Jan;325;21;26;0;7;8;11
+1;ŠANCE;8;Křivánek Vladimír;300;0;5;0;3;0;2
+1;ŠANCE;9;Sudek Martin Ing.;324;24;29;1;6;17;5
+1;ŠANCE;10;Červená Terezie Ing.;383;83;88;17;21;28;22
+1;ŠANCE;11;Trnka Jiří;286;0;1;0;0;0;1
+1;ŠANCE;12;Onderková Johana;278;0;2;0;2;0;0
+1;ŠANCE;13;Vyleta Jan;273;0;2;0;2;0;0
+1;ŠANCE;14;Chroust Martin;269;0;3;1;0;2;0
+1;ŠANCE;15;Wagner Richard;242;0;0;0;0;0;0
+2;TOP 09;1;Tlustý Josef Ing. arch.;179;0;0;0;0;0;0
+2;TOP 09;2;Hartmann Pavel Ing.;223;44;44;15;17;12;0
+2;TOP 09;3;Čapková Pavlína Ing. arch.;124;0;0;0;0;0;0
+2;TOP 09;4;Mizerovský Radek;110;0;6;2;0;0;4
+2;TOP 09;5;Beránková Anna Mgr.;122;12;21;0;12;6;3
+2;TOP 09;6;Holovský Jakub doc. Mgr.;119;9;19;0;7;8;4
+2;TOP 09;7;Blažková Stanislava Ing. arch.;82;0;0;0;0;0;0
+2;TOP 09;8;Voloďko Mychajlo;78;0;3;2;0;1;0
+2;TOP 09;9;Holovská Kateřina Mgr.;83;5;8;2;1;3;2
+2;TOP 09;10;Beránek Pavel Mgr.;87;9;12;7;4;1;0
+2;TOP 09;11;Zavadilová Alice Mgr.;95;17;20;9;2;0;9
+2;TOP 09;12;Masner Ondřej MUDr.;137;59;62;12;14;19;17
+2;TOP 09;13;Krämer Lukáš Hynek;75;0;4;0;0;0;4
+2;TOP 09;14;Krejčí Lukáš Mgr.;66;0;1;1;0;0;0
+2;TOP 09;15;Brodský Tomáš;50;0;0;0;0;0;0
+3;DOBŘE;1;Štěpánková Martina Mgr. MPA;512;0;0;0;0;0;0
+3;DOBŘE;2;Uhlík Michal Ing. Ph.D.;491;0;0;0;0;0;0
+3;DOBŘE;3;Nappi Bursík Martina Mgr.;437;0;0;0;0;0;0
+3;DOBŘE;4;Bobek Vladimír Ing.;393;0;0;0;0;0;0
+3;DOBŘE;5;Dudová Renata;405;12;13;2;4;7;0
+3;DOBŘE;6;Skripnik Nikola;378;0;0;0;0;0;0
+3;DOBŘE;7;Reslová Marie MgA.;373;0;2;1;0;1;0
+3;DOBŘE;8;Polášek Jan Ferdinand Mgr.;354;0;0;0;0;0;0
+3;DOBŘE;9;Šafařík Petr;343;0;1;0;1;0;0
+3;DOBŘE;10;Skovajsová Martina Mgr.;354;11;13;9;0;3;1
+3;DOBŘE;11;Bobková Adéla;317;0;0;0;0;0;0
+3;DOBŘE;12;Kment Filip Ing.;325;8;8;3;0;0;5
+3;DOBŘE;13;Radová Jitka;295;0;0;0;0;0;0
+3;DOBŘE;14;Wielgusová Zuzana MgA.;296;1;4;0;0;4;0
+3;DOBŘE;15;Vohryzková Tereza;280;0;1;0;1;0;0
+4;Srdce;1;Vyletová Jaroslava;158;0;0;0;0;0;0
+4;Srdce;2;Marek Stanislav;88;0;0;0;0;0;0
+4;Srdce;3;Lednická Eva MUDr.;118;30;30;6;8;11;5
+4;Srdce;4;Pazderková Kateřina;72;0;1;0;1;0;0
+4;Srdce;5;Fasching Kronus Petra;66;0;4;0;0;0;4
+4;Srdce;6;Sudková Michaela Bc.;62;0;4;2;2;0;0
+4;Srdce;7;Babka Martin;63;1;7;0;1;0;6
+4;Srdce;8;Bolart Miroslav Ing.;70;8;18;5;0;7;6
+4;Srdce;9;Svobodová Ivanka;52;0;1;0;0;1;0
+4;Srdce;10;Bolartová Vlasta Ing.;61;9;10;0;2;0;8
+4;Srdce;11;Schneider Jitřenka;54;2;4;1;1;0;2
+4;Srdce;12;Hášová Naděžda;52;0;4;2;0;0;2
+4;Srdce;13;Schusová Michaela Mgr. Ph.D.;66;14;18;6;6;4;2
+4;Srdce;14;Neumannová Monika;62;10;14;1;7;5;1
+4;Srdce;15;Trnka Michal;58;6;13;5;4;4;0
+5;PRO;1;Kvasnička Libor;287;0;0;0;0;0;0
+5;PRO;2;Hlaváčková Kateřina Ing.;211;0;0;0;0;0;0
+5;PRO;3;Veselka Jakub Ing. Ph.D.;193;0;0;0;0;0;0
+5;PRO;4;Buchal Jiří Ing.;167;0;0;0;0;0;0
+5;PRO;5;Lánský Ondřej Bc.;178;11;14;1;2;11;0
+5;PRO;6;Lojda Jan Ing. Ph.D.;214;47;50;11;22;11;6
+5;PRO;7;Pražská Martina Mgr.;144;0;2;0;0;2;0
+5;PRO;8;Doležalová Anna;133;0;3;0;3;0;0
+5;PRO;9;Šimůnek Jan Ing.;176;43;46;17;6;9;14
+5;PRO;10;Krofta Matěj;119;0;0;0;0;0;0
+5;PRO;11;Čermák Petr RNDr. Ph.D.;156;37;37;13;2;10;12
+5;PRO;12;Adam Milan;136;17;17;0;0;7;10
+5;PRO;13;Vyleta Karel;126;7;9;0;0;3;6
+5;PRO;14;Bělohlávek Milan;127;8;11;4;0;6;1
+5;PRO;15;Vejmelka Roman Ing.;131;12;18;10;0;0;8
+6;ODS;1;Schlindenbuch Anna Mgr.;105;0;0;0;0;0;0
+6;ODS;2;Směšný Martin;114;9;12;6;1;5;0
+6;ODS;3;Šenk Pavel;82;0;0;0;0;0;0
+6;ODS;4;Karas Matyáš;84;2;7;0;0;3;4
+6;ODS;5;Hlaváček Jan Ing.;81;0;8;1;0;4;3
+6;ODS;6;Krtek Patrik;88;7;15;0;1;9;5
+6;ODS;7;Cvanciger Miroslav Bc.;122;41;49;8;3;16;22
+6;ODS;8;Hlaváček Václav Ing.;64;0;2;0;0;2;0
+6;ODS;9;Sedláčková Rytířová Helena;61;0;7;0;0;0;7
+6;ODS;10;Štech Jan;56;0;2;1;0;0;1
+6;ODS;11;Černý Miroslav;86;30;32;6;2;10;14
+6;ODS;12;Blechová Zuzana;65;9;13;4;0;1;8
+6;ODS;13;Slovenčík Jan MgA.;63;7;12;0;9;0;3
+6;ODS;14;Benda Tomáš;62;6;11;0;4;2;5
+6;ODS;15;Řehák Jan Mgr.;49;0;4;1;3;0;0
+7;Perspektiva;1;Smrčka Tomáš Ing.;397;0;0;0;0;0;0
+7;Perspektiva;2;Hartmann Petr Ing.;377;0;3;0;0;3;0
+7;Perspektiva;3;Veselá Petra;344;0;0;0;0;0;0
+7;Perspektiva;4;Hrubý Vratislav;367;23;25;0;0;14;11
+7;Perspektiva;5;Tamchyna Martin;336;0;7;0;0;7;0
+7;Perspektiva;6;Benešová Zlata Bc.;327;0;6;0;6;0;0
+7;Perspektiva;7;Šebesta Karel Mgr.;332;5;26;12;0;0;14
+7;Perspektiva;8;Kovářová Iveta;319;0;19;19;0;0;0
+7;Perspektiva;9;Schlindenbuch Jan Mgr.;271;0;0;0;0;0;0
+7;Perspektiva;10;Martinec Šimon Ing.;331;60;60;9;19;13;19
+7;Perspektiva;11;Fuchs Vladimír Bc.;265;0;2;0;1;0;1
+7;Perspektiva;12;Jílek Pavel;257;0;3;2;0;1;0
+7;Perspektiva;13;Junková Ivana MgA.;308;51;54;9;24;9;12
+7;Perspektiva;14;Špidla Šimon MgA.;229;0;0;0;0;0;0
+7;Perspektiva;15;Veselý Lukáš;223;0;0;0;0;0;0
+8;Naše Řevnice;1;Kozák Petr Ing.;262;0;0;0;0;0;0
+8;Naše Řevnice;2;Spěvák Tomáš;188;0;0;0;0;0;0
+8;Naše Řevnice;3;Sedláčková Davidová Markéta;238;50;50;17;17;5;11
+8;Naše Řevnice;4;Navrátilová Jana Dr.;177;0;10;5;0;0;5
+8;Naše Řevnice;5;Doubek Gabriela;142;0;0;0;0;0;0
+8;Naše Řevnice;6;Marval Lukáš;159;17;17;5;0;5;7
+8;Naše Řevnice;7;Grund Jiří MSc.;130;0;6;3;0;3;0
+8;Naše Řevnice;8;Neuvirt Kateřina Ing.;153;23;29;7;8;5;9
+8;Naše Řevnice;9;Froňková Pavlína Ing.;160;30;36;13;9;5;9
+8;Naše Řevnice;10;Bergr Petr;130;0;12;0;7;0;5
+8;Naše Řevnice;11;Koleňáková Eva;132;2;17;5;1;0;11
+8;Naše Řevnice;12;Adam Jakub;143;13;28;7;10;3;8
+8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;144;14;29;4;9;6;10
+8;Naše Řevnice;14;Ciglerová Barbora Bc.;171;41;56;14;18;10;14
+8;Naše Řevnice;15;Šarounová Lucie;122;0;9;0;4;0;5
