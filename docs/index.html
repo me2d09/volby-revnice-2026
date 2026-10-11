@@ -197,6 +197,64 @@
       </div>
     </div>
   </section>
+
+  <section class="section" id="zakulisi" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Pro zajímavost · zákulisí</div>
+        <h2>Kolik práce a peněz to stálo</h2>
+        <p>Jazykové modely „čtou“ a „píšou“ po tokenech (kouscích slov) a při placení přes API se platí právě za ně.
+          Takhle vypadala spotřeba při výpočtu analýz.</p>
+      </div>
+      <div class="grid g-7-5" style="align-items:start">
+        <div class="card reveal">
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+            <span class="author" style="padding:6px 12px 6px 6px"><span class="av" style="background:var(--warm)">C</span><span>Claude<small>model Claude Fable 5.1 (Anthropic)</small></span></span>
+            <span class="tag tag-bound">doloženo</span>
+          </div>
+          <div class="grid g3" style="margin-top:16px;gap:12px">
+            <div class="stat"><span class="label">Doba relace</span><span class="value" style="font-size:2rem">15 h 15 min</span>
+              <span class="sub">10. 10. 22:23 – 11. 10. 13:38, z toho ~4 h čekání na výpočty</span></div>
+            <div class="stat"><span class="label">Zpracované tokeny</span><span class="value" style="font-size:2rem">78,2 mil.</span>
+              <span class="sub">225 volání modelu; vlastní výstup jen 280 tis.</span></div>
+            <div class="stat"><span class="label">Cena při platbě za tokeny</span><span class="value" style="font-size:2rem">≈ 60 USD</span>
+              <span class="sub">asi 1 400 Kč (při 23 Kč/USD)</span></div>
+          </div>
+          <div class="table-wrap" style="margin-top:14px">
+            <table class="data">
+              <thead><tr><th>Druh tokenů</th><th class="r">Počet</th><th class="r">USD / 1 mil.</th><th class="r">Cena</th></tr></thead>
+              <tbody>
+                <tr><td>Čtení kontextu z cache</td><td class="r">76 615 412</td><td class="r">0,25</td><td class="r">19,15 USD</td></tr>
+                <tr><td>Zápis do cache (1 h)</td><td class="r">1 351 922</td><td class="r">20,00</td><td class="r">27,04 USD</td></tr>
+                <tr><td>Výstup (text, kód, úvahy)</td><td class="r">280 258</td><td class="r">50,00</td><td class="r">14,01 USD</td></tr>
+                <tr><td>Vstup bez cache</td><td class="r">450</td><td class="r">10,00</td><td class="r">0,00 USD</td></tr>
+                <tr><td><strong>Celkem</strong></td><td class="r"><strong>78 248 042</strong></td><td class="r"></td><td class="r"><strong>≈ 60,2 USD</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note" style="margin:10px 0 0">99,6 % tokenů je opakované čtení dosavadního průběhu práce – model ho „vidí“ při každém kroku znovu.
+            Bez prompt cache by stejná práce stála asi 794 USD. Zdroj: <code>input/claude_tokens.md</code> (záznam relace, ceník Anthropic k 11. 10. 2026).</p>
+        </div>
+        <div class="grid" style="gap:clamp(14px,2vw,22px)">
+          <div class="card reveal">
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+              <span class="author" style="padding:6px 12px 6px 6px"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI (Codex)</small></span></span>
+              <span class="tag tag-soon">nedoloženo</span>
+            </div>
+            <p class="ink-2" style="margin:14px 0 0;font-size:15.5px">GPT nedokázal ze svých záznamů zjistit počet tokenů, přesný model ani dobu výpočtu –
+              lokální záznamy spotřebu neobsahovaly. Místo odhadu proto poctivě uvedl, že čísla <strong>nejsou k dispozici</strong>, a popsal,
+              jak by se cena správně spočítala.</p>
+            <p class="chart-note" style="margin:10px 0 0">Zdroj: <code>input/gpt_tokens.md</code>.</p>
+          </div>
+          <div class="card reveal">
+            <h3>A tenhle web?</h3>
+            <p class="ink-2" style="margin:0;font-size:15.5px">Web, grafy a srovnání obou analýz sestavil v samostatné relaci model <strong>Claude Opus 5.5</strong>.
+              Jeho spotřeba v číslech výše není.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer data-site-footer></footer>
