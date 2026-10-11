@@ -115,7 +115,7 @@
     { ic: "warm", icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M6 11l6-6 6 6"/></svg>',
       title: "Z 10. místa do zastupitelstva",
       text: `Terezie Červená (ŠANCE) přeskočila osm kandidátů před sebou. Matematicky jisté je, že dostala nejméně ${cervena.min_personal_marks} osobních křížků.`,
-      href: "krizky.html#cervena", link: "Osobní křížky" },
+      href: "souhrn.html#overeno", link: "Souhrn analýz" },
     { ic: "river", icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></svg>',
       title: `ODS chybělo ${F.ods_threshold_votes_new} hlasů`,
       text: `S ${RV.pct(F.ods_share_pct, 2)} zůstala ODS těsně pod 5% hranicí. Stačil by jediný volič, který by místo jiné strany zakřížkoval celou ODS.`,
@@ -125,4 +125,23 @@
     `<div class="card fact reveal"><div class="ic ${m.ic}">${m.icon}</div><div><h3>${m.title}</h3><p>${m.text}</p>` +
     `<p style="margin-top:10px"><a href="${m.href}">${m.link} →</a></p></div></div>`).join("");
   document.querySelectorAll("#moments .reveal").forEach((e) => e.classList.add("in"));
+
+  /* ---------- osobní křížky: jen výsledky potvrzené oběma analýzami ---------- */
+  const S = RV.data.srovnani;
+  if (S) {
+    const K = S.consensus;
+    const r100 = (x) => RV.int(Math.round(x / 100) * 100);
+    const tc = K.top_eff.find((r) => r.name === "Terezie Červená");
+    const others = K.top_eff.filter((r) => r.name !== "Terezie Červená").slice(0, 4);
+    const po = K.parties.slice().sort((a, b) => (b.cl + b.gp) - (a.cl + a.gp));
+    const rng = (a, b) => `${RV.fmt(100 * Math.min(a, b), 0)}–${RV.fmt(100 * Math.max(a, b), 0)}\u00a0%`;
+    const items = [
+      ["tag-bound", "jisté minimum", `≥ ${RV.int(K.lb_exact)}`, "osobních křížků je dokázáno jen z pravidel sčítání, bez modelu."],
+      ["tag-model", "oba modely", `${r100(K.total.band[0])}–${r100(K.total.band[1])}`, "osobních křížků celkem – zhruba čtvrtina všech hlasů."],
+      ["tag-model", "oba modely", `×${RV.fmt((tc.cl + tc.gp) / 2, 0)}`, `Terezie Červená (ŠANCE, 10. místo) dostala asi trojnásobek osobních křížků oproti své pozici – nejvíc ve městě. Dále ${others.map((r) => RV.esc(r.name)).join(", ")}.`],
+      ["tag-model", "oba modely", rng(po[0].cl, po[0].gp), `hlasů ${RV.esc(po[0].party)} jsou osobní křížky; u vítězného ${RV.esc(po[7].party)} jen ${rng(po[7].cl, po[7].gp)}. Malé kandidátky žijí z osobností.`],
+    ];
+    document.getElementById("consensus").innerHTML = items.map(([cls, tag, v, t]) =>
+      `<div class="card stat reveal in"><span><span class="tag ${cls}">${tag}</span></span><span class="value" style="margin-top:6px">${v}</span><span class="sub">${t}</span></div>`).join("");
+  }
 })();

@@ -31,7 +31,7 @@
       <div class="hero-actions">
         <a class="btn btn-primary" href="vysledky.html">Výsledky v kostce
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="krizky.html">Kdo straně přinesl hlasy?</a>
+        <a class="btn btn-ghost" href="souhrn.html">Kdo straně přinesl hlasy?</a>
       </div>
     </div>
     <svg class="landscape" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
@@ -97,11 +97,27 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Osobní křížky · ověřeno dvěma analýzami</div>
+        <h2>Kdo straně přinesl hlasy</h2>
+        <p>Výsledky říkají jen součet hlasů. Kolik z nich kandidát získal sám za sebe – osobním křížkem – odhadly dva nezávislé
+          modely, Claude a GPT. Tady je jen to, na čem se oba shodnou.</p>
+      </div>
+      <div class="grid g4" id="consensus"></div>
+      <div class="reveal" style="margin-top:22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+        <a class="btn btn-primary" href="souhrn.html">Celý souhrn obou analýz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="muted" style="font-size:14.5px">včetně toho, kde se modely liší a kdo odvedl lepší práci</span>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-alt" style="padding-top:clamp(48px,8vw,96px)">
     <div class="wrap">
       <div class="section-head reveal">
         <div class="eyebrow">Kam dál</div>
-        <h2>Od jednoduchých čísel po bayesovský model</h2>
+        <h2>Od jednoduchých čísel po dva bayesovské modely</h2>
         <p>Každá kapitola jde o kousek hlouběji. Nemusíte číst všechno – vyberte si, co vás zajímá.</p>
       </div>
       <div class="grid g3" id="chapters">
@@ -112,26 +128,26 @@
           <p>Interaktivní verze infografiky: kandidátky, okrsky, změny proti roku 2022, zvolení zastupitelé a nejtěsnější momenty. Plus mandátová kalkulačka „co kdyby“.</p>
           <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="card nav-card reveal" href="krizky.html">
-          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><g><rect x="30" y="20" width="110" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="140" y="20" width="30" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="38" width="100" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="130" y="38" width="16" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="56" width="92" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="122" y="56" width="40" height="10" rx="3" fill="var(--p-sance)"/><rect x="30" y="74" width="88" height="10" rx="3" fill="var(--p-sance)" opacity=".35"/><rect x="118" y="74" width="8" height="10" rx="3" fill="var(--p-sance)"/></g></svg></div>
-          <span class="tag tag-model">Analýza Claude</span>
-          <h3>Osobní křížky</h3>
-          <p>Kolik hlasů přinesl straně každý kandidát sám za sebe? Co lze dokázat bez modelu a co odhaduje bayesovský model z 480 okrskových čísel.</p>
+        <a class="card nav-card reveal" href="souhrn.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><rect x="52" y="22" width="40" height="50" rx="6" fill="var(--warm-soft)" stroke="var(--warm)" stroke-width="1.5"/><rect x="108" y="22" width="40" height="50" rx="6" fill="var(--river-soft)" stroke="var(--river)" stroke-width="1.5"/><path d="m92 47 6 6 12-12" stroke="var(--accent)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="tag tag-model">Claude × GPT</span>
+          <h3>Souhrn analýz</h3>
+          <p>Osobní křížky podle dvou nezávislých modelů: co obě analýzy potvrdily, kde se liší a kdo odvedl lepší práci.</p>
           <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="card nav-card is-soon reveal" href="gpt.html">
-          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><circle cx="100" cy="46" r="26" fill="none" stroke="var(--line-strong)" stroke-width="2" stroke-dasharray="4 6"/><path d="M100 32v14l9 6" stroke="var(--warm)" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
-          <span class="tag tag-soon">Připravujeme</span>
-          <h3>Analýza GPT</h3>
-          <p>Druhá, nezávislá analýza stejných dat od jiného modelu. Až bude hotová, porovnáme, v čem se obě analýzy shodují.</p>
-          <span class="go">Co v ní bude <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <a class="card nav-card reveal" href="krizky.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><g><rect x="30" y="20" width="110" height="10" rx="3" fill="var(--warm)" opacity=".3"/><rect x="140" y="20" width="30" height="10" rx="3" fill="var(--warm)"/><rect x="30" y="38" width="100" height="10" rx="3" fill="var(--warm)" opacity=".3"/><rect x="130" y="38" width="16" height="10" rx="3" fill="var(--warm)"/><rect x="30" y="56" width="92" height="10" rx="3" fill="var(--warm)" opacity=".3"/><rect x="122" y="56" width="40" height="10" rx="3" fill="var(--warm)"/><rect x="30" y="74" width="88" height="10" rx="3" fill="var(--warm)" opacity=".3"/><rect x="118" y="74" width="8" height="10" rx="3" fill="var(--warm)"/></g></svg></div>
+          <span class="tag" style="background:var(--warm-soft);color:var(--warm)">Analýza Claude</span>
+          <h3>Analýza Claude</h3>
+          <p>Hierarchický bayesovský model v PyMC: rozklad hlasů každého kandidáta, žebříček, osobnosti, kandidátky a okrsky.</p>
+          <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="card nav-card is-soon reveal" href="souhrn.html">
-          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><rect x="52" y="22" width="40" height="50" rx="6" fill="var(--river-soft)" stroke="var(--river)" stroke-width="1.5"/><rect x="108" y="22" width="40" height="50" rx="6" fill="var(--warm-soft)" stroke="var(--warm)" stroke-width="1.5"/><path d="M92 47h16" stroke="var(--ink-2)" stroke-width="2" stroke-dasharray="3 3"/></svg></div>
-          <span class="tag tag-soon">Připravujeme</span>
-          <h3>Souhrn</h3>
-          <p>Shrnutí obou analýz na jednom místě: co je jisté, na čem se modely shodnou a kde se rozcházejí.</p>
-          <span class="go">Co v něm bude <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <a class="card nav-card reveal" href="gpt.html">
+          <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><g><rect x="30" y="20" width="118" height="10" rx="3" fill="var(--river)" opacity=".3"/><rect x="148" y="20" width="22" height="10" rx="3" fill="var(--river)"/><rect x="30" y="38" width="108" height="10" rx="3" fill="var(--river)" opacity=".3"/><rect x="138" y="38" width="10" height="10" rx="3" fill="var(--river)"/><rect x="30" y="56" width="96" height="10" rx="3" fill="var(--river)" opacity=".3"/><rect x="126" y="56" width="36" height="10" rx="3" fill="var(--river)"/><rect x="30" y="74" width="90" height="10" rx="3" fill="var(--river)" opacity=".3"/><rect x="120" y="74" width="6" height="10" rx="3" fill="var(--river)"/></g></svg></div>
+          <span class="tag" style="background:var(--river-soft);color:var(--river)">Analýza GPT</span>
+          <h3>Analýza GPT</h3>
+          <p>Celočíselný model s přesnou dolní mezí a kontrolou na platné lístky – stejná témata, jiný postup.</p>
+          <span class="go">Otevřít <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
         <a class="card nav-card reveal" href="notebooky.html">
           <div class="art"><svg viewBox="0 0 200 92" aria-hidden="true"><rect x="40" y="16" width="120" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/><path d="M52 32h18M52 44h40M52 56h28" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/><path d="M104 62c8-2 10-26 18-26s10 18 18 18 8-10 10-12" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
@@ -172,7 +188,7 @@
           <h3>Autoři</h3>
           <div class="authors" style="margin-top:12px">
             <span class="author"><span class="av" style="background:var(--warm)">C</span><span>Claude<small>Anthropic · bayesovská analýza a tento web</small></span></span>
-            <span class="author"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI · infografika, druhá analýza (brzy)</small></span></span>
+            <span class="author"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI · druhá analýza a infografika</small></span></span>
             <span class="author"><span class="av" style="background:var(--accent)">PČ</span><span>Petr Čermák<small>zadání a prompty</small></span></span>
           </div>
           <p class="muted" style="font-size:14px;margin:14px 0 0">Zdroj dat: ČSÚ / volby.cz, exporty výsledků po okrscích.
@@ -187,6 +203,7 @@
 
 <script src="vendor/plotly-4.1.1.min.js"></script>
 <script src="data/zakladni.js"></script>
+<script src="data/srovnani.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
 </html>

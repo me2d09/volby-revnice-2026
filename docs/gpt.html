@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Analýza GPT · Volby Řevnice 2026</title>
-<meta name="description" content="Druhá, nezávislá analýza osobních křížků v Řevnicích 2026 od modelu GPT – připravujeme.">
+<meta name="description" content="Kolik hlasů přinesl kandidátce každý kandidát sám za sebe? Rigorózní meze a bayesovský odhad osobních křížků v Řevnicích 2026 (analýza GPT).">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,47 +12,247 @@
 <link rel="stylesheet" href="assets/css/site.css">
 <script src="assets/js/common.js"></script>
 </head>
-<body>
+<body data-analysis="gpt">
 <a class="skip" href="#obsah">Přeskočit na obsah</a>
 <header data-site-header></header>
 
 <main id="obsah">
   <section class="page-hero">
     <div class="wrap">
-      <div class="kicker">Kapitola 3 · analýza GPT</div>
-      <h1>Druhý pohled na stejná data</h1>
-      <p class="lead">Model GPT (Astra) dostal úplně stejná data a stejné zadání jako Claude, ale analýzu navrhuje a počítá
-        sám a nezávisle. Díky tomu uvidíme, které závěry obstojí bez ohledu na to, kdo je počítal.</p>
+      <div class="kicker">Analýza GPT (OpenAI)</div>
+      <h1>Osobní křížky: kdo straně přinesl hlasy</h1>
+      <p class="lead">Každý kandidát má ve výsledcích jediné číslo – součet hlasů. Část z nich ale dostal „zadarmo“,
+        protože volič zakřížkoval celou kandidátku, a část si vysloužil sám, protože mu někdo udělal křížek u jména.
+        Tady ukazujeme, co z výsledků lze dokázat a co odhaduje model.</p>
+      <div class="chips" style="margin-top:18px;gap:10px">
+        <span class="party"><span class="tag tag-fact">fakt</span> <span class="muted" style="font-size:14px">přímo z výsledků ČSÚ</span></span>
+        <span class="party"><span class="tag tag-bound">jisté minimum</span> <span class="muted" style="font-size:14px">dokázané jen z pravidel sčítání</span></span>
+        <span class="party"><span class="tag tag-model">model</span> <span class="muted" style="font-size:14px">bayesovský odhad s nejistotou</span></span>
+      </div>
+      <div class="callout river" style="margin-top:22px;box-shadow:none;max-width:760px">
+        <p style="font-size:15.5px">Tohle je <strong>jedna ze dvou nezávislých analýz</strong>. Co obě potvrdily a v čem se liší,
+          najdete v <a href="souhrn.html">souhrnu</a>.</p>
+      </div>
+      <nav class="toc" aria-label="Obsah kapitoly">
+        <a href="#jak">Jak se volí</a><a href="#jiste">Co víme jistě</a><a href="#prinos">Přínos pro stranu</a>
+        <a href="#zebricek">Žebříček</a><a href="#osobnosti">Osobnosti</a><a href="#cervena">Terezie Červená</a>
+        <a href="#kandidatky">Kandidátky a okrsky</a><a href="#hledat">Najdi kandidáta</a><a href="#duvera">Jak moc tomu věřit</a>
+      </nav>
     </div>
   </section>
 
-  <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+  <!-- 1 jak se volí -->
+  <section class="section" id="jak" style="padding-top:clamp(24px,4vw,48px)">
     <div class="wrap">
-      <div class="soon-box reveal">
-        <div class="big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
-        <span class="tag tag-soon">připravujeme</span>
-        <h2 style="margin-top:12px">Analýza se právě počítá</h2>
-        <p>Jakmile bude hotová, najdete tady její výsledky ve stejné podobě jako u <a href="krizky.html">analýzy Claude</a>
-          a celý notebook v sekci <a href="notebooky.html">Pro fajnšmekry</a>.</p>
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">1</span>Jak se v Řevnicích volí</div>
+        <h2>Jeden lístek, patnáct hlasů</h2>
+        <p>Volič může zakřížkovat celou kandidátku, jednotlivé kandidáty, nebo obojí. Zkuste si to: zvolte, kolik křížků
+          dáte kandidátům <em>jiných</em> stran, a sledujte, kdo dostane hlas.</p>
       </div>
-
-      <div class="grid g2" style="margin-top:clamp(18px,3vw,32px)">
-        <div class="card reveal">
-          <h3>Co tu bude</h3>
-          <ul class="checklist" style="margin-top:12px">
-            <li class="done">Stejná vstupní data (480 okrskových čísel, 120 kandidátů)</li>
-            <li class="done">Stejné zadání jako pro Claude</li>
-            <li>Vlastní model a odhad osobních křížků pro každého kandidáta</li>
-            <li>Jupyter notebook k prohlížení v prohlížeči</li>
-            <li>Srovnání s analýzou Claude v <a href="souhrn.html">souhrnu</a></li>
-          </ul>
+      <div class="card reveal ballot">
+        <div class="controls" style="margin:0">
+          <div class="seg" id="ballot-mode" role="group" aria-label="Způsob hlasování">
+            <button type="button" data-v="party" aria-pressed="true">Strana + křížky jinde</button>
+            <button type="button" data-v="people" aria-pressed="false">Jen jednotlivci</button>
+          </div>
+          <label for="ballot-k" id="ballot-k-label" style="margin-left:auto">Křížky u jiných stran: <strong id="ballot-k-out">3</strong></label>
         </div>
-        <div class="card reveal download" style="grid-template-columns:120px 1fr">
-          <a href="vysledky.html#infografika"><img src="assets/infografika-revnice-2026.png" alt="Infografika výsledků voleb" loading="lazy"></a>
-          <div>
-            <h3>Mezitím od GPT</h3>
-            <p class="ink-2" style="font-size:15.5px">GPT už připravil infografiku se všemi základními výsledky. Její interaktivní verzi najdete
-              na stránce <a href="vysledky.html">Výsledky v kostce</a>.</p>
+        <input type="range" id="ballot-k" min="0" max="15" value="3" aria-labelledby="ballot-k-label">
+        <div class="ballot-cols" id="ballot-cols"></div>
+        <p class="ballot-sum" id="ballot-sum"></p>
+      </div>
+      <div class="grid g3" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="card fact reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div>
+          <div><h3>Hlasy ze stranického křížku</h3><p>Jdou kandidátům podle pořadí shora. Kdo je na kandidátce níž, přichází o ně jako první.</p></div></div>
+        <div class="card fact reveal"><div class="ic warm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></div>
+          <div><h3>Osobní křížek</h3><p>Hlas pro konkrétního člověka – a zároveň jeden hlas navíc pro jeho kandidátku. Tohle je „přínos pro stranu“.</p></div></div>
+        <div class="card fact reveal"><div class="ic river"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></div>
+          <div><h3>Proč to nevíme přesně</h3><p>ČSÚ zveřejňuje jen součet obou druhů hlasů. Rozdělení musíme dovodit – zčásti s jistotou, zčásti modelem.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 co víme jistě -->
+  <section class="section" id="jiste">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">2</span>Co víme jistě</div>
+        <h2>Nejméně <span data-h="lb_budget"></span> osobních křížků – a to je dokázané</h2>
+        <p>Stranické hlasy nikdy nerostou směrem dolů po kandidátce. Má-li tedy 10. kandidát víc hlasů než 8., musí rozdíl pocházet
+          z osobních křížků. Když navíc víme, že lístek se zakřížkovanou stranou dá vždy přesně 15 hlasů, dostaneme ještě
+          silnější dolní hranici. Model pak odhaduje, kolik jich bylo pravděpodobně.</p>
+      </div>
+      <div class="card chart-card reveal">
+        <header><div><h3>Kolik bylo osobních křížků celkem?</h3><p>Ze všech <span data-b="votes"></span> hlasů. Tři dokázaná minima a odhad modelu s 90% intervalem.</p></div></header>
+        <div id="bounds-chart" class="chart" role="img" aria-label="Dolní meze a odhad počtu osobních křížků"></div>
+        <p class="chart-note" id="bounds-note"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 přínos pro stranu -->
+  <section class="section" id="prinos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">3</span>Přínos pro stranu <span class="tag tag-model">model</span></div>
+        <h2>Kolik hlasů si kdo vysloužil sám</h2>
+        <p>Každý pruh je jeden kandidát. Světlá část jsou hlasy, které dostal díky křížku u celé kandidátky, sytá část jsou
+          odhadnuté osobní křížky – hlasy, které kandidátce přinesl on sám. Najeďte na pruh pro interval nejistoty a jisté minimum.</p>
+      </div>
+      <div class="controls reveal"><div class="chips" id="prinos-party" role="group" aria-label="Kandidátka"></div></div>
+      <div class="card chart-card reveal">
+        <header><div><h3 id="prinos-title"></h3><p id="prinos-sub"></p></div></header>
+        <div id="prinos-chart" class="chart chart-lg" role="img" aria-label="Rozklad hlasů kandidátů na stranické a osobní"></div>
+        <div class="legend" id="prinos-legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 žebříček -->
+  <section class="section" id="zebricek">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">4</span>Žebříček <span class="tag tag-model">model</span></div>
+        <h2>Nejvíc osobních křížků v celém městě</h2>
+        <p>Tečka je nejpravděpodobnější počet, čára 90% interval, svislá čárka jisté minimum. Na prvních místech jsou hlavně lídři –
+          pozice nahoře na lístku pomáhá i u osobních křížků.</p>
+      </div>
+      <div class="controls reveal">
+        <div class="seg" id="rank-metric" role="group" aria-label="Ukazatel">
+          <button type="button" data-v="C" aria-pressed="true">Počet křížků</button>
+          <button type="button" data-v="C_share" aria-pressed="false">Podíl z vlastních hlasů</button>
+        </div>
+        <div class="seg" id="rank-filter" role="group" aria-label="Filtr">
+          <button type="button" data-v="all" aria-pressed="true">Všichni</button>
+          <button type="button" data-v="elected" aria-pressed="false">Jen zvolení</button>
+        </div>
+      </div>
+      <div class="card chart-card reveal">
+        <div id="rank-chart" class="chart chart-lg" role="img" aria-label="Žebříček kandidátů podle osobních křížků"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 osobnosti -->
+  <section class="section" id="osobnosti">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">5</span>Osobnosti voleb <span class="tag tag-model">model</span></div>
+        <h2>Kdo dostal víc křížků, než by „měl“</h2>
+        <p>Lídr má výhodu už tím, že je nahoře. Model proto pozici „odečte“: osobní efekt je <span id="eff-def"></span>.
+          Číslo „×3“ znamená zhruba třikrát víc osobních křížků, než by odpovídalo pozici. Nad čarou jsou osobnosti,
+          pod ní kandidáti, jejichž hlasy jsou téměř čistě stranické.</p>
+      </div>
+      <div class="grid g-7-5" style="align-items:start">
+        <div class="card chart-card reveal">
+          <header><div><h3>Osobní efekt podle pozice na kandidátce</h3><p>Každá tečka je kandidát. Najeďte pro detail.</p></div></header>
+          <div id="pers-chart" class="chart chart-lg" role="img" aria-label="Osobní efekt kandidátů podle pozice"></div>
+        </div>
+        <div class="card reveal">
+          <h3>Největší osobnosti</h3>
+          <p class="muted" style="font-size:14px;margin-bottom:10px">Seřazeno podle osobního efektu (medián).</p>
+          <div class="table-wrap"><table class="data" id="pers-table"></table></div>
+          <div class="callout warm" style="margin-top:16px;box-shadow:none;background:var(--surface-2)">
+            <p style="font-size:15px" id="pers-leaders"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 Červená -->
+  <section class="section" id="cervena">
+    <div class="wrap">
+      <div class="grid g-5-7" style="align-items:center">
+        <div class="reveal">
+          <div class="eyebrow"><span class="n">6</span>Příběh voleb</div>
+          <h2 style="margin-top:8px">Terezie Červená: z 10. místa do zastupitelstva</h2>
+          <p class="ink-2" id="cervena-text"></p>
+          <p class="big-quote" id="cervena-quote"></p>
+        </div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Hlasy po okrscích</h3><p>Sytá část = jisté minimum osobních křížků v daném okrsku.</p></div></header>
+          <div id="cervena-chart" class="chart chart-sm" role="img" aria-label="Hlasy Terezie Červené po okrscích"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 kandidátky a okrsky -->
+  <section class="section" id="kandidatky">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">7</span>Kandidátky a okrsky <span class="tag tag-model">model</span></div>
+        <h2>Malé kandidátky žijí z osobností, velké ze stranických křížků</h2>
+        <p id="parties-intro"></p>
+      </div>
+      <div class="grid g2">
+        <div class="card chart-card reveal">
+          <header><div><h3>Podíl hlasů z osobních křížků</h3><p>Medián a 90% interval.</p></div></header>
+          <div id="party-share-chart" class="chart" role="img" aria-label="Podíl osobních křížků podle kandidátky"></div>
+        </div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Kolik voličů zakřížkovalo celou kandidátku</h3><p>Odhad počtu lístků se zakřížkovanou stranou.</p></div></header>
+          <div id="party-ballots-chart" class="chart" role="img" aria-label="Odhad počtu stranických lístků"></div>
+        </div>
+      </div>
+      <div class="grid g-7-5" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="card chart-card reveal">
+          <header><div><h3>Okrsky: kde se nejvíc „křížkuje“</h3><p>Podíl osobních křížků na hlasech v okrsku (medián, 90% interval).</p></div></header>
+          <div id="pc-share-chart" class="chart chart-sm" role="img" aria-label="Podíl osobních křížků po okrscích"></div>
+        </div>
+        <div class="card reveal">
+          <h3 id="extra-title"></h3>
+          <p class="ink-2" id="extra-text" style="font-size:15.5px"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 najdi kandidáta -->
+  <section class="section" id="hledat">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">8</span>Najdi kandidáta</div>
+        <h2>Všech 120 kandidátů na jednom místě</h2>
+      </div>
+      <div class="controls reveal"><label for="cand-select">Kandidát</label><select id="cand-select"></select></div>
+      <div class="card reveal cand-card" id="cand-card"></div>
+    </div>
+  </section>
+
+  <!-- 9 důvěra -->
+  <section class="section" id="duvera">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">9</span>Jak moc tomu věřit</div>
+        <h2>Pořadí sedí, celkový počet je jen přibližný</h2>
+        <p>Model byl prověřen dvěma způsoby: změnou předpokladů (citlivost) a na simulovaných volbách, kde pravdu známe.
+          Pořadí kandidátů a osobnosti vycházejí stabilně, celkový počet křížků se podle předpokladů mění.</p>
+      </div>
+      <div class="grid g2">
+        <div class="card chart-card reveal">
+          <header><div><h3>Citlivost na předpoklady</h3><p id="sens-sub"></p></div></header>
+          <div id="sens-chart" class="chart chart-lg" role="img" aria-label="Citlivost odhadu na předpoklady"></div>
+        </div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Test na simulovaných volbách</h3><p id="rec-sub"></p></div></header>
+          <div id="rec-chart" class="chart chart-sm" role="img" aria-label="Výsledky simulačního testu"></div>
+          <div class="prose" style="margin:6px 4px 0" id="rec-text"></div>
+        </div>
+      </div>
+      <div class="card reveal" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="grid g-7-5" style="align-items:center">
+          <div class="prose">
+            <h3 style="margin-top:0">Chcete vědět proč?</h3>
+            <p>Celý postup – pravidla sčítání, odvození dolních mezí, model, diagnostika MCMC, kontroly a všechny testy – je
+              v Jupyter notebooku. Dá se číst přímo v prohlížeči včetně interaktivních grafů.</p>
+            <p class="muted" style="font-size:14.5px" id="method-line"></p>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end">
+            <a class="btn btn-primary" data-notebook href="notebooky/gpt.html">Otevřít notebook</a>
+            <a class="btn btn-ghost" href="notebooky.html">Notebooky a data</a>
           </div>
         </div>
       </div>
@@ -61,6 +261,11 @@
 </main>
 
 <footer data-site-footer></footer>
-<script>RV.init("gpt");</script>
+
+<script src="vendor/plotly-4.1.1.min.js"></script>
+<script src="data/zakladni.js"></script>
+<script src="data/claude.js"></script>
+<script src="data/gpt.js"></script>
+<script src="assets/js/analyza.js"></script>
 </body>
 </html>

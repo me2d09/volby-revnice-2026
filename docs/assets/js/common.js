@@ -69,9 +69,9 @@
   const NAV = [
     { href: "index.html", label: "Úvod", key: "uvod" },
     { href: "vysledky.html", label: "Výsledky v kostce", key: "vysledky" },
-    { href: "krizky.html", label: "Osobní křížky", key: "krizky" },
-    { href: "gpt.html", label: "Analýza GPT", key: "gpt", soon: true },
-    { href: "souhrn.html", label: "Souhrn", key: "souhrn", soon: true },
+    { href: "souhrn.html", label: "Souhrn analýz", key: "souhrn" },
+    { href: "krizky.html", label: "Analýza Claude", key: "krizky" },
+    { href: "gpt.html", label: "Analýza GPT", key: "gpt" },
     { href: "notebooky.html", label: "Pro fajnšmekry", key: "notebooky" },
   ];
   const ICONS = {
@@ -124,7 +124,7 @@
         <ul>
           <li>Zdroj dat: <a href="https://www.volby.cz/" rel="noopener">ČSÚ / volby.cz</a></li>
           <li><a href="${REPO}" rel="noopener">Zdrojový kód na GitHubu</a></li>
-          <li><a href="notebooky/claude.html">Notebook Claude (HTML)</a></li>
+          <li><a href="notebooky/claude.html">Notebook Claude</a> · <a href="notebooky/gpt.html">Notebook GPT</a></li>
           <li><a href="data/zakladni.json" download>Základní data (JSON)</a></li>
         </ul>
       </div>

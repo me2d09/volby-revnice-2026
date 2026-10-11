@@ -9,12 +9,15 @@ Zdroj dat: ČSÚ / volby.cz.
 
 | stránka | obsah |
 |---|---|
-| `index.html` – Úvod | rychlá čísla, rozdělení mandátů, výsledky kandidátek 2026/2022, rozcestník |
+| `index.html` – Úvod | rychlá čísla, zastupitelstvo (zasedací pořádek do U), výsledky kandidátek, **jen výsledky potvrzené oběma analýzami** |
 | `vysledky.html` – Výsledky v kostce | interaktivní verze infografiky: kandidátky, změna proti 2022, okrsky (schéma + „co kdyby“), zvolení, kandidáti a přednostní hlasy, osobní změny, těsné momenty, d’Hondt, mandátová kalkulačka, infografika ke stažení |
-| `krizky.html` – Osobní křížky | výcuc bayesovské analýzy Claude: simulátor lístku, dokazatelné meze, přínos kandidátů pro stranu, žebříček, osobnosti, kandidátky a okrsky, vyhledání kandidáta, citlivost a simulační test |
-| `gpt.html` – Analýza GPT | připravujeme |
-| `souhrn.html` – Souhrn | už teď jisté závěry; srovnání Claude × GPT připravujeme |
-| `notebooky.html` – Pro fajnšmekry | notebooky v prohlížeči (s funkčními Plotly grafy), data, reprodukce, slovníček |
+| `souhrn.html` – Souhrn analýz | co potvrdily obě analýzy, srovnání kandidát po kandidátovi, kde a proč se liší, hodnocení Claude × GPT, společný žebříček |
+| `krizky.html` – Analýza Claude | výcuc analýzy Claude (simulátor lístku, meze, přínos kandidátů pro stranu, žebříček, osobnosti, kandidátky a okrsky, vyhledání kandidáta, citlivost) |
+| `gpt.html` – Analýza GPT | totéž pro analýzu GPT |
+| `notebooky.html` – Pro fajnšmekry | oba notebooky v prohlížeči (s funkčními interaktivními grafy), data, reprodukce, slovníček |
+
+Stránky `krizky.html` a `gpt.html` mají stejnou strukturu a vykresluje je společný `docs/assets/js/analyza.js`
+(analýzu určuje `<body data-analysis="claude|gpt">`). Při úpravě šablony je potřeba upravit oba soubory.
 
 Všechny grafy jsou v Plotly (plotly.js 4.1.1 přibalený v `docs/vendor/`), web funguje ve světlém i tmavém režimu a na mobilu.
 
@@ -23,8 +26,10 @@ Všechny grafy jsou v Plotly (plotly.js 4.1.1 přibalený v `docs/vendor/`), web
 ```text
 input/      společná vstupní data a zadání pro oba modely (beze změn)
 claude/     analýza Claude – notebook, zdrojáky, výsledky (web ji jen čte)
+gpt/        analýza GPT – notebook, zdrojáky, výsledky (web ji jen čte)
 basic/      jednoduché statistiky bez modelu: prepare_basic.py → zakladni_data.json + CSV
-scripts/    build_site.py – sestaví data a notebooky pro web
+scripts/    build_site.py – sestaví data, srovnání a notebooky pro web
+            derived/ – 90% intervaly součtů GPT spočtené z posteriorových vzorků (vzorky jsou v .gitignore)
 docs/       hotový statický web (GitHub Pages)
   assets/     CSS, JS stránek, infografika
   data/       data pro web (JSON ke stažení + JS pro načtení i z file://)
@@ -49,14 +54,12 @@ v prohlížeči, nebo `python -m http.server -d docs`.
 Settings → Pages → *Build and deployment*: **Deploy from a branch**, branch `main`, složka **`/docs`**.
 Web pak poběží na `https://me2d09.github.io/volby-revnice-2026/`.
 
-## Jak doplnit analýzu GPT
+## Jak se obě analýzy porovnávají
 
-1. Výstup GPT uložte do složky `gpt/` (notebook + tabulky výsledků).
-2. V `scripts/build_site.py` doplňte cestu k notebooku v `ANALYSES["gpt"]` – notebook se převede do `docs/notebooky/gpt.html`
-   (Plotly výstupy se převádějí automaticky).
-3. Přidejte funkci obdobnou `build_claude()`, která z výsledků GPT vytáhne data do `docs/data/gpt.json`.
-4. Naplňte `docs/gpt.html` (lze vyjít z `krizky.html`) a srovnání v `docs/souhrn.html`; v `docs/assets/js/common.js`
-   odstraňte u položek menu příznak `soon`.
+`build_site.py` převede výsledky obou analýz na společný formát (`docs/data/claude.json`, `gpt.json`): medián osobních
+křížků, **90% intervaly** (u GPT dopočtené z posteriorových vzorků) a osobní efekt jako násobek. `docs/data/srovnani.json`
+obsahuje srovnání kandidát po kandidátovi, shody a nezávislé ověření dolní meze: přesné celočíselné minimum je
+**2 897** (GPT), spojitá relaxace dává 2 889,3 (Claude uvádí 2 890). Ověření je ve funkci `exact_budget_bound()`.
 
 ## Upozornění
 

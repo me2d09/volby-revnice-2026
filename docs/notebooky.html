@@ -45,15 +45,21 @@
             <a class="btn btn-ghost" href="https://github.com/me2d09/volby-revnice-2026/tree/main/claude" rel="noopener">Zdroj na GitHubu</a>
           </div>
         </article>
-        <article class="card nav-card is-soon reveal" style="gap:14px">
+        <article class="card reveal" style="display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:12px;align-items:center">
             <span class="author" style="padding:6px 12px 6px 6px"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI</small></span></span>
-            <span class="tag tag-soon">připravujeme</span>
+            <span class="tag tag-bound">hotovo</span>
           </div>
-          <h2 style="font-size:1.6rem;margin:0">Druhá, nezávislá analýza</h2>
-          <p class="ink-2" style="margin:0">Stejná data, stejné zadání, jiný model. Jakmile bude notebook hotový, objeví se tady
-            ve stejné podobě – k prohlížení v prohlížeči i ke stažení.</p>
-          <a class="go" href="gpt.html" style="text-decoration:none">Co bude obsahovat →</a>
+          <h2 style="font-size:1.6rem;margin:0">Individuální křížky a meze jejich rekonstrukce</h2>
+          <p class="ink-2" style="margin:0">Přesná celočíselná dolní mez s konstrukcí platných lístků, vlastní celočíselný MCMC sampler,
+            sedm variant předpokladů, simulace se známou pravdou, predikce vynechaného okrsku, jednotkové testy a kontrola
+            2&nbsp;800 rozkladů na platné lístky. Obsahuje i dva interaktivní průzkumníky kandidátů.</p>
+          <dl class="kv" id="gpt-run"></dl>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:auto">
+            <a class="btn btn-primary" href="notebooky/gpt.html">Otevřít notebook</a>
+            <a class="btn btn-ghost" href="notebooky/gpt.ipynb" download="revnice_2026_bayesian_analysis_gpt.ipynb">Stáhnout .ipynb</a>
+            <a class="btn btn-ghost" href="https://github.com/me2d09/volby-revnice-2026/tree/main/gpt" rel="noopener">Zdroj na GitHubu</a>
+          </div>
         </article>
       </div>
     </div>
@@ -62,13 +68,14 @@
   <section class="section">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Obsah notebooku Claude</div>
-        <h2>Co v notebooku najdete</h2>
+        <div class="eyebrow">Obsah notebooků</div>
+        <h2>Co v notebookách najdete</h2>
+        <p>Obě analýzy mají podobnou osnovu – liší se modelem a některými testy. Srovnání najdete v <a href="souhrn.html">souhrnu</a>.</p>
       </div>
       <div class="grid g3">
         <div class="card fact reveal"><div class="ic">1</div><div><h3>Pravidla a data</h3><p>Přesná mechanika lístku podle zákona č. 491/2001 Sb. a metodiky ČSÚ; kontrolní součty všech 480 čísel.</p></div></div>
-        <div class="card fact reveal"><div class="ic">2</div><div><h3>Co lze dokázat</h3><p>Monotónní mez (1 096 → 1 493) a silnější mez ze zákona zachování hlasů (2 890) řešená lineárním programem.</p></div></div>
-        <div class="card fact reveal"><div class="ic">3</div><div><h3>Generativní model</h3><p>Rozdělení počtu křížků na lístku, lístky bez strany, výhoda pozice, osobní popularita, okrskové odchylky, saturace.</p></div></div>
+        <div class="card fact reveal"><div class="ic">2</div><div><h3>Co lze dokázat</h3><p>Monotónní mez (1 096 → 1 493) a silnější mez ze zákona zachování hlasů: 2 890 (Claude, lineární program) a přesných 2 897 (GPT, celočíselně).</p></div></div>
+        <div class="card fact reveal"><div class="ic">3</div><div><h3>Generativní model</h3><p>Rozdělení počtu křížků na lístku, výhoda pozice, osobní popularita, okrskové odchylky. Claude navíc lístky bez strany a počet platných lístků.</p></div></div>
         <div class="card fact reveal"><div class="ic warm">4</div><div><h3>Testy modelu</h3><p>Prior predictive checks, simulace lístek po lístku se známou pravdou, R̂, ESS, divergence, posterior predictive checks.</p></div></div>
         <div class="card fact reveal"><div class="ic warm">5</div><div><h3>Výsledky</h3><p>Kandidáti, kandidátky a okrsky, rozklad hlasů, změny 2022 → 2026 a srovnání se starším scénářovým modelem.</p></div></div>
         <div class="card fact reveal"><div class="ic river">6</div><div><h3>Poctivost</h3><p>Citlivost na předpoklady, leave-one-precinct-out, limity ekologické inference a co by analýzu nejvíc zpřesnilo.</p></div></div>
@@ -85,10 +92,11 @@
             <table class="data">
               <tbody>
                 <tr><td><a href="data/zakladni.json" download>zakladni.json</a></td><td class="muted">všechna čísla ze stránky „Výsledky v kostce“</td></tr>
-                <tr><td><a href="data/claude.json" download>claude.json</a></td><td class="muted">výběr výsledků analýzy Claude použitý na webu</td></tr>
+                <tr><td><a href="data/claude.json" download>claude.json</a> · <a href="data/gpt.json" download>gpt.json</a></td><td class="muted">výsledky obou analýz ve společném formátu (90% intervaly)</td></tr>
+                <tr><td><a href="data/srovnani.json" download>srovnani.json</a></td><td class="muted">srovnání kandidát po kandidátovi a ověření dolní meze</td></tr>
                 <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/basic" rel="noopener">basic/</a></td><td class="muted">skript a CSV se základními statistikami (mandáty, d’Hondt, zvolení)</td></tr>
                 <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/input/data" rel="noopener">input/data/</a></td><td class="muted">vstupní data z ČSÚ: 480 okrskových řádků, 120 kandidátů, rok 2022</td></tr>
-                <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/claude/results" rel="noopener">claude/results/</a></td><td class="muted">všechny tabulky analýzy Claude (posteriory, diagnostika, citlivost)</td></tr>
+                <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/claude/results" rel="noopener">claude/results/</a> · <a href="https://github.com/me2d09/volby-revnice-2026/tree/main/gpt/results" rel="noopener">gpt/results/</a></td><td class="muted">všechny tabulky obou analýz (posteriory, diagnostika, citlivost)</td></tr>
               </tbody>
             </table>
           </div>
@@ -104,6 +112,11 @@ python scripts/build_site.py</code></pre>
 pip install -r requirements.txt
 python scripts/prepare_and_validate.py
 jupyter lab revnice_2026_bayesian_analysis.ipynb</code></pre>
+          <p>Analýza GPT (Python 3.12; desítky minut):</p>
+<pre><code>cd gpt
+pip install -r requirements.txt
+python scripts/run_analysis.py --force
+python scripts/execute_notebook.py</code></pre>
         </div>
       </div>
     </div>
@@ -130,18 +143,22 @@ jupyter lab revnice_2026_bayesian_analysis.ipynb</code></pre>
 <footer data-site-footer></footer>
 
 <script src="data/claude.js"></script>
+<script src="data/gpt.js"></script>
 <script>
   (function () {
     RV.init("notebooky");
-    const C = RV.data.claude;
-    if (!C) return;
-    const r = C.run_info, v = r.versions || {};
-    document.getElementById("claude-run").innerHTML = [
-      ["Software", `PyMC ${v.pymc || "?"}, ArviZ ${v.arviz || "?"}`],
-      ["Parametry modelu", RV.int(r.n_free_params)],
-      ["Vzorkování (hlavní fit)", `${RV.fmt(r.sampling_time_s / 60, 0)} min`],
-      ["Divergence", RV.int(r.divergences)],
-    ].map(([k, val]) => `<div><dt>${k}</dt><dd style="font-size:16px">${RV.esc(val)}</dd></div>`).join("");
+    const fill = (id, A) => {
+      if (!A) return;
+      const r = A.run_info;
+      document.getElementById(id).innerHTML = [
+        ["Software", r.software],
+        ["Osobní křížky celkem", `≈ ${RV.int(A.headline.total)} (${RV.int(A.headline.lo)}–${RV.int(A.headline.hi)})`],
+        ["Vzorkování (hlavní fit)", `${RV.int(r.minutes)} min`],
+        ["Diagnostika", r.diagnostics],
+      ].map(([k, val]) => `<div><dt>${k}</dt><dd style="font-size:15px">${RV.esc(val)}</dd></div>`).join("");
+    };
+    fill("claude-run", RV.data.claude);
+    fill("gpt-run", RV.data.gpt);
   })();
 </script>
 </body>

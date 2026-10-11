@@ -180,7 +180,8 @@ def build_claude(basic: dict) -> dict:
     sensitivity = [{
         "label": SENS_LABELS.get(r["label"], r["label"]), "tech": r["label"], "main": r["label"] == "hlavní model",
         "C": num(r["total_C_median"], 0), "lo": num(r["total_C_q05"], 0), "hi": num(r["total_C_q95"], 0),
-        "ok": int(float(r["divergences"])) == 0 or r["label"] == "hlavní model",
+        # stejné kritérium jako u GPT: R̂ ≤ 1,01 a bulk ESS ≥ 400 (a žádné divergence)
+        "ok": int(float(r["divergences"])) == 0 and float(r["max_rhat"]) <= 1.01 and float(r["min_ess_bulk"]) >= 400,
     } for r in read_csv(res / "sensitivity.csv", delimiter=",")]
     rec_names = {"A_malo_krizku": "Málo křížků", "B_hodne_krizku": "Hodně křížků", "D_ruzne_strany": "Kandidátky se liší"}
     recovery = []
@@ -291,14 +292,16 @@ def build_gpt(basic: dict) -> dict | None:
         "headline": {"total": med, "lo": lo, "hi": hi, "share": round(med / 23939, 3),
                      "sens_min": min(s["C"] for s in sensitivity), "sens_max": max(s["C"] for s in sensitivity),
                      "lb_budget": 2897, "lb_budget_method": "přesné celočíselné minimum s konstrukcí lístků",
-                     "lb_monotone": 1493, "lb_city": 1096, "valid_ballots_used": False},
+                     "lb_monotone": 1493, "lb_city": 1096, "valid_ballots_used": False,
+                     "p_k0": next(num(r["p0_median"], 3) for r in read_csv(res / "prior_sensitivity.csv") if r["scenario"] == "reference")},
         "eff_def": "násobek oproti „průměrnému“ kandidátovi téže kandidátky po očištění o pořadí",
         "interval": "90 %", "recovery_interval": "95 %",
         "method": "Vlastní celočíselný MCMC sampler (Gibbs/Metropolis, 4 řetězce); počet platných lístků model nepoužívá.",
         "candidates": cands, "parties": parties, "precincts": precincts, "sensitivity": sensitivity, "recovery": recovery,
         "run_info": {"software": "vlastní celočíselný sampler (NumPy)",
                      "params": None, "minutes": round(float(ref["wall_seconds"]) / 60),
-                     "diagnostics": f"R̂ ≤ {RVfmt(float(ref['max_rhat']), 3)}; varianty: {sum(r['mcmc_gate_pass'] == 'True' for r in sens_scen)} z {len(sens_scen)} prošlo kontrolou"},
+                     "diagnostics": f"hlavní R̂ ≤ {RVfmt(float(ref['max_rhat']), 3)}; ostatní varianty: "
+                                    f"{sum(r['mcmc_gate_pass'] == 'True' for r in sens_scen if r['label'] != 'reference')} z {len(sens_scen) - 1} prošlo kontrolou"},
         "n_draws": tot.get("n_draws"),
     }
     write_data("gpt", out)
@@ -340,7 +343,30 @@ def build_comparison(basic: dict, cl: dict, gp: dict | None) -> None:
     top_eff = lambda key, n: {(p["party"], p["position"]) for p in sorted(pairs, key=lambda p: -p[key])[:n]}
     by_pos = [{"position": k, "cl": sum(p["cl"] for p in pairs if p["position"] == k),
                "gp": sum(p["gp"] for p in pairs if p["position"] == k)} for k in range(1, 16)]
+    def topn(cands, key, n=10):
+        return [(c["party"], c["position"]) for c in sorted(cands, key=lambda c: -c[key])[:n]]
+
+    def common(key):
+        a, b = topn(cl["candidates"], key), topn(gp["candidates"], key)
+        both = [k for k in a if k in b]
+        idx = {(c["party"], c["position"]): c for c in cl["candidates"]}
+        gdx = {(c["party"], c["position"]): c for c in gp["candidates"]}
+        rows = [{"name": idx[k]["name"], "party": k[0], "position": k[1], "elected": idx[k]["elected"],
+                 "cl": idx[k][key], "gp": gdx[k][key], "lb": idx[k]["lb"]} for k in both]
+        return sorted(rows, key=lambda r: -(r["cl"] + r["gp"]))
+
+    hc, hg = cl["headline"], gp["headline"]
+    consensus = {
+        "total": {"cl": [hc["lo"], hc["total"], hc["hi"]], "gp": [hg["lo"], hg["total"], hg["hi"]],
+                  "band": [max(hc["lo"], hg["lo"]), min(hc["hi"], hg["hi"])], "share": [hg["share"], hc["share"]]},
+        "top_eff": common("eff"), "top_C": common("C"),
+        "parties": [{"party": c["party"], "cl": c["share"], "gp": g["share"], "votes": c["votes"]}
+                    for c, g in zip(cl["parties"], gp["parties"])],
+        "precincts": [{"id": c["id"], "cl": c["share"], "gp": g["share"]} for c, g in zip(cl["precincts"], gp["precincts"])],
+        "lb_exact": bound["integer_total"], "lb_claude": hc["lb_budget"], "lb_gpt": hg["lb_budget"],
+    }
     out = {
+        "consensus": consensus,
         "bound": bound,
         "stats": {"pearson_C": round(pearson(cx, gx), 3), "spearman_C": round(pearson(ranks(cx), ranks(gx)), 3),
                   "pearson_eff": round(pearson(ce, ge), 3), "spearman_eff": round(pearson(ranks(ce), ranks(ge)), 3),

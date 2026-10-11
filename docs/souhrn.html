@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Souhrn · Volby Řevnice 2026</title>
-<meta name="description" content="Souhrn obou analýz voleb v Řevnicích 2026: co je jisté, na čem se modely shodují a kde se rozcházejí.">
+<title>Souhrn analýz · Volby Řevnice 2026</title>
+<meta name="description" content="Dvě nezávislé analýzy osobních křížků v Řevnicích 2026 (Claude a GPT): co obě potvrdily, kde se liší a kdo odvedl lepší práci.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,76 +19,143 @@
 <main id="obsah">
   <section class="page-hero">
     <div class="wrap">
-      <div class="kicker">Kapitola 4 · souhrn</div>
-      <h1>Co z toho všeho plyne</h1>
-      <p class="lead">Až budou hotové obě analýzy, shrneme tady, na čem se Claude a GPT shodnou, kde se liší a čemu lze
-        věřit nejvíc. Část závěrů ale platí už teď – nezávisí totiž na žádném modelu.</p>
+      <div class="kicker">Kapitola 2 · souhrn analýz</div>
+      <h1>Co potvrdily dvě nezávislé analýzy</h1>
+      <p class="lead">Stejná data a stejné zadání dostaly dva různé jazykové modely – Claude a GPT. Každý si navrhl vlastní
+        postup i vlastní model. Tady je jen to, na čem se shodly, místa, kde se rozcházejí, a naše hodnocení, kdo si vedl lépe.</p>
+      <div class="chips" style="margin-top:18px;gap:10px">
+        <span class="party"><span class="tag tag-fact">fakt</span> <span class="muted" style="font-size:14px">přímo z výsledků ČSÚ</span></span>
+        <span class="party"><span class="tag tag-bound">jisté minimum</span> <span class="muted" style="font-size:14px">dokázané jen z pravidel sčítání</span></span>
+        <span class="party"><span class="tag tag-model">oba modely</span> <span class="muted" style="font-size:14px">odhad potvrzený oběma analýzami</span></span>
+      </div>
+      <nav class="toc" aria-label="Obsah kapitoly">
+        <a href="#overeno">Ověřeno oběma</a><a href="#kandidati">Kandidát po kandidátovi</a><a href="#rozdil">Kde se liší</a>
+        <a href="#hodnoceni">Kdo to udělal líp</a><a href="#tabulka">Společný žebříček</a>
+      </nav>
     </div>
   </section>
 
-  <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+  <!-- 1 ověřeno oběma -->
+  <section class="section" id="overeno" style="padding-top:clamp(24px,4vw,48px)">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Už teď jisté</div>
-        <h2>Fakta a dokázaná minima</h2>
+        <div class="eyebrow"><span class="n">1</span>Ověřeno oběma</div>
+        <h2>Výsledky, na kterých se Claude a GPT shodnou</h2>
+        <p>Odhady osobních křížků jsou vždy modelové. Když ale dva nezávisle postavené modely dojdou ke stejnému závěru,
+          můžeme mu věřit víc. Tohle jsou takové závěry.</p>
       </div>
-      <div class="grid g2" id="certain"></div>
+      <div class="grid g2" id="consensus"></div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- 2 kandidát po kandidátovi -->
+  <section class="section" id="kandidati">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Zatím jen podle Claude</div>
-        <h2>Modelové závěry čekající na druhý názor</h2>
+        <div class="eyebrow"><span class="n">2</span>Kandidát po kandidátovi</div>
+        <h2>Odhady se shodují – s jednou výjimkou</h2>
+        <p id="pairs-intro"></p>
       </div>
-      <div class="grid g2" id="model"></div>
+      <div class="grid g-7-5" style="align-items:start">
+        <div class="card chart-card reveal">
+          <header><div><h3>Osobní křížky: Claude × GPT</h3><p>Každá tečka je kandidát. Na šikmé čáře by oba modely říkaly totéž.</p></div></header>
+          <div id="pairs-chart" class="chart chart-lg" role="img" aria-label="Srovnání odhadů osobních křížků Claude a GPT"></div>
+        </div>
+        <div class="grid" style="gap:clamp(14px,2vw,22px)">
+          <div class="card chart-card reveal">
+            <header><div><h3>Celkový počet osobních křížků</h3><p>Medián a 90% interval obou modelů, zelená čára = jisté minimum.</p></div></header>
+            <div id="total-chart" class="chart chart-sm" role="img" aria-label="Celkový počet osobních křížků podle obou modelů"></div>
+          </div>
+          <div class="card reveal" id="agree-stats"></div>
+        </div>
+      </div>
+      <div class="grid g2" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="card chart-card reveal">
+          <header><div><h3>Podíl osobních křížků podle kandidátek</h3><p>Oba modely seřadily kandidátky přesně stejně.</p></div></header>
+          <div id="party-chart" class="chart" role="img" aria-label="Podíl osobních křížků podle kandidátek, oba modely"></div>
+        </div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Osobní efekt: největší osobnosti</h3><p>Kolikrát víc osobních křížků, než odpovídá pozici na lístku.</p></div></header>
+          <div id="eff-chart" class="chart" role="img" aria-label="Osobní efekt největších osobností, oba modely"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- 3 rozdíl -->
+  <section class="section" id="rozdil">
     <div class="wrap">
-      <div class="soon-box reveal">
-        <div class="big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="7" height="14" rx="1.5"/><rect x="13.5" y="5" width="7" height="14" rx="1.5"/><path d="M10.5 12h3"/></svg></div>
-        <span class="tag tag-soon">připravujeme</span>
-        <h2 style="margin-top:12px">Srovnání Claude × GPT</h2>
-        <p>Porovnáme odhady osobních křížků kandidát po kandidátovi, žebříček osobností i celkové počty – a ukážeme,
-          které závěry jsou robustní a které závisí na volbě modelu.</p>
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">3</span>Kde se liší a proč</div>
+        <h2>Jediná podstatná odchylka: lídři DOBŘE</h2>
+      </div>
+      <div class="grid g-5-7" style="align-items:start">
+        <div class="prose reveal" id="diff-text"></div>
+        <div class="card chart-card reveal">
+          <header><div><h3>Kde se modely rozcházejí</h3><p>Součet osobních křížků podle pozice na kandidátce (všech 8 kandidátek).</p></div></header>
+          <div id="pos-chart" class="chart" role="img" aria-label="Součet osobních křížků podle pozice, oba modely"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 hodnocení -->
+  <section class="section" id="hodnoceni">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">4</span>Kdo to udělal líp</div>
+        <h2>Hodnocení obou analýz</h2>
+        <p>Porovnali jsme obě práce v osmi ohledech – od matematické přesnosti po srozumitelnost.</p>
+      </div>
+      <div class="callout warm reveal" style="margin-bottom:clamp(14px,2vw,22px);max-width:820px">
+        <p style="font-size:15.5px"><strong>Střet zájmů:</strong> tento souhrn i web napsal Claude, tedy jeden z hodnocených.
+          Proto se hodnocení opírá jen o měřitelná kritéria a čísla, která si každý může ověřit v datech obou analýz. Rozhodující
+          sporný bod (dolní mez) jsme navíc přepočítali nezávislým výpočtem.</p>
+      </div>
+      <div class="card reveal"><div class="table-wrap" id="score"></div></div>
+      <div class="grid g3" style="margin-top:clamp(14px,2vw,22px)" id="verdict"></div>
+    </div>
+  </section>
+
+  <!-- 5 tabulka -->
+  <section class="section" id="tabulka">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">5</span>Společný žebříček</div>
+        <h2>Všech 120 kandidátů v obou modelech</h2>
+        <p>Seřazeno podle průměru obou odhadů. ✓ = zvolen(a); „shoda“ = 90% intervaly obou modelů se překrývají.</p>
+      </div>
+      <div class="controls reveal">
+        <div class="seg" id="tab-n" role="group" aria-label="Počet řádků">
+          <button type="button" data-v="20" aria-pressed="true">Top 20</button>
+          <button type="button" data-v="120" aria-pressed="false">Všech 120</button>
+        </div>
+      </div>
+      <div class="card reveal"><div class="table-wrap" id="pairs-table"></div></div>
+      <div class="card reveal" style="margin-top:clamp(14px,2vw,22px)">
+        <div class="grid g-7-5" style="align-items:center">
+          <div class="prose">
+            <h3 style="margin-top:0">Chcete jít do detailu?</h3>
+            <p>Každá analýza má vlastní stránku se všemi grafy a celý notebook ke čtení v prohlížeči.</p>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end">
+            <a class="btn btn-primary" href="krizky.html">Analýza Claude</a>
+            <a class="btn btn-primary" href="gpt.html">Analýza GPT</a>
+            <a class="btn btn-ghost" href="notebooky.html">Notebooky</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer data-site-footer></footer>
+
+<script src="vendor/plotly-4.1.1.min.js"></script>
 <script src="data/zakladni.js"></script>
 <script src="data/claude.js"></script>
-<script>
-  (function () {
-    RV.init("souhrn");
-    const B = RV.data.zakladni, C = RV.data.claude;
-    if (!B || !C) return;
-    const T = B.totals, F = B.facts, H = C.headline;
-    const by = Object.fromEntries(B.parties.map((p) => [p.short, p]));
-    const tc = B.candidates.find((c) => c.name === "Terezie Červená");
-    const top = C.candidates.slice().sort((a, b) => b.u - a.u).slice(0, 3);
-    const nm = (c) => B.candidates.find((x) => x.party === (c.party === "Srdce" ? "Srdce Řevnic" : c.party) && x.position === c.position).name;
-    const card = (tag, cls, title, text) =>
-      `<div class="card reveal in"><span class="tag ${cls}">${tag}</span><h3 style="margin-top:10px">${title}</h3><p class="ink-2" style="margin:0">${text}</p></div>`;
-    document.getElementById("certain").innerHTML = [
-      card("fakt", "tag-fact", `DOBŘE vyhrálo s ${RV.pct(by["DOBŘE"].share_2026, 2)}`, `Nová kandidátka získala ${RV.int(by["DOBŘE"].votes_2026)} hlasů a 4 mandáty. Bez okrsku 4 by vedla ŠANCE.`),
-      card("fakt", "tag-fact", `Účast ${RV.pct(B.turnout.turnout_pct, 2)}`, `Proti roku 2022 ${RV.pp(B.turnout.turnout_change_pp)}; hlasů přibylo ${RV.signed(T.change_pct, 2)} %.`),
-      card("fakt", "tag-fact", `ODS chybělo ${F.ods_threshold_votes_new} hlasů`, `S ${RV.pct(F.ods_share_pct, 2)} zůstala pod 5% hranicí: chybělo ${F.ods_threshold_votes_new} nových hlasů, nebo ${F.ods_threshold_votes_moved} přetažených.`),
-      card("jisté minimum", "tag-bound", `Nejméně ${RV.int(H.lb_lp)} osobních křížků`, `To je ${RV.fmt(100 * H.lb_lp_share, 1)} % všech hlasů – dokázáno jen z pravidel sčítání, bez modelu.`),
-      card("jisté minimum", "tag-bound", `Terezie Červená: nejméně ${tc.min_personal_marks} křížků`, `Po okrscích ${tc.min_personal_marks_precincts.join(" + ")}. Z 10. místa se díky nim dostala do zastupitelstva.`),
-      card("fakt", "tag-fact", `${RV.int(T.unused_votes)} nevyužitých hlasů`, `Na lístcích bez zakřížkované strany voliči nevyčerpali všech 15 hlasů – takových lístků bylo nejméně ${Math.ceil(T.unused_votes / 14)}.`),
-    ].join("");
-    document.getElementById("model").innerHTML = [
-      card("model", "tag-model", `≈ ${RV.int(H.total_C)} osobních křížků`, `Asi ${RV.fmt(100 * H.total_C_share, 0)} % hlasů (90 %: ${RV.int(H.total_C_q05)}–${RV.int(H.total_C_q95)}). Celkový počet je nejméně jistá část odhadu.`),
-      card("model", "tag-model", "Osobnosti voleb", `${top.map((c) => `${RV.esc(nm(c))} (${RV.esc(c.party)})`).join(", ")} dostali výrazně víc křížků, než odpovídá jejich pozici.`),
-      card("model", "tag-model", "Malé kandidátky žijí z osobností", "U TOP 09 a ODS tvoří osobní křížky asi polovinu hlasů, u DOBŘE jen asi šestinu."),
-      card("model", "tag-model", "Tři ze čtyř nekřížkují jinde", `Asi ${RV.fmt(100 * H.p_k0, 0)} % voličů, kteří zakřížkují celou kandidátku, nedá křížek nikomu z jiné strany.`),
-    ].join("");
-  })();
-</script>
+<script src="data/gpt.js"></script>
+<script src="data/srovnani.js"></script>
+<script src="assets/js/souhrn.js"></script>
 </body>
 </html>
