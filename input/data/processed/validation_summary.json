@@ -1,0 +1,24 @@
+{
+  "n_precinct_csv": 32,
+  "n_precinct_records": 480,
+  "n_candidates": 120,
+  "total_votes": 23939,
+  "party_totals": {
+    "ŠANCE Řevnice": 4840,
+    "TOP 09 a nezávislí kandidáti": 1630,
+    "DOBŘE - Dialog o budoucnosti Řevnic": 5553,
+    "Hnutí Srdce Řevnic": 1102,
+    "PRO Řevnice": 2498,
+    "ODS a nezávislí": 1182,
+    "Perspektiva pro město": 4683,
+    "Naše Řevnice": 2451
+  },
+  "precinct_totals": {
+    "1": 5778,
+    "2": 6012,
+    "3": 5818,
+    "4": 6331
+  },
+  "rigorous_city_min": 1096,
+  "rigorous_precinct_min": 1493
+}
