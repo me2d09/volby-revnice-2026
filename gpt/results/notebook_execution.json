@@ -1,0 +1,10 @@
+{
+  "clean_kernel": true,
+  "transport": "inprocess",
+  "kernel": "ipykernel.inprocess.InProcessKernel in a fresh Python process",
+  "executed_code_cells": 16,
+  "errors": 0,
+  "wall_seconds": 38.521900137000046,
+  "python_version": "3.12.14",
+  "note": "Verified actual MCMC caches reused where valid; separate metadata records all model runs. TCP and IPC sockets were unavailable in the execution environment; genuine in-process Jupyter messages capture outputs."
+}

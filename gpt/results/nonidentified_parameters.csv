@@ -1,0 +1,4 @@
+﻿parameter;prior_q025;prior_median;prior_q975;posterior_q025;posterior_median;posterior_q975;status
+utilization_u;0.093435;0.498259;0.902841;0.093435;0.498259;0.902841;prior_equals_posterior_by_definition_not_identified
+expected_marks_per_pure_ballot;2.308084;7.975628;13.639770;2.308084;7.975628;13.639770;prior_equals_posterior_by_definition_not_identified
+ineffective_K15_fraction;0.002513;0.074601;0.331237;0.002513;0.074601;0.331237;prior_equals_posterior_by_definition_not_identified

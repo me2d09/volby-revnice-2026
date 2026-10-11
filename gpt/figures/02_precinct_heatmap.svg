@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="726.915157pt" height="382.271479pt" viewBox="0 0 726.915157 382.271479" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-11T05:40:28.442664</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 382.271479 
+L 726.915157 382.271479 
+L 726.915157 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 81.6875 344.521395 
+L 645.653341 344.521395 
+L 645.653341 36.01923 
+L 81.6875 36.01923 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#pd92984a0de)">
+    <image xlink:href="data:image/png;base64,
+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" id="image334a34ca20" transform="scale(1 -1) translate(0 -308.88)" x="81.6875" y="-35.641395" width="564.48" height="308.88"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="md1d75f41c9" d="M 0 0 
+L 0 3.5 
+" style="stroke: #182f3a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md1d75f41c9" x="152.18323" y="344.521395" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="152.18323" y="359.119833" transform="rotate(-0 152.18323 359.119833)">Okrsek 1</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#md1d75f41c9" x="293.17469" y="344.521395" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="293.17469" y="359.119833" transform="rotate(-0 293.17469 359.119833)">Okrsek 2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#md1d75f41c9" x="434.166151" y="344.521395" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="434.166151" y="359.119833" transform="rotate(-0 434.166151 359.119833)">Okrsek 3</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#md1d75f41c9" x="575.157611" y="344.521395" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="575.157611" y="359.119833" transform="rotate(-0 575.157611 359.119833)">Okrsek 4</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m5c9afe2899" d="M 0 0 
+L -3.5 0 
+" style="stroke: #182f3a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="55.300615" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="59.099834" transform="rotate(-0 74.6875 59.099834)">ŠANCE</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="93.863386" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="97.662605" transform="rotate(-0 74.6875 97.662605)">TOP 09</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="132.426157" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="136.225375" transform="rotate(-0 74.6875 136.225375)">DOBŘE</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="170.988927" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="174.788146" transform="rotate(-0 74.6875 174.788146)">Srdce</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="209.551698" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="213.350917" transform="rotate(-0 74.6875 213.350917)">PRO</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="248.114468" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="251.913687" transform="rotate(-0 74.6875 251.913687)">ODS</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="286.677239" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="290.476458" transform="rotate(-0 74.6875 290.476458)">Perspektiva</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m5c9afe2899" x="81.6875" y="325.24001" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="74.6875" y="329.039228" transform="rotate(-0 74.6875 329.039228)">Naše Řevnice</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 81.6875 344.521395 
+L 81.6875 36.01923 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 81.6875 344.521395 
+L 645.653341 344.521395 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(134.710574 52.461084)">24.0 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(122.884793 63.658897)">1 389 hlasů</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(275.702034 52.461084)">20.6 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(263.876253 63.658897)">1 240 hlasů</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(416.693495 52.461084)">20.8 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(404.867713 63.658897)">1 209 hlasů</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(557.684955 52.461084)">15.8 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(545.859174 63.658897)">1 002 hlasů</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(137.891824 91.023855)">4.3 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(127.655105 102.221667)">248 hlasů</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(278.883284 91.023855)">9.0 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(268.646565 102.221667)">544 hlasů</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(419.874745 91.023855)">6.5 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(409.638026 102.221667)">376 hlasů</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(560.866205 91.023855)">7.3 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(550.629486 102.221667)">462 hlasů</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(134.710574 129.586625)">20.1 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(122.884793 140.784438)">1 164 hlasů</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(275.702034 129.586625)">22.4 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(263.876253 140.784438)">1 345 hlasů</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(416.693495 129.586625)">20.6 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(404.867713 140.784438)">1 197 hlasů</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(557.684955 129.586625)">29.2 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(545.859174 140.784438)">1 847 hlasů</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(137.891824 168.149396)">3.3 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(127.655105 179.347208)">190 hlasů</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(278.883284 168.149396)">4.2 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(268.646565 179.347208)">255 hlasů</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(419.874745 168.149396)">5.2 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(409.638026 179.347208)">304 hlasů</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(560.866205 168.149396)">5.6 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(550.629486 179.347208)">353 hlasů</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(137.891824 206.712167)">7.9 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(127.655105 217.909979)">457 hlasů</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(275.702034 206.712167)">12.2 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(268.646565 217.909979)">736 hlasů</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(419.874745 206.712167)">9.5 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(409.638026 217.909979)">554 hlasů</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(557.684955 206.712167)">11.9 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(550.629486 217.909979)">751 hlasů</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(137.891824 245.274937)">3.5 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(127.655105 256.47275)">201 hlasů</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(278.883284 245.274937)">4.0 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(268.646565 256.47275)">242 hlasů</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(419.874745 245.274937)">7.3 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(409.638026 256.47275)">423 hlasů</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(560.866205 245.274937)">5.0 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(550.629486 256.47275)">316 hlasů</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(134.710574 283.837708)">23.6 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(122.884793 295.03552)">1 363 hlasů</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(275.702034 283.837708)">20.0 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(263.876253 295.03552)">1 205 hlasů</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(416.693495 283.837708)">18.5 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(404.867713 295.03552)">1 079 hlasů</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(557.684955 283.837708)">16.4 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(545.859174 295.03552)">1 036 hlasů</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(134.710574 322.400478)">13.3 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(127.655105 333.598291)">766 hlasů</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(278.883284 322.400478)">7.4 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(268.646565 333.598291)">445 hlasů</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(416.693495 322.400478)">11.6 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(409.638026 333.598291)">676 hlasů</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(560.866205 322.400478)">8.9 %</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182f3a" transform="translate(550.629486 333.598291)">564 hlasů</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 673.851633 313.671179 
+L 686.19172 313.671179 
+L 686.19172 66.869447 
+L 673.851633 66.869447 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABEAAAFXCAYAAABEG6U/AAABsElEQVR4nO2bQY7DMAwD1SL//24PBZLeS99MAwOCegBhMSPKyXZfn+/zzGa9dwVmZq79c8xcz+yrXAYNlycWEYqxHk8cT4djrIsTA/aYdtLyBGOsB3vTAFLyxMSJQYS0dyDYW4wFcTIUY0F5ggnq3k+0QHmCMRaUJxhjw/Kk2GsVe60w7LtGVyIgTiDYN08WIs2ThUjzRERug7PlRMvjyU1pJ23vYIwl7R2HyB3mSdbsOJ5O3qdUR55QToLaxRBjQZyEzY7j9siBzZWxBhHPLsZ4EtaO5/bY65aIWIzlcMLxBBSPHE8wswPKkyxOwjwxrQyHSJgnzdgzIiBPHCKYd0DS61sWJ5iVAXrN93zJKScLEYixIE7S/qyJ4aR7ZyVC4QTzSgviBBOPIE4w9xNQO2HxiGkHhX09+StOO52dQycpJ1rlRKueaIFm5zbcQTs7h04C4sRkLMUTz6/cszzBtEP6DxGMJxxOOjtSnHY6O4dEOjtaaZx0dqTC2ukjXogMhpN59n8LY2nHchKXJ5B26smhk3R2tMqJFokTx2dDEieQR4zyBNJO3OxQjC0nWhxOfmPqG2qA3Q2AAAAAAElFTkSuQmCC" id="image2be5ba3bef" transform="scale(1 -1) translate(0 -246.96)" x="673.92" y="-66.24" width="12.24" height="246.96"/>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_9">
+     <g id="line2d_13">
+      <defs>
+       <path id="m6036ed1ace" d="M 0 0 
+L 3.5 0 
+" style="stroke: #182f3a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="313.671179" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="317.470397" transform="rotate(-0 693.19172 317.470397)">0</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="272.537557" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="276.336775" transform="rotate(-0 693.19172 276.336775)">5</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="231.403935" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_47">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="235.203153" transform="rotate(-0 693.19172 235.203153)">10</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="190.270313" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="194.069531" transform="rotate(-0 693.19172 194.069531)">15</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="149.136691" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_49">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="152.935909" transform="rotate(-0 693.19172 152.935909)">20</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="108.003069" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_50">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="111.802287" transform="rotate(-0 693.19172 111.802287)">25</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m6036ed1ace" x="686.19172" y="66.869447" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_51">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="693.19172" y="70.668665" transform="rotate(-0 693.19172 70.668665)">30</text>
+     </g>
+    </g>
+    <g id="text_52">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="717.63547" y="190.270313" transform="rotate(-90 717.63547 190.270313)">Podíl hlasů v okrsku (%)</text>
+    </g>
+   </g>
+   <g id="LineCollection_1"/>
+   <g id="patch_6">
+    <path d="M 673.851633 313.671179 
+L 680.021677 313.671179 
+L 686.19172 313.671179 
+L 686.19172 66.869447 
+L 680.021677 66.869447 
+L 673.851633 66.869447 
+L 673.851633 313.671179 
+z
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_53">
+   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="32.99976" y="25.703125" transform="rotate(-0 32.99976 25.703125)">Vítězství DOBŘE zesílil čtvrtý okrsek</text>
+  </g>
+  <g id="text_54">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586e77" x="32.99976" y="373.19976" transform="rotate(-0 32.99976 373.19976)">Pozorované podíly. Čísla okrsků nelze geograficky párovat s rokem 2022.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd92984a0de">
+   <rect x="81.6875" y="36.01923" width="563.965841" height="308.502165"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,481 @@
+﻿year;precinct;party_id;party;position;name;age;votes;pct_of_party_precinct;source_file;rigorous_min_personal_marks
+2026;1;1;ŠANCE Řevnice;1;Chabera Tomáš Ing.;55;107;7.7;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;2;Ullrichová Jiřina Ing.;56;104;7.48;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;3;Šůra Josef;51;105;7.55;1/data-export (1).csv;1
+2026;1;1;ŠANCE Řevnice;4;Flemr Lukáš;50;103;7.41;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;5;Foldynová Renáta;54;95;6.83;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;6;Soukupová Květa Ing.;46;111;7.99;1/data-export (1).csv;16
+2026;1;1;ŠANCE Řevnice;7;Chroust Jan;44;90;6.47;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;8;Křivánek Vladimír;75;86;6.19;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;9;Sudek Martin Ing.;59;87;6.26;1/data-export (1).csv;1
+2026;1;1;ŠANCE Řevnice;10;Červená Terezie Ing.;40;103;7.41;1/data-export (1).csv;17
+2026;1;1;ŠANCE Řevnice;11;Trnka Jiří;79;84;6.04;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;12;Onderková Johana;26;83;5.97;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;13;Vyleta Jan;23;79;5.68;1/data-export (1).csv;0
+2026;1;1;ŠANCE Řevnice;14;Chroust Martin;45;80;5.75;1/data-export (1).csv;1
+2026;1;1;ŠANCE Řevnice;15;Wagner Richard;44;72;5.18;1/data-export (1).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;1;Tlustý Josef Ing. arch.;49;25;10.08;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;2;Hartmann Pavel Ing.;51;40;16.12;1/data-export (2).csv;15
+2026;1;2;TOP 09 a nezávislí kandidáti;3;Čapková Pavlína Ing. arch.;52;18;7.25;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;4;Mizerovský Radek;49;20;8.06;1/data-export (2).csv;2
+2026;1;2;TOP 09 a nezávislí kandidáti;5;Beránková Anna Mgr.;40;15;6.04;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;6;Holovský Jakub doc. Mgr.;44;14;5.64;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;7;Blažková Stanislava Ing. arch.;52;10;4.03;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;8;Voloďko Mychajlo;45;12;4.83;1/data-export (2).csv;2
+2026;1;2;TOP 09 a nezávislí kandidáti;9;Holovská Kateřina Mgr.;42;12;4.83;1/data-export (2).csv;2
+2026;1;2;TOP 09 a nezávislí kandidáti;10;Beránek Pavel Mgr.;50;17;6.85;1/data-export (2).csv;7
+2026;1;2;TOP 09 a nezávislí kandidáti;11;Zavadilová Alice Mgr.;53;19;7.66;1/data-export (2).csv;9
+2026;1;2;TOP 09 a nezávislí kandidáti;12;Masner Ondřej MUDr.;59;22;8.87;1/data-export (2).csv;12
+2026;1;2;TOP 09 a nezávislí kandidáti;13;Krämer Lukáš Hynek;56;8;3.22;1/data-export (2).csv;0
+2026;1;2;TOP 09 a nezávislí kandidáti;14;Krejčí Lukáš Mgr.;50;9;3.62;1/data-export (2).csv;1
+2026;1;2;TOP 09 a nezávislí kandidáti;15;Brodský Tomáš;56;7;2.82;1/data-export (2).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;1;Štěpánková Martina Mgr. MPA;52;107;9.19;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;2;Uhlík Michal Ing. Ph.D.;46;103;8.84;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;3;Nappi Bursík Martina Mgr.;38;90;7.73;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;4;Bobek Vladimír Ing.;49;77;6.61;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;5;Dudová Renata;45;79;6.78;1/data-export (3).csv;2
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;6;Skripnik Nikola;20;77;6.61;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;7;Reslová Marie MgA.;68;78;6.7;1/data-export (3).csv;1
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;8;Polášek Jan Ferdinand Mgr.;38;73;6.27;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;9;Šafařík Petr;52;70;6.01;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;10;Skovajsová Martina Mgr.;41;79;6.78;1/data-export (3).csv;9
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;11;Bobková Adéla;53;68;5.84;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;12;Kment Filip Ing.;48;71;6.09;1/data-export (3).csv;3
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;13;Radová Jitka;45;64;5.49;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;14;Wielgusová Zuzana MgA.;41;64;5.49;1/data-export (3).csv;0
+2026;1;3;DOBŘE - Dialog o budoucnosti Řevnic;15;Vohryzková Tereza;47;64;5.49;1/data-export (3).csv;0
+2026;1;4;Hnutí Srdce Řevnic;1;Vyletová Jaroslava;61;28;14.73;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;2;Marek Stanislav;49;16;8.42;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;3;Lednická Eva MUDr.;57;22;11.57;1/data-export (4).csv;6
+2026;1;4;Hnutí Srdce Řevnic;4;Pazderková Kateřina;54;10;5.26;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;5;Fasching Kronus Petra;62;9;4.73;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;6;Sudková Michaela Bc.;59;11;5.78;1/data-export (4).csv;2
+2026;1;4;Hnutí Srdce Řevnic;7;Babka Martin;49;9;4.73;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;8;Bolart Miroslav Ing.;72;14;7.36;1/data-export (4).csv;5
+2026;1;4;Hnutí Srdce Řevnic;9;Svobodová Ivanka;78;8;4.21;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;10;Bolartová Vlasta Ing.;39;8;4.21;1/data-export (4).csv;0
+2026;1;4;Hnutí Srdce Řevnic;11;Schneider Jitřenka;77;9;4.73;1/data-export (4).csv;1
+2026;1;4;Hnutí Srdce Řevnic;12;Hášová Naděžda;79;10;5.26;1/data-export (4).csv;2
+2026;1;4;Hnutí Srdce Řevnic;13;Schusová Michaela Mgr. Ph.D.;49;14;7.36;1/data-export (4).csv;6
+2026;1;4;Hnutí Srdce Řevnic;14;Neumannová Monika;61;9;4.73;1/data-export (4).csv;1
+2026;1;4;Hnutí Srdce Řevnic;15;Trnka Michal;53;13;6.84;1/data-export (4).csv;5
+2026;1;5;PRO Řevnice;1;Kvasnička Libor;63;58;12.69;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;2;Hlaváčková Kateřina Ing.;47;37;8.09;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;3;Veselka Jakub Ing. Ph.D.;36;34;7.43;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;4;Buchal Jiří Ing.;46;31;6.78;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;5;Lánský Ondřej Bc.;46;32;7.0;1/data-export (5).csv;1
+2026;1;5;PRO Řevnice;6;Lojda Jan Ing. Ph.D.;46;42;9.19;1/data-export (5).csv;11
+2026;1;5;PRO Řevnice;7;Pražská Martina Mgr.;54;25;5.47;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;8;Doležalová Anna;33;20;4.37;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;9;Šimůnek Jan Ing.;52;37;8.09;1/data-export (5).csv;17
+2026;1;5;PRO Řevnice;10;Krofta Matěj;29;20;4.37;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;11;Čermák Petr RNDr. Ph.D.;40;33;7.22;1/data-export (5).csv;13
+2026;1;5;PRO Řevnice;12;Adam Milan;59;20;4.37;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;13;Vyleta Karel;56;18;3.93;1/data-export (5).csv;0
+2026;1;5;PRO Řevnice;14;Bělohlávek Milan;51;22;4.81;1/data-export (5).csv;4
+2026;1;5;PRO Řevnice;15;Vejmelka Roman Ing.;48;28;6.12;1/data-export (5).csv;10
+2026;1;6;ODS a nezávislí;1;Schlindenbuch Anna Mgr.;50;19;9.45;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;2;Směšný Martin;49;25;12.43;1/data-export (6).csv;6
+2026;1;6;ODS a nezávislí;3;Šenk Pavel;50;19;9.45;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;4;Karas Matyáš;23;14;6.96;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;5;Hlaváček Jan Ing.;34;15;7.46;1/data-export (6).csv;1
+2026;1;6;ODS a nezávislí;6;Krtek Patrik;31;14;6.96;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;7;Cvanciger Miroslav Bc.;71;22;10.94;1/data-export (6).csv;8
+2026;1;6;ODS a nezávislí;8;Hlaváček Václav Ing.;32;8;3.98;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;9;Sedláčková Rytířová Helena;74;8;3.98;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;10;Štech Jan;30;9;4.47;1/data-export (6).csv;1
+2026;1;6;ODS a nezávislí;11;Černý Miroslav;75;14;6.96;1/data-export (6).csv;6
+2026;1;6;ODS a nezávislí;12;Blechová Zuzana;36;12;5.97;1/data-export (6).csv;4
+2026;1;6;ODS a nezávislí;13;Slovenčík Jan MgA.;49;7;3.48;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;14;Benda Tomáš;51;7;3.48;1/data-export (6).csv;0
+2026;1;6;ODS a nezávislí;15;Řehák Jan Mgr.;64;8;3.98;1/data-export (6).csv;1
+2026;1;7;Perspektiva pro město;1;Smrčka Tomáš Ing.;59;115;8.43;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;2;Hartmann Petr Ing.;44;114;8.36;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;3;Veselá Petra;52;100;7.33;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;4;Hrubý Vratislav;34;99;7.26;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;5;Tamchyna Martin;51;95;6.96;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;6;Benešová Zlata Bc.;36;94;6.89;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;7;Šebesta Karel Mgr.;50;106;7.77;1/data-export (7).csv;12
+2026;1;7;Perspektiva pro město;8;Kovářová Iveta;50;113;8.29;1/data-export (7).csv;19
+2026;1;7;Perspektiva pro město;9;Schlindenbuch Jan Mgr.;52;80;5.86;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;10;Martinec Šimon Ing.;34;89;6.52;1/data-export (7).csv;9
+2026;1;7;Perspektiva pro město;11;Fuchs Vladimír Bc.;39;74;5.42;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;12;Jílek Pavel;57;76;5.57;1/data-export (7).csv;2
+2026;1;7;Perspektiva pro město;13;Junková Ivana MgA.;52;83;6.08;1/data-export (7).csv;9
+2026;1;7;Perspektiva pro město;14;Špidla Šimon MgA.;46;63;4.62;1/data-export (7).csv;0
+2026;1;7;Perspektiva pro město;15;Veselý Lukáš;24;62;4.54;1/data-export (7).csv;0
+2026;1;8;Naše Řevnice;1;Kozák Petr Ing.;72;74;9.66;1/data-export (8).csv;0
+2026;1;8;Naše Řevnice;2;Spěvák Tomáš;56;53;6.91;1/data-export (8).csv;0
+2026;1;8;Naše Řevnice;3;Sedláčková Davidová Markéta;45;70;9.13;1/data-export (8).csv;17
+2026;1;8;Naše Řevnice;4;Navrátilová Jana Dr.;63;58;7.57;1/data-export (8).csv;5
+2026;1;8;Naše Řevnice;5;Doubek Gabriela;47;44;5.74;1/data-export (8).csv;0
+2026;1;8;Naše Řevnice;6;Marval Lukáš;28;49;6.39;1/data-export (8).csv;5
+2026;1;8;Naše Řevnice;7;Grund Jiří MSc.;49;47;6.13;1/data-export (8).csv;3
+2026;1;8;Naše Řevnice;8;Neuvirt Kateřina Ing.;36;51;6.65;1/data-export (8).csv;7
+2026;1;8;Naše Řevnice;9;Froňková Pavlína Ing.;55;57;7.44;1/data-export (8).csv;13
+2026;1;8;Naše Řevnice;10;Bergr Petr;63;39;5.09;1/data-export (8).csv;0
+2026;1;8;Naše Řevnice;11;Koleňáková Eva;43;44;5.74;1/data-export (8).csv;5
+2026;1;8;Naše Řevnice;12;Adam Jakub;41;46;6.0;1/data-export (8).csv;7
+2026;1;8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;35;43;5.61;1/data-export (8).csv;4
+2026;1;8;Naše Řevnice;14;Ciglerová Barbora Bc.;50;53;6.91;1/data-export (8).csv;14
+2026;1;8;Naše Řevnice;15;Šarounová Lucie;51;38;4.96;1/data-export (8).csv;0
+2026;2;1;ŠANCE Řevnice;1;Chabera Tomáš Ing.;55;111;8.95;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;2;Ullrichová Jiřina Ing.;56;89;7.17;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;3;Šůra Josef;51;88;7.09;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;4;Flemr Lukáš;50;101;8.14;2/data-export (1).csv;13
+2026;2;1;ŠANCE Řevnice;5;Foldynová Renáta;54;75;6.04;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;6;Soukupová Květa Ing.;46;87;7.01;2/data-export (1).csv;12
+2026;2;1;ŠANCE Řevnice;7;Chroust Jan;44;82;6.61;2/data-export (1).csv;7
+2026;2;1;ŠANCE Řevnice;8;Křivánek Vladimír;75;78;6.29;2/data-export (1).csv;3
+2026;2;1;ŠANCE Řevnice;9;Sudek Martin Ing.;59;81;6.53;2/data-export (1).csv;6
+2026;2;1;ŠANCE Řevnice;10;Červená Terezie Ing.;40;96;7.74;2/data-export (1).csv;21
+2026;2;1;ŠANCE Řevnice;11;Trnka Jiří;79;71;5.72;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;12;Onderková Johana;26;73;5.88;2/data-export (1).csv;2
+2026;2;1;ŠANCE Řevnice;13;Vyleta Jan;23;73;5.88;2/data-export (1).csv;2
+2026;2;1;ŠANCE Řevnice;14;Chroust Martin;45;70;5.64;2/data-export (1).csv;0
+2026;2;1;ŠANCE Řevnice;15;Wagner Richard;44;65;5.24;2/data-export (1).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;1;Tlustý Josef Ing. arch.;49;60;11.02;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;2;Hartmann Pavel Ing.;51;77;14.15;2/data-export (2).csv;17
+2026;2;2;TOP 09 a nezávislí kandidáti;3;Čapková Pavlína Ing. arch.;52;45;8.27;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;4;Mizerovský Radek;49;33;6.06;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;5;Beránková Anna Mgr.;40;45;8.27;2/data-export (2).csv;12
+2026;2;2;TOP 09 a nezávislí kandidáti;6;Holovský Jakub doc. Mgr.;44;40;7.35;2/data-export (2).csv;7
+2026;2;2;TOP 09 a nezávislí kandidáti;7;Blažková Stanislava Ing. arch.;52;29;5.33;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;8;Voloďko Mychajlo;45;26;4.77;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;9;Holovská Kateřina Mgr.;42;27;4.96;2/data-export (2).csv;1
+2026;2;2;TOP 09 a nezávislí kandidáti;10;Beránek Pavel Mgr.;50;30;5.51;2/data-export (2).csv;4
+2026;2;2;TOP 09 a nezávislí kandidáti;11;Zavadilová Alice Mgr.;53;28;5.14;2/data-export (2).csv;2
+2026;2;2;TOP 09 a nezávislí kandidáti;12;Masner Ondřej MUDr.;59;40;7.35;2/data-export (2).csv;14
+2026;2;2;TOP 09 a nezávislí kandidáti;13;Krämer Lukáš Hynek;56;26;4.77;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;14;Krejčí Lukáš Mgr.;50;24;4.41;2/data-export (2).csv;0
+2026;2;2;TOP 09 a nezávislí kandidáti;15;Brodský Tomáš;56;14;2.57;2/data-export (2).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;1;Štěpánková Martina Mgr. MPA;52;140;10.4;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;2;Uhlík Michal Ing. Ph.D.;46;128;9.51;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;3;Nappi Bursík Martina Mgr.;38;104;7.73;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;4;Bobek Vladimír Ing.;49;93;6.91;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;5;Dudová Renata;45;97;7.21;2/data-export (3).csv;4
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;6;Skripnik Nikola;20;90;6.69;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;7;Reslová Marie MgA.;68;86;6.39;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;8;Polášek Jan Ferdinand Mgr.;38;82;6.09;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;9;Šafařík Petr;52;83;6.17;2/data-export (3).csv;1
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;10;Skovajsová Martina Mgr.;41;81;6.02;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;11;Bobková Adéla;53;75;5.57;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;12;Kment Filip Ing.;48;75;5.57;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;13;Radová Jitka;45;72;5.35;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;14;Wielgusová Zuzana MgA.;41;69;5.13;2/data-export (3).csv;0
+2026;2;3;DOBŘE - Dialog o budoucnosti Řevnic;15;Vohryzková Tereza;47;70;5.2;2/data-export (3).csv;1
+2026;2;4;Hnutí Srdce Řevnic;1;Vyletová Jaroslava;61;34;13.33;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;2;Marek Stanislav;49;20;7.84;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;3;Lednická Eva MUDr.;57;28;10.98;2/data-export (4).csv;8
+2026;2;4;Hnutí Srdce Řevnic;4;Pazderková Kateřina;54;21;8.23;2/data-export (4).csv;1
+2026;2;4;Hnutí Srdce Řevnic;5;Fasching Kronus Petra;62;15;5.88;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;6;Sudková Michaela Bc.;59;17;6.66;2/data-export (4).csv;2
+2026;2;4;Hnutí Srdce Řevnic;7;Babka Martin;49;16;6.27;2/data-export (4).csv;1
+2026;2;4;Hnutí Srdce Řevnic;8;Bolart Miroslav Ing.;72;11;4.31;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;9;Svobodová Ivanka;78;11;4.31;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;10;Bolartová Vlasta Ing.;39;13;5.09;2/data-export (4).csv;2
+2026;2;4;Hnutí Srdce Řevnic;11;Schneider Jitřenka;77;12;4.7;2/data-export (4).csv;1
+2026;2;4;Hnutí Srdce Řevnic;12;Hášová Naděžda;79;10;3.92;2/data-export (4).csv;0
+2026;2;4;Hnutí Srdce Řevnic;13;Schusová Michaela Mgr. Ph.D.;49;16;6.27;2/data-export (4).csv;6
+2026;2;4;Hnutí Srdce Řevnic;14;Neumannová Monika;61;17;6.66;2/data-export (4).csv;7
+2026;2;4;Hnutí Srdce Řevnic;15;Trnka Michal;53;14;5.49;2/data-export (4).csv;4
+2026;2;5;PRO Řevnice;1;Kvasnička Libor;63;89;12.09;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;2;Hlaváčková Kateřina Ing.;47;68;9.23;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;3;Veselka Jakub Ing. Ph.D.;36;64;8.69;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;4;Buchal Jiří Ing.;46;49;6.65;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;5;Lánský Ondřej Bc.;46;51;6.92;2/data-export (5).csv;2
+2026;2;5;PRO Řevnice;6;Lojda Jan Ing. Ph.D.;46;71;9.64;2/data-export (5).csv;22
+2026;2;5;PRO Řevnice;7;Pražská Martina Mgr.;54;40;5.43;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;8;Doležalová Anna;33;43;5.84;2/data-export (5).csv;3
+2026;2;5;PRO Řevnice;9;Šimůnek Jan Ing.;52;46;6.25;2/data-export (5).csv;6
+2026;2;5;PRO Řevnice;10;Krofta Matěj;29;36;4.89;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;11;Čermák Petr RNDr. Ph.D.;40;38;5.16;2/data-export (5).csv;2
+2026;2;5;PRO Řevnice;12;Adam Milan;59;36;4.89;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;13;Vyleta Karel;56;36;4.89;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;14;Bělohlávek Milan;51;35;4.75;2/data-export (5).csv;0
+2026;2;5;PRO Řevnice;15;Vejmelka Roman Ing.;48;34;4.61;2/data-export (5).csv;0
+2026;2;6;ODS a nezávislí;1;Schlindenbuch Anna Mgr.;50;28;11.57;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;2;Směšný Martin;49;29;11.98;2/data-export (6).csv;1
+2026;2;6;ODS a nezávislí;3;Šenk Pavel;50;21;8.67;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;4;Karas Matyáš;23;21;8.67;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;5;Hlaváček Jan Ing.;34;17;7.02;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;6;Krtek Patrik;31;18;7.43;2/data-export (6).csv;1
+2026;2;6;ODS a nezávislí;7;Cvanciger Miroslav Bc.;71;20;8.26;2/data-export (6).csv;3
+2026;2;6;ODS a nezávislí;8;Hlaváček Václav Ing.;32;15;6.19;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;9;Sedláčková Rytířová Helena;74;9;3.71;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;10;Štech Jan;30;9;3.71;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;11;Černý Miroslav;75;11;4.54;2/data-export (6).csv;2
+2026;2;6;ODS a nezávislí;12;Blechová Zuzana;36;7;2.89;2/data-export (6).csv;0
+2026;2;6;ODS a nezávislí;13;Slovenčík Jan MgA.;49;16;6.61;2/data-export (6).csv;9
+2026;2;6;ODS a nezávislí;14;Benda Tomáš;51;11;4.54;2/data-export (6).csv;4
+2026;2;6;ODS a nezávislí;15;Řehák Jan Mgr.;64;10;4.13;2/data-export (6).csv;3
+2026;2;7;Perspektiva pro město;1;Smrčka Tomáš Ing.;59;108;8.96;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;2;Hartmann Petr Ing.;44;92;7.63;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;3;Veselá Petra;52;91;7.55;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;4;Hrubý Vratislav;34;90;7.46;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;5;Tamchyna Martin;51;83;6.88;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;6;Benešová Zlata Bc.;36;89;7.38;2/data-export (7).csv;6
+2026;2;7;Perspektiva pro město;7;Šebesta Karel Mgr.;50;78;6.47;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;8;Kovářová Iveta;50;77;6.39;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;9;Schlindenbuch Jan Mgr.;52;71;5.89;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;10;Martinec Šimon Ing.;34;90;7.46;2/data-export (7).csv;19
+2026;2;7;Perspektiva pro město;11;Fuchs Vladimír Bc.;39;72;5.97;2/data-export (7).csv;1
+2026;2;7;Perspektiva pro město;12;Jílek Pavel;57;62;5.14;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;13;Junková Ivana MgA.;52;86;7.13;2/data-export (7).csv;24
+2026;2;7;Perspektiva pro město;14;Špidla Šimon MgA.;46;58;4.81;2/data-export (7).csv;0
+2026;2;7;Perspektiva pro město;15;Veselý Lukáš;24;58;4.81;2/data-export (7).csv;0
+2026;2;8;Naše Řevnice;1;Kozák Petr Ing.;72;47;10.56;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;2;Spěvák Tomáš;56;34;7.64;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;3;Sedláčková Davidová Markéta;45;51;11.46;2/data-export (8).csv;17
+2026;2;8;Naše Řevnice;4;Navrátilová Jana Dr.;63;30;6.74;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;5;Doubek Gabriela;47;23;5.16;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;6;Marval Lukáš;28;23;5.16;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;7;Grund Jiří MSc.;49;19;4.26;2/data-export (8).csv;0
+2026;2;8;Naše Řevnice;8;Neuvirt Kateřina Ing.;36;27;6.06;2/data-export (8).csv;8
+2026;2;8;Naše Řevnice;9;Froňková Pavlína Ing.;55;28;6.29;2/data-export (8).csv;9
+2026;2;8;Naše Řevnice;10;Bergr Petr;63;26;5.84;2/data-export (8).csv;7
+2026;2;8;Naše Řevnice;11;Koleňáková Eva;43;20;4.49;2/data-export (8).csv;1
+2026;2;8;Naše Řevnice;12;Adam Jakub;41;29;6.51;2/data-export (8).csv;10
+2026;2;8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;35;28;6.29;2/data-export (8).csv;9
+2026;2;8;Naše Řevnice;14;Ciglerová Barbora Bc.;50;37;8.31;2/data-export (8).csv;18
+2026;2;8;Naše Řevnice;15;Šarounová Lucie;51;23;5.16;2/data-export (8).csv;4
+2026;3;1;ŠANCE Řevnice;1;Chabera Tomáš Ing.;55;102;8.43;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;2;Ullrichová Jiřina Ing.;56;90;7.44;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;3;Šůra Josef;51;93;7.69;3/data-export (1).csv;3
+2026;3;1;ŠANCE Řevnice;4;Flemr Lukáš;50;96;7.94;3/data-export (1).csv;6
+2026;3;1;ŠANCE Řevnice;5;Foldynová Renáta;54;74;6.12;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;6;Soukupová Květa Ing.;46;90;7.44;3/data-export (1).csv;16
+2026;3;1;ŠANCE Řevnice;7;Chroust Jan;44;82;6.78;3/data-export (1).csv;8
+2026;3;1;ŠANCE Řevnice;8;Křivánek Vladimír;75;74;6.12;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;9;Sudek Martin Ing.;59;91;7.52;3/data-export (1).csv;17
+2026;3;1;ŠANCE Řevnice;10;Červená Terezie Ing.;40;102;8.43;3/data-export (1).csv;28
+2026;3;1;ŠANCE Řevnice;11;Trnka Jiří;79;70;5.78;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;12;Onderková Johana;26;63;5.21;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;13;Vyleta Jan;23;63;5.21;3/data-export (1).csv;0
+2026;3;1;ŠANCE Řevnice;14;Chroust Martin;45;65;5.37;3/data-export (1).csv;2
+2026;3;1;ŠANCE Řevnice;15;Wagner Richard;44;54;4.46;3/data-export (1).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;1;Tlustý Josef Ing. arch.;49;41;10.9;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;2;Hartmann Pavel Ing.;51;53;14.09;3/data-export (2).csv;12
+2026;3;2;TOP 09 a nezávislí kandidáti;3;Čapková Pavlína Ing. arch.;52;32;8.51;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;4;Mizerovský Radek;49;24;6.38;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;5;Beránková Anna Mgr.;40;30;7.97;3/data-export (2).csv;6
+2026;3;2;TOP 09 a nezávislí kandidáti;6;Holovský Jakub doc. Mgr.;44;32;8.51;3/data-export (2).csv;8
+2026;3;2;TOP 09 a nezávislí kandidáti;7;Blažková Stanislava Ing. arch.;52;17;4.52;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;8;Voloďko Mychajlo;45;18;4.78;3/data-export (2).csv;1
+2026;3;2;TOP 09 a nezávislí kandidáti;9;Holovská Kateřina Mgr.;42;20;5.31;3/data-export (2).csv;3
+2026;3;2;TOP 09 a nezávislí kandidáti;10;Beránek Pavel Mgr.;50;18;4.78;3/data-export (2).csv;1
+2026;3;2;TOP 09 a nezávislí kandidáti;11;Zavadilová Alice Mgr.;53;17;4.52;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;12;Masner Ondřej MUDr.;59;36;9.57;3/data-export (2).csv;19
+2026;3;2;TOP 09 a nezávislí kandidáti;13;Krämer Lukáš Hynek;56;15;3.98;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;14;Krejčí Lukáš Mgr.;50;12;3.19;3/data-export (2).csv;0
+2026;3;2;TOP 09 a nezávislí kandidáti;15;Brodský Tomáš;56;11;2.92;3/data-export (2).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;1;Štěpánková Martina Mgr. MPA;52;110;9.18;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;2;Uhlík Michal Ing. Ph.D.;46;108;9.02;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;3;Nappi Bursík Martina Mgr.;38;102;8.52;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;4;Bobek Vladimír Ing.;49;92;7.68;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;5;Dudová Renata;45;99;8.27;3/data-export (3).csv;7
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;6;Skripnik Nikola;20;83;6.93;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;7;Reslová Marie MgA.;68;84;7.01;3/data-export (3).csv;1
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;8;Polášek Jan Ferdinand Mgr.;38;77;6.43;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;9;Šafařík Petr;52;71;5.93;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;10;Skovajsová Martina Mgr.;41;74;6.18;3/data-export (3).csv;3
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;11;Bobková Adéla;53;66;5.51;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;12;Kment Filip Ing.;48;66;5.51;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;13;Radová Jitka;45;54;4.51;3/data-export (3).csv;0
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;14;Wielgusová Zuzana MgA.;41;58;4.84;3/data-export (3).csv;4
+2026;3;3;DOBŘE - Dialog o budoucnosti Řevnic;15;Vohryzková Tereza;47;53;4.42;3/data-export (3).csv;0
+2026;3;4;Hnutí Srdce Řevnic;1;Vyletová Jaroslava;61;48;15.78;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;2;Marek Stanislav;49;22;7.23;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;3;Lednická Eva MUDr.;57;33;10.85;3/data-export (4).csv;11
+2026;3;4;Hnutí Srdce Řevnic;4;Pazderková Kateřina;54;20;6.57;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;5;Fasching Kronus Petra;62;17;5.59;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;6;Sudková Michaela Bc.;59;17;5.59;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;7;Babka Martin;49;15;4.93;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;8;Bolart Miroslav Ing.;72;22;7.23;3/data-export (4).csv;7
+2026;3;4;Hnutí Srdce Řevnic;9;Svobodová Ivanka;78;16;5.26;3/data-export (4).csv;1
+2026;3;4;Hnutí Srdce Řevnic;10;Bolartová Vlasta Ing.;39;15;4.93;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;11;Schneider Jitřenka;77;14;4.6;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;12;Hášová Naděžda;79;13;4.27;3/data-export (4).csv;0
+2026;3;4;Hnutí Srdce Řevnic;13;Schusová Michaela Mgr. Ph.D.;49;17;5.59;3/data-export (4).csv;4
+2026;3;4;Hnutí Srdce Řevnic;14;Neumannová Monika;61;18;5.92;3/data-export (4).csv;5
+2026;3;4;Hnutí Srdce Řevnic;15;Trnka Michal;53;17;5.59;3/data-export (4).csv;4
+2026;3;5;PRO Řevnice;1;Kvasnička Libor;63;61;11.01;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;2;Hlaváčková Kateřina Ing.;47;44;7.94;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;3;Veselka Jakub Ing. Ph.D.;36;40;7.22;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;4;Buchal Jiří Ing.;46;33;5.95;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;5;Lánský Ondřej Bc.;46;44;7.94;3/data-export (5).csv;11
+2026;3;5;PRO Řevnice;6;Lojda Jan Ing. Ph.D.;46;44;7.94;3/data-export (5).csv;11
+2026;3;5;PRO Řevnice;7;Pražská Martina Mgr.;54;35;6.31;3/data-export (5).csv;2
+2026;3;5;PRO Řevnice;8;Doležalová Anna;33;29;5.23;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;9;Šimůnek Jan Ing.;52;38;6.85;3/data-export (5).csv;9
+2026;3;5;PRO Řevnice;10;Krofta Matěj;29;27;4.87;3/data-export (5).csv;0
+2026;3;5;PRO Řevnice;11;Čermák Petr RNDr. Ph.D.;40;37;6.67;3/data-export (5).csv;10
+2026;3;5;PRO Řevnice;12;Adam Milan;59;34;6.13;3/data-export (5).csv;7
+2026;3;5;PRO Řevnice;13;Vyleta Karel;56;30;5.41;3/data-export (5).csv;3
+2026;3;5;PRO Řevnice;14;Bělohlávek Milan;51;33;5.95;3/data-export (5).csv;6
+2026;3;5;PRO Řevnice;15;Vejmelka Roman Ing.;48;25;4.51;3/data-export (5).csv;0
+2026;3;6;ODS a nezávislí;1;Schlindenbuch Anna Mgr.;50;31;7.32;3/data-export (6).csv;0
+2026;3;6;ODS a nezávislí;2;Směšný Martin;49;36;8.51;3/data-export (6).csv;5
+2026;3;6;ODS a nezávislí;3;Šenk Pavel;50;25;5.91;3/data-export (6).csv;0
+2026;3;6;ODS a nezávislí;4;Karas Matyáš;23;28;6.61;3/data-export (6).csv;3
+2026;3;6;ODS a nezávislí;5;Hlaváček Jan Ing.;34;29;6.85;3/data-export (6).csv;4
+2026;3;6;ODS a nezávislí;6;Krtek Patrik;31;34;8.03;3/data-export (6).csv;9
+2026;3;6;ODS a nezávislí;7;Cvanciger Miroslav Bc.;71;41;9.69;3/data-export (6).csv;16
+2026;3;6;ODS a nezávislí;8;Hlaváček Václav Ing.;32;27;6.38;3/data-export (6).csv;2
+2026;3;6;ODS a nezávislí;9;Sedláčková Rytířová Helena;74;23;5.43;3/data-export (6).csv;0
+2026;3;6;ODS a nezávislí;10;Štech Jan;30;23;5.43;3/data-export (6).csv;0
+2026;3;6;ODS a nezávislí;11;Černý Miroslav;75;33;7.8;3/data-export (6).csv;10
+2026;3;6;ODS a nezávislí;12;Blechová Zuzana;36;24;5.67;3/data-export (6).csv;1
+2026;3;6;ODS a nezávislí;13;Slovenčík Jan MgA.;49;23;5.43;3/data-export (6).csv;0
+2026;3;6;ODS a nezávislí;14;Benda Tomáš;51;25;5.91;3/data-export (6).csv;2
+2026;3;6;ODS a nezávislí;15;Řehák Jan Mgr.;64;21;4.96;3/data-export (6).csv;0
+2026;3;7;Perspektiva pro město;1;Smrčka Tomáš Ing.;59;82;7.59;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;2;Hartmann Petr Ing.;44;85;7.87;3/data-export (7).csv;3
+2026;3;7;Perspektiva pro město;3;Veselá Petra;52;78;7.22;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;4;Hrubý Vratislav;34;92;8.52;3/data-export (7).csv;14
+2026;3;7;Perspektiva pro město;5;Tamchyna Martin;51;85;7.87;3/data-export (7).csv;7
+2026;3;7;Perspektiva pro město;6;Benešová Zlata Bc.;36;76;7.04;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;7;Šebesta Karel Mgr.;50;66;6.11;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;8;Kovářová Iveta;50;64;5.93;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;9;Schlindenbuch Jan Mgr.;52;64;5.93;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;10;Martinec Šimon Ing.;34;77;7.13;3/data-export (7).csv;13
+2026;3;7;Perspektiva pro město;11;Fuchs Vladimír Bc.;39;62;5.74;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;12;Jílek Pavel;57;63;5.83;3/data-export (7).csv;1
+2026;3;7;Perspektiva pro město;13;Junková Ivana MgA.;52;71;6.58;3/data-export (7).csv;9
+2026;3;7;Perspektiva pro město;14;Špidla Šimon MgA.;46;57;5.28;3/data-export (7).csv;0
+2026;3;7;Perspektiva pro město;15;Veselý Lukáš;24;57;5.28;3/data-export (7).csv;0
+2026;3;8;Naše Řevnice;1;Kozák Petr Ing.;72;75;11.09;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;2;Spěvák Tomáš;56;60;8.87;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;3;Sedláčková Davidová Markéta;45;65;9.61;3/data-export (8).csv;5
+2026;3;8;Naše Řevnice;4;Navrátilová Jana Dr.;63;43;6.36;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;5;Doubek Gabriela;47;38;5.62;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;6;Marval Lukáš;28;43;6.36;3/data-export (8).csv;5
+2026;3;8;Naše Řevnice;7;Grund Jiří MSc.;49;41;6.06;3/data-export (8).csv;3
+2026;3;8;Naše Řevnice;8;Neuvirt Kateřina Ing.;36;43;6.36;3/data-export (8).csv;5
+2026;3;8;Naše Řevnice;9;Froňková Pavlína Ing.;55;43;6.36;3/data-export (8).csv;5
+2026;3;8;Naše Řevnice;10;Bergr Petr;63;37;5.47;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;11;Koleňáková Eva;43;34;5.02;3/data-export (8).csv;0
+2026;3;8;Naše Řevnice;12;Adam Jakub;41;37;5.47;3/data-export (8).csv;3
+2026;3;8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;35;40;5.91;3/data-export (8).csv;6
+2026;3;8;Naše Řevnice;14;Ciglerová Barbora Bc.;50;44;6.5;3/data-export (8).csv;10
+2026;3;8;Naše Řevnice;15;Šarounová Lucie;51;33;4.88;3/data-export (8).csv;0
+2026;4;1;ŠANCE Řevnice;1;Chabera Tomáš Ing.;55;82;8.18;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;2;Ullrichová Jiřina Ing.;56;74;7.38;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;3;Šůra Josef;51;74;7.38;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;4;Flemr Lukáš;50;79;7.88;4/data-export (1).csv;5
+2026;4;1;ŠANCE Řevnice;5;Foldynová Renáta;54;60;5.98;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;6;Soukupová Květa Ing.;46;70;6.98;4/data-export (1).csv;10
+2026;4;1;ŠANCE Řevnice;7;Chroust Jan;44;71;7.08;4/data-export (1).csv;11
+2026;4;1;ŠANCE Řevnice;8;Křivánek Vladimír;75;62;6.18;4/data-export (1).csv;2
+2026;4;1;ŠANCE Řevnice;9;Sudek Martin Ing.;59;65;6.48;4/data-export (1).csv;5
+2026;4;1;ŠANCE Řevnice;10;Červená Terezie Ing.;40;82;8.18;4/data-export (1).csv;22
+2026;4;1;ŠANCE Řevnice;11;Trnka Jiří;79;61;6.08;4/data-export (1).csv;1
+2026;4;1;ŠANCE Řevnice;12;Onderková Johana;26;59;5.88;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;13;Vyleta Jan;23;58;5.78;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;14;Chroust Martin;45;54;5.38;4/data-export (1).csv;0
+2026;4;1;ŠANCE Řevnice;15;Wagner Richard;44;51;5.08;4/data-export (1).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;1;Tlustý Josef Ing. arch.;49;53;11.47;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;2;Hartmann Pavel Ing.;51;53;11.47;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;3;Čapková Pavlína Ing. arch.;52;29;6.27;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;4;Mizerovský Radek;49;33;7.14;4/data-export (2).csv;4
+2026;4;2;TOP 09 a nezávislí kandidáti;5;Beránková Anna Mgr.;40;32;6.92;4/data-export (2).csv;3
+2026;4;2;TOP 09 a nezávislí kandidáti;6;Holovský Jakub doc. Mgr.;44;33;7.14;4/data-export (2).csv;4
+2026;4;2;TOP 09 a nezávislí kandidáti;7;Blažková Stanislava Ing. arch.;52;26;5.62;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;8;Voloďko Mychajlo;45;22;4.76;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;9;Holovská Kateřina Mgr.;42;24;5.19;4/data-export (2).csv;2
+2026;4;2;TOP 09 a nezávislí kandidáti;10;Beránek Pavel Mgr.;50;22;4.76;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;11;Zavadilová Alice Mgr.;53;31;6.7;4/data-export (2).csv;9
+2026;4;2;TOP 09 a nezávislí kandidáti;12;Masner Ondřej MUDr.;59;39;8.44;4/data-export (2).csv;17
+2026;4;2;TOP 09 a nezávislí kandidáti;13;Krämer Lukáš Hynek;56;26;5.62;4/data-export (2).csv;4
+2026;4;2;TOP 09 a nezávislí kandidáti;14;Krejčí Lukáš Mgr.;50;21;4.54;4/data-export (2).csv;0
+2026;4;2;TOP 09 a nezávislí kandidáti;15;Brodský Tomáš;56;18;3.89;4/data-export (2).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;1;Štěpánková Martina Mgr. MPA;52;155;8.39;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;2;Uhlík Michal Ing. Ph.D.;46;152;8.22;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;3;Nappi Bursík Martina Mgr.;38;141;7.63;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;4;Bobek Vladimír Ing.;49;131;7.09;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;5;Dudová Renata;45;130;7.03;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;6;Skripnik Nikola;20;128;6.93;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;7;Reslová Marie MgA.;68;125;6.76;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;8;Polášek Jan Ferdinand Mgr.;38;122;6.6;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;9;Šafařík Petr;52;119;6.44;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;10;Skovajsová Martina Mgr.;41;120;6.49;4/data-export (3).csv;1
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;11;Bobková Adéla;53;108;5.84;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;12;Kment Filip Ing.;48;113;6.11;4/data-export (3).csv;5
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;13;Radová Jitka;45;105;5.68;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;14;Wielgusová Zuzana MgA.;41;105;5.68;4/data-export (3).csv;0
+2026;4;3;DOBŘE - Dialog o budoucnosti Řevnic;15;Vohryzková Tereza;47;93;5.03;4/data-export (3).csv;0
+2026;4;4;Hnutí Srdce Řevnic;1;Vyletová Jaroslava;61;48;13.59;4/data-export (4).csv;0
+2026;4;4;Hnutí Srdce Řevnic;2;Marek Stanislav;49;30;8.49;4/data-export (4).csv;0
+2026;4;4;Hnutí Srdce Řevnic;3;Lednická Eva MUDr.;57;35;9.91;4/data-export (4).csv;5
+2026;4;4;Hnutí Srdce Řevnic;4;Pazderková Kateřina;54;21;5.94;4/data-export (4).csv;0
+2026;4;4;Hnutí Srdce Řevnic;5;Fasching Kronus Petra;62;25;7.08;4/data-export (4).csv;4
+2026;4;4;Hnutí Srdce Řevnic;6;Sudková Michaela Bc.;59;17;4.81;4/data-export (4).csv;0
+2026;4;4;Hnutí Srdce Řevnic;7;Babka Martin;49;23;6.51;4/data-export (4).csv;6
+2026;4;4;Hnutí Srdce Řevnic;8;Bolart Miroslav Ing.;72;23;6.51;4/data-export (4).csv;6
+2026;4;4;Hnutí Srdce Řevnic;9;Svobodová Ivanka;78;17;4.81;4/data-export (4).csv;0
+2026;4;4;Hnutí Srdce Řevnic;10;Bolartová Vlasta Ing.;39;25;7.08;4/data-export (4).csv;8
+2026;4;4;Hnutí Srdce Řevnic;11;Schneider Jitřenka;77;19;5.38;4/data-export (4).csv;2
+2026;4;4;Hnutí Srdce Řevnic;12;Hášová Naděžda;79;19;5.38;4/data-export (4).csv;2
+2026;4;4;Hnutí Srdce Řevnic;13;Schusová Michaela Mgr. Ph.D.;49;19;5.38;4/data-export (4).csv;2
+2026;4;4;Hnutí Srdce Řevnic;14;Neumannová Monika;61;18;5.09;4/data-export (4).csv;1
+2026;4;4;Hnutí Srdce Řevnic;15;Trnka Michal;53;14;3.96;4/data-export (4).csv;0
+2026;4;5;PRO Řevnice;1;Kvasnička Libor;63;79;10.51;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;2;Hlaváčková Kateřina Ing.;47;62;8.25;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;3;Veselka Jakub Ing. Ph.D.;36;55;7.32;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;4;Buchal Jiří Ing.;46;54;7.19;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;5;Lánský Ondřej Bc.;46;51;6.79;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;6;Lojda Jan Ing. Ph.D.;46;57;7.58;4/data-export (5).csv;6
+2026;4;5;PRO Řevnice;7;Pražská Martina Mgr.;54;44;5.85;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;8;Doležalová Anna;33;41;5.45;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;9;Šimůnek Jan Ing.;52;55;7.32;4/data-export (5).csv;14
+2026;4;5;PRO Řevnice;10;Krofta Matěj;29;36;4.79;4/data-export (5).csv;0
+2026;4;5;PRO Řevnice;11;Čermák Petr RNDr. Ph.D.;40;48;6.39;4/data-export (5).csv;12
+2026;4;5;PRO Řevnice;12;Adam Milan;59;46;6.12;4/data-export (5).csv;10
+2026;4;5;PRO Řevnice;13;Vyleta Karel;56;42;5.59;4/data-export (5).csv;6
+2026;4;5;PRO Řevnice;14;Bělohlávek Milan;51;37;4.92;4/data-export (5).csv;1
+2026;4;5;PRO Řevnice;15;Vejmelka Roman Ing.;48;44;5.85;4/data-export (5).csv;8
+2026;4;6;ODS a nezávislí;1;Schlindenbuch Anna Mgr.;50;27;8.54;4/data-export (6).csv;0
+2026;4;6;ODS a nezávislí;2;Směšný Martin;49;24;7.59;4/data-export (6).csv;0
+2026;4;6;ODS a nezávislí;3;Šenk Pavel;50;17;5.37;4/data-export (6).csv;0
+2026;4;6;ODS a nezávislí;4;Karas Matyáš;23;21;6.64;4/data-export (6).csv;4
+2026;4;6;ODS a nezávislí;5;Hlaváček Jan Ing.;34;20;6.32;4/data-export (6).csv;3
+2026;4;6;ODS a nezávislí;6;Krtek Patrik;31;22;6.96;4/data-export (6).csv;5
+2026;4;6;ODS a nezávislí;7;Cvanciger Miroslav Bc.;71;39;12.34;4/data-export (6).csv;22
+2026;4;6;ODS a nezávislí;8;Hlaváček Václav Ing.;32;14;4.43;4/data-export (6).csv;0
+2026;4;6;ODS a nezávislí;9;Sedláčková Rytířová Helena;74;21;6.64;4/data-export (6).csv;7
+2026;4;6;ODS a nezávislí;10;Štech Jan;30;15;4.74;4/data-export (6).csv;1
+2026;4;6;ODS a nezávislí;11;Černý Miroslav;75;28;8.86;4/data-export (6).csv;14
+2026;4;6;ODS a nezávislí;12;Blechová Zuzana;36;22;6.96;4/data-export (6).csv;8
+2026;4;6;ODS a nezávislí;13;Slovenčík Jan MgA.;49;17;5.37;4/data-export (6).csv;3
+2026;4;6;ODS a nezávislí;14;Benda Tomáš;51;19;6.01;4/data-export (6).csv;5
+2026;4;6;ODS a nezávislí;15;Řehák Jan Mgr.;64;10;3.16;4/data-export (6).csv;0
+2026;4;7;Perspektiva pro město;1;Smrčka Tomáš Ing.;59;92;8.88;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;2;Hartmann Petr Ing.;44;86;8.3;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;3;Veselá Petra;52;75;7.23;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;4;Hrubý Vratislav;34;86;8.3;4/data-export (7).csv;11
+2026;4;7;Perspektiva pro město;5;Tamchyna Martin;51;73;7.04;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;6;Benešová Zlata Bc.;36;68;6.56;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;7;Šebesta Karel Mgr.;50;82;7.91;4/data-export (7).csv;14
+2026;4;7;Perspektiva pro město;8;Kovářová Iveta;50;65;6.27;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;9;Schlindenbuch Jan Mgr.;52;56;5.4;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;10;Martinec Šimon Ing.;34;75;7.23;4/data-export (7).csv;19
+2026;4;7;Perspektiva pro město;11;Fuchs Vladimír Bc.;39;57;5.5;4/data-export (7).csv;1
+2026;4;7;Perspektiva pro město;12;Jílek Pavel;57;56;5.4;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;13;Junková Ivana MgA.;52;68;6.56;4/data-export (7).csv;12
+2026;4;7;Perspektiva pro město;14;Špidla Šimon MgA.;46;51;4.92;4/data-export (7).csv;0
+2026;4;7;Perspektiva pro město;15;Veselý Lukáš;24;46;4.44;4/data-export (7).csv;0
+2026;4;8;Naše Řevnice;1;Kozák Petr Ing.;72;66;11.7;4/data-export (8).csv;0
+2026;4;8;Naše Řevnice;2;Spěvák Tomáš;56;41;7.26;4/data-export (8).csv;0
+2026;4;8;Naše Řevnice;3;Sedláčková Davidová Markéta;45;52;9.21;4/data-export (8).csv;11
+2026;4;8;Naše Řevnice;4;Navrátilová Jana Dr.;63;46;8.15;4/data-export (8).csv;5
+2026;4;8;Naše Řevnice;5;Doubek Gabriela;47;37;6.56;4/data-export (8).csv;0
+2026;4;8;Naše Řevnice;6;Marval Lukáš;28;44;7.8;4/data-export (8).csv;7
+2026;4;8;Naše Řevnice;7;Grund Jiří MSc.;49;23;4.07;4/data-export (8).csv;0
+2026;4;8;Naše Řevnice;8;Neuvirt Kateřina Ing.;36;32;5.67;4/data-export (8).csv;9
+2026;4;8;Naše Řevnice;9;Froňková Pavlína Ing.;55;32;5.67;4/data-export (8).csv;9
+2026;4;8;Naše Řevnice;10;Bergr Petr;63;28;4.96;4/data-export (8).csv;5
+2026;4;8;Naše Řevnice;11;Koleňáková Eva;43;34;6.02;4/data-export (8).csv;11
+2026;4;8;Naše Řevnice;12;Adam Jakub;41;31;5.49;4/data-export (8).csv;8
+2026;4;8;Naše Řevnice;13;Waldmann Tadeáš Mgr.;35;33;5.85;4/data-export (8).csv;10
+2026;4;8;Naše Řevnice;14;Ciglerová Barbora Bc.;50;37;6.56;4/data-export (8).csv;14
+2026;4;8;Naše Řevnice;15;Šarounová Lucie;51;28;4.96;4/data-export (8).csv;5

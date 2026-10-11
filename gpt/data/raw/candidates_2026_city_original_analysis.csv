@@ -1,0 +1,121 @@
+﻿position;name;Kandidát.věk;votes;Počet hlasů.v %;Mandát;Pořadí;party;runningmin;min_cross;cross_vs_prev
+1;Chabera Tomáš Ing.;55;402;8,30;ANO;1.0;ŠANCE;402;0;
+2;Ullrichová Jiřina Ing.;56;357;7,37;NE;3.0;ŠANCE;357;0;-45.0
+3;Šůra Josef;51;360;7,43;NE;1.0;ŠANCE;357;3;3.0
+4;Flemr Lukáš;50;379;7,83;ANO;3.0;ŠANCE;357;22;19.0
+5;Foldynová Renáta;54;304;6,28;NE;4.0;ŠANCE;304;0;-75.0
+6;Soukupová Květa Ing.;46;358;7,39;NE;2.0;ŠANCE;304;54;54.0
+7;Chroust Jan;44;325;6,71;NE;5.0;ŠANCE;304;21;-33.0
+8;Křivánek Vladimír;75;300;6,19;NE;6.0;ŠANCE;300;0;-25.0
+9;Sudek Martin Ing.;59;324;6,69;NE;7.0;ŠANCE;300;24;24.0
+10;Červená Terezie Ing.;40;383;7,91;ANO;2.0;ŠANCE;300;83;59.0
+11;Trnka Jiří;79;286;5,90;NE;8.0;ŠANCE;286;0;-97.0
+12;Onderková Johana;26;278;5,74;NE;9.0;ŠANCE;278;0;-8.0
+13;Vyleta Jan;23;273;5,64;NE;10.0;ŠANCE;273;0;-5.0
+14;Chroust Martin;45;269;5,55;NE;11.0;ŠANCE;269;0;-4.0
+15;Wagner Richard;44;242;5,00;NE;12.0;ŠANCE;242;0;-27.0
+1;Tlustý Josef Ing. arch.;49;179;10,98;NE;1.0;TOP 09;179;0;
+2;Hartmann Pavel Ing.;51;223;13,68;ANO;1.0;TOP 09;179;44;44.0
+3;Čapková Pavlína Ing. arch.;52;124;7,60;NE;3.0;TOP 09;124;0;-99.0
+4;Mizerovský Radek;49;110;6,74;NE;6.0;TOP 09;110;0;-14.0
+5;Beránková Anna Mgr.;40;122;7,48;NE;4.0;TOP 09;110;12;12.0
+6;Holovský Jakub doc. Mgr.;44;119;7,30;NE;5.0;TOP 09;110;9;-3.0
+7;Blažková Stanislava Ing. arch.;52;82;5,03;NE;7.0;TOP 09;82;0;-37.0
+8;Voloďko Mychajlo;45;78;4,78;NE;8.0;TOP 09;78;0;-4.0
+9;Holovská Kateřina Mgr.;42;83;5,09;NE;9.0;TOP 09;78;5;5.0
+10;Beránek Pavel Mgr.;50;87;5,33;NE;10.0;TOP 09;78;9;4.0
+11;Zavadilová Alice Mgr.;53;95;5,82;NE;11.0;TOP 09;78;17;8.0
+12;Masner Ondřej MUDr.;59;137;8,40;NE;2.0;TOP 09;78;59;42.0
+13;Krämer Lukáš Hynek;56;75;4,60;NE;12.0;TOP 09;75;0;-62.0
+14;Krejčí Lukáš Mgr.;50;66;4,04;NE;13.0;TOP 09;66;0;-9.0
+15;Brodský Tomáš;56;50;3,06;NE;14.0;TOP 09;50;0;-16.0
+1;Štěpánková Martina Mgr. MPA;52;512;9,22;ANO;1.0;DOBŘE;512;0;
+2;Uhlík Michal Ing. Ph.D.;46;491;8,84;ANO;2.0;DOBŘE;491;0;-21.0
+3;Nappi Bursík Martina Mgr.;38;437;7,86;ANO;3.0;DOBŘE;437;0;-54.0
+4;Bobek Vladimír Ing.;49;393;7,07;ANO;4.0;DOBŘE;393;0;-44.0
+5;Dudová Renata;45;405;7,29;NE;1.0;DOBŘE;393;12;12.0
+6;Skripnik Nikola;20;378;6,80;NE;2.0;DOBŘE;378;0;-27.0
+7;Reslová Marie MgA.;68;373;6,71;NE;3.0;DOBŘE;373;0;-5.0
+8;Polášek Jan Ferdinand Mgr.;38;354;6,37;NE;4.0;DOBŘE;354;0;-19.0
+9;Šafařík Petr;52;343;6,17;NE;5.0;DOBŘE;343;0;-11.0
+10;Skovajsová Martina Mgr.;41;354;6,37;NE;6.0;DOBŘE;343;11;11.0
+11;Bobková Adéla;53;317;5,70;NE;7.0;DOBŘE;317;0;-37.0
+12;Kment Filip Ing.;48;325;5,85;NE;8.0;DOBŘE;317;8;8.0
+13;Radová Jitka;45;295;5,31;NE;9.0;DOBŘE;295;0;-30.0
+14;Wielgusová Zuzana MgA.;41;296;5,33;NE;10.0;DOBŘE;295;1;1.0
+15;Vohryzková Tereza;47;280;5,04;NE;11.0;DOBŘE;280;0;-16.0
+1;Vyletová Jaroslava;61;158;14,33;;;Srdce;158;0;
+2;Marek Stanislav;49;88;7,98;;;Srdce;88;0;-70.0
+3;Lednická Eva MUDr.;57;118;10,70;;;Srdce;88;30;30.0
+4;Pazderková Kateřina;54;72;6,53;;;Srdce;72;0;-46.0
+5;Fasching Kronus Petra;62;66;5,98;;;Srdce;66;0;-6.0
+6;Sudková Michaela Bc.;59;62;5,62;;;Srdce;62;0;-4.0
+7;Babka Martin;49;63;5,71;;;Srdce;62;1;1.0
+8;Bolart Miroslav Ing.;72;70;6,35;;;Srdce;62;8;7.0
+9;Svobodová Ivanka;78;52;4,71;;;Srdce;52;0;-18.0
+10;Bolartová Vlasta Ing.;39;61;5,53;;;Srdce;52;9;9.0
+11;Schneider Jitřenka;77;54;4,90;;;Srdce;52;2;-7.0
+12;Hášová Naděžda;79;52;4,71;;;Srdce;52;0;-2.0
+13;Schusová Michaela Mgr. Ph.D.;49;66;5,98;;;Srdce;52;14;14.0
+14;Neumannová Monika;61;62;5,62;;;Srdce;52;10;-4.0
+15;Trnka Michal;53;58;5,26;;;Srdce;52;6;-4.0
+1;Kvasnička Libor;63;287;11,48;ANO;1.0;PRO;287;0;
+2;Hlaváčková Kateřina Ing.;47;211;8,44;NE;1.0;PRO;211;0;-76.0
+3;Veselka Jakub Ing. Ph.D.;36;193;7,72;NE;2.0;PRO;193;0;-18.0
+4;Buchal Jiří Ing.;46;167;6,68;NE;3.0;PRO;167;0;-26.0
+5;Lánský Ondřej Bc.;46;178;7,12;NE;4.0;PRO;167;11;11.0
+6;Lojda Jan Ing. Ph.D.;46;214;8,56;ANO;2.0;PRO;167;47;36.0
+7;Pražská Martina Mgr.;54;144;5,76;NE;5.0;PRO;144;0;-70.0
+8;Doležalová Anna;33;133;5,32;NE;6.0;PRO;133;0;-11.0
+9;Šimůnek Jan Ing.;52;176;7,04;NE;7.0;PRO;133;43;43.0
+10;Krofta Matěj;29;119;4,76;NE;8.0;PRO;119;0;-57.0
+11;Čermák Petr RNDr. Ph.D.;40;156;6,24;NE;9.0;PRO;119;37;37.0
+12;Adam Milan;59;136;5,44;NE;10.0;PRO;119;17;-20.0
+13;Vyleta Karel;56;126;5,04;NE;11.0;PRO;119;7;-10.0
+14;Bělohlávek Milan;51;127;5,08;NE;12.0;PRO;119;8;1.0
+15;Vejmelka Roman Ing.;48;131;5,24;NE;13.0;PRO;119;12;4.0
+1;Schlindenbuch Anna Mgr.;50;105;8,88;;;ODS;105;0;
+2;Směšný Martin;49;114;9,64;;;ODS;105;9;9.0
+3;Šenk Pavel;50;82;6,93;;;ODS;82;0;-32.0
+4;Karas Matyáš;23;84;7,10;;;ODS;82;2;2.0
+5;Hlaváček Jan Ing.;34;81;6,85;;;ODS;81;0;-3.0
+6;Krtek Patrik;31;88;7,44;;;ODS;81;7;7.0
+7;Cvanciger Miroslav Bc.;71;122;10,32;;;ODS;81;41;34.0
+8;Hlaváček Václav Ing.;32;64;5,41;;;ODS;64;0;-58.0
+9;Sedláčková Rytířová Helena;74;61;5,16;;;ODS;61;0;-3.0
+10;Štech Jan;30;56;4,73;;;ODS;56;0;-5.0
+11;Černý Miroslav;75;86;7,27;;;ODS;56;30;30.0
+12;Blechová Zuzana;36;65;5,49;;;ODS;56;9;-21.0
+13;Slovenčík Jan MgA.;49;63;5,32;;;ODS;56;7;-2.0
+14;Benda Tomáš;51;62;5,24;;;ODS;56;6;-1.0
+15;Řehák Jan Mgr.;64;49;4,14;;;ODS;49;0;-13.0
+1;Smrčka Tomáš Ing.;59;397;8,47;ANO;1.0;Perspektiva;397;0;
+2;Hartmann Petr Ing.;44;377;8,05;ANO;2.0;Perspektiva;377;0;-20.0
+3;Veselá Petra;52;344;7,34;NE;1.0;Perspektiva;344;0;-33.0
+4;Hrubý Vratislav;34;367;7,83;ANO;3.0;Perspektiva;344;23;23.0
+5;Tamchyna Martin;51;336;7,17;NE;2.0;Perspektiva;336;0;-31.0
+6;Benešová Zlata Bc.;36;327;6,98;NE;3.0;Perspektiva;327;0;-9.0
+7;Šebesta Karel Mgr.;50;332;7,08;NE;4.0;Perspektiva;327;5;5.0
+8;Kovářová Iveta;50;319;6,81;NE;5.0;Perspektiva;319;0;-13.0
+9;Schlindenbuch Jan Mgr.;52;271;5,78;NE;6.0;Perspektiva;271;0;-48.0
+10;Martinec Šimon Ing.;34;331;7,06;NE;7.0;Perspektiva;271;60;60.0
+11;Fuchs Vladimír Bc.;39;265;5,65;NE;8.0;Perspektiva;265;0;-66.0
+12;Jílek Pavel;57;257;5,48;NE;9.0;Perspektiva;257;0;-8.0
+13;Junková Ivana MgA.;52;308;6,57;NE;10.0;Perspektiva;257;51;51.0
+14;Špidla Šimon MgA.;46;229;4,89;NE;11.0;Perspektiva;229;0;-79.0
+15;Veselý Lukáš;24;223;4,76;NE;12.0;Perspektiva;223;0;-6.0
+1;Kozák Petr Ing.;72;262;10,68;ANO;1.0;Naše Řevnice;262;0;
+2;Spěvák Tomáš;56;188;7,67;NE;1.0;Naše Řevnice;188;0;-74.0
+3;Sedláčková Davidová Markéta;45;238;9,71;ANO;2.0;Naše Řevnice;188;50;50.0
+4;Navrátilová Jana Dr.;63;177;7,22;NE;2.0;Naše Řevnice;177;0;-61.0
+5;Doubek Gabriela;47;142;5,79;NE;3.0;Naše Řevnice;142;0;-35.0
+6;Marval Lukáš;28;159;6,48;NE;4.0;Naše Řevnice;142;17;17.0
+7;Grund Jiří  MSc.;49;130;5,30;NE;5.0;Naše Řevnice;130;0;-29.0
+8;Neuvirt Kateřina Ing.;36;153;6,24;NE;6.0;Naše Řevnice;130;23;23.0
+9;Froňková Pavlína Ing.;55;160;6,52;NE;7.0;Naše Řevnice;130;30;7.0
+10;Bergr Petr;63;130;5,30;NE;8.0;Naše Řevnice;130;0;-30.0
+11;Koleňáková Eva;43;132;5,38;NE;9.0;Naše Řevnice;130;2;2.0
+12;Adam Jakub;41;143;5,83;NE;10.0;Naše Řevnice;130;13;11.0
+13;Waldmann Tadeáš Mgr.;35;144;5,87;NE;11.0;Naše Řevnice;130;14;1.0
+14;Ciglerová Barbora Bc.;50;171;6,97;NE;12.0;Naše Řevnice;130;41;27.0
+15;Šarounová Lucie;51;122;4,97;NE;13.0;Naše Řevnice;122;0;-49.0

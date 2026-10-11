@@ -1,0 +1,62 @@
+{
+  "label": "personal_long_tail",
+  "scenario": "personal_long_tail",
+  "tune": 6000,
+  "draws": 40000,
+  "chains": 4,
+  "seed": 20261244,
+  "no_candidate": false,
+  "signature": "358756f624f447d3d7c0923c984f094bad0395c3f843cf7c875dacd018920ba0",
+  "storage_stride": 25,
+  "wall_seconds": 121.72206857399988,
+  "chain_runtime_seconds": [
+    120.083571506,
+    120.45771220799998,
+    121.28901787799987,
+    120.35072967399992
+  ],
+  "acceptance": [
+    [
+      0.9880421875,
+      0.3775,
+      0.386375,
+      0.32355,
+      0.341625,
+      0.0887625
+    ],
+    [
+      0.98845,
+      0.31885,
+      0.330925,
+      0.307,
+      0.375275,
+      0.08978125
+    ],
+    [
+      0.9878140625,
+      0.354,
+      0.367925,
+      0.336025,
+      0.33565,
+      0.087490625
+    ],
+    [
+      0.98898046875,
+      0.3359,
+      0.352,
+      0.3462,
+      0.377625,
+      0.0894
+    ]
+  ],
+  "diagnostics_on_unthinned": true,
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "arviz": "0.22.0"
+  },
+  "max_rhat": 1.0046843640074137,
+  "min_ess_bulk": 656.5379068297316,
+  "min_ess_tail": 1052.8139388970474,
+  "sampler": "FFBS + Gibbs + Metropolis; divergences/BFMI not applicable"
+}

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1088.399524pt" height="456.071479pt" viewBox="0 0 1088.399524 456.071479" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-11T05:40:35.978867</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 456.071479 
+L 1088.399524 456.071479 
+L 1088.399524 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 115.026719 401.96202 
+L 517.388601 401.96202 
+L 517.388601 51.476574 
+L 115.026719 51.476574 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 218.093233 386.030863 
+L 133.315895 386.030863 
+L 133.315895 357.065124 
+L 218.093233 357.065124 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 218.093233 349.823689 
+L 151.215783 349.823689 
+L 151.215783 320.85795 
+L 218.093233 320.85795 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 218.093233 313.616515 
+L 176.808165 313.616515 
+L 176.808165 284.650776 
+L 218.093233 284.650776 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 218.093233 277.409341 
+L 193.392454 277.409341 
+L 193.392454 248.443601 
+L 218.093233 248.443601 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 218.093233 241.202167 
+L 194.395507 241.202167 
+L 194.395507 212.236427 
+L 218.093233 212.236427 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 218.093233 204.994992 
+L 195.684454 204.994992 
+L 195.684454 176.029253 
+L 218.093233 176.029253 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 218.093233 168.787818 
+L 204.645301 168.787818 
+L 204.645301 139.822079 
+L 218.093233 139.822079 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 218.093233 132.580644 
+L 214.283329 132.580644 
+L 214.283329 103.614905 
+L 218.093233 103.614905 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #bd7467"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 218.093233 96.37347 
+L 499.099424 96.37347 
+L 499.099424 67.40773 
+L 218.093233 67.40773 
+z
+" clip-path="url(#pd31635d7ef)" style="fill: #147d86"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m56dbc430d3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #182f3a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m56dbc430d3" x="157.522416" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="157.522416" y="416.560457" transform="rotate(-0 157.522416 416.560457)">−5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="218.093233" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="218.093233" y="416.560457" transform="rotate(-0 218.093233 416.560457)">0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="278.66405" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="278.66405" y="416.560457" transform="rotate(-0 278.66405 416.560457)">5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="339.234867" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="339.234867" y="416.560457" transform="rotate(-0 339.234867 416.560457)">10</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="399.805684" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="399.805684" y="416.560457" transform="rotate(-0 399.805684 416.560457)">15</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="460.376501" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="460.376501" y="416.560457" transform="rotate(-0 460.376501 416.560457)">20</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="316.20766" y="431.119832" transform="rotate(-0 316.20766 431.119832)">Změna podílu hlasů (procentní body)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="mf9802f7175" d="M 0 0 
+L -3.5 0 
+" style="stroke: #182f3a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="371.547994" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="375.147291" transform="rotate(-0 108.026719 375.147291)">Perspektiva pro město</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="335.340819" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="338.760116" transform="rotate(-0 108.026719 338.760116)">Řevnice SPOLEČNĚ</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="299.133645" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="302.552942" transform="rotate(-0 108.026719 302.552942)">PRO Řevnice</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="262.926471" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="266.345768" transform="rotate(-0 108.026719 266.345768)">ODS a nezávislí</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="226.719297" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="230.138594" transform="rotate(-0 108.026719 230.138594)">ŠANCE Řevnice</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="190.512123" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="193.93142" transform="rotate(-0 108.026719 193.93142)">Naše Řevnice</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="154.304948" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="157.724245" transform="rotate(-0 108.026719 157.724245)">Hnutí Srdce Řevnic</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="118.097774" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="121.517071" transform="rotate(-0 108.026719 121.517071)">TOP 09</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#mf9802f7175" x="115.026719" y="81.8906" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="108.026719" y="85.309897" transform="rotate(-0 108.026719 85.309897)">DOBŘE</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_16">
+    <path d="M 218.093233 401.96202 
+L 218.093233 51.476574 
+" clip-path="url(#pd31635d7ef)" style="fill: none; stroke: #dddddd; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 115.026719 401.96202 
+L 115.026719 51.476574 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 115.026719 401.96202 
+L 517.388601 401.96202 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="115.026719" y="45.476574" transform="rotate(-0 115.026719 45.476574)">Kandidátky: 2022 → 2026</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_14">
+    <path d="M 670.855163 401.96202 
+L 1073.217045 401.96202 
+L 1073.217045 51.476574 
+L 670.855163 51.476574 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m2736cc3c58" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #9aa7ac"/>
+    </defs>
+    <g clip-path="url(#pfb053d753c)">
+     <use xlink:href="#m2736cc3c58" x="689.144339" y="386.030863" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="700.296276" y="340.513273" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="851.962618" y="294.995683" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="843.041068" y="249.478092" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="989.131441" y="203.960502" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="1023.702445" y="158.442911" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="1054.927868" y="112.925321" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     <use xlink:href="#m2736cc3c58" x="933.371757" y="67.40773" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="mff41109cc1" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #147d86"/>
+    </defs>
+    <g clip-path="url(#pfb053d753c)">
+     <use xlink:href="#mff41109cc1" x="762.747123" y="386.030863" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="779.475028" y="340.513273" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="806.239676" y="294.995683" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="834.119519" y="249.478092" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="923.335013" y="203.960502" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="934.48695" y="158.442911" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="956.790824" y="112.925321" style="fill: #147d86; stroke: #147d86"/>
+     <use xlink:href="#mff41109cc1" x="962.366792" y="67.40773" style="fill: #147d86; stroke: #147d86"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_7">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="681.337984" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="681.337984" y="416.560457" transform="rotate(-0 681.337984 416.560457)">150</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="737.097668" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="737.097668" y="416.560457" transform="rotate(-0 737.097668 416.560457)">200</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="792.857352" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="792.857352" y="416.560457" transform="rotate(-0 792.857352 416.560457)">250</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="848.617037" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="848.617037" y="416.560457" transform="rotate(-0 848.617037 416.560457)">300</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="904.376721" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="904.376721" y="416.560457" transform="rotate(-0 904.376721 416.560457)">350</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="960.136405" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="960.136405" y="416.560457" transform="rotate(-0 960.136405 416.560457)">400</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="1015.896089" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="1015.896089" y="416.560457" transform="rotate(-0 1015.896089 416.560457)">450</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m56dbc430d3" x="1071.655774" y="401.96202" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="1071.655774" y="416.560457" transform="rotate(-0 1071.655774 416.560457)">500</text>
+     </g>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182f3a" x="872.036104" y="430.638582" transform="rotate(-0 872.036104 430.638582)">Pozorované kandidátské hlasy</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_10">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="386.030863" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="389.45016" transform="rotate(-0 663.855163 389.45016)">Pavel Hartmann (TOP 09)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="340.513273" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="343.93257" transform="rotate(-0 663.855163 343.93257)">Markéta Sedláčková Davidová</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="294.995683" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="298.414979" transform="rotate(-0 663.855163 298.414979)">Petr Kozák</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="249.478092" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="252.897389" transform="rotate(-0 663.855163 252.897389)">Libor Kvasnička</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="203.960502" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="207.559799" transform="rotate(-0 663.855163 207.559799)">Vratislav Hrubý</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="158.442911" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="161.862208" transform="rotate(-0 663.855163 161.862208)">Petr Hartmann (Perspektiva)</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="112.925321" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="116.344618" transform="rotate(-0 663.855163 116.344618)">Tomáš Smrčka</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#mf9802f7175" x="670.855163" y="67.40773" style="fill: #182f3a; stroke: #182f3a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #182f3a" x="663.855163" y="70.827027" transform="rotate(-0 663.855163 70.827027)">Tomáš Chabera</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 689.144339 386.030863 
+L 762.747123 386.030863 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 700.296276 340.513273 
+L 779.475028 340.513273 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 851.962618 294.995683 
+L 806.239676 294.995683 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 843.041068 249.478092 
+L 834.119519 249.478092 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 989.131441 203.960502 
+L 923.335013 203.960502 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 1023.702445 158.442911 
+L 934.48695 158.442911 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 1054.927868 112.925321 
+L 956.790824 112.925321 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+    <path d="M 933.371757 67.40773 
+L 962.366792 67.40773 
+" clip-path="url(#pfb053d753c)" style="fill: none; stroke: #d8e5e9; stroke-width: 3"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 670.855163 401.96202 
+L 670.855163 51.476574 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 670.855163 401.96202 
+L 1073.217045 401.96202 
+" style="fill: none; stroke: #c4ced2; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="670.855163" y="45.476574" transform="rotate(-0 670.855163 45.476574)">Zvolení s dostupným srovnáním</text>
+   </g>
+   <g id="legend_1">
+    <g id="PathCollection_3">
+     <g>
+      <use xlink:href="#m2736cc3c58" x="1020.767045" y="65.450011" style="fill: #9aa7ac; stroke: #9aa7ac"/>
+     </g>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="1038.767045" y="68.075011" transform="rotate(-0 1038.767045 68.075011)">2022</text>
+    </g>
+    <g id="PathCollection_4">
+     <g>
+      <use xlink:href="#mff41109cc1" x="1020.767045" y="80.128136" style="fill: #147d86; stroke: #147d86"/>
+     </g>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="1038.767045" y="82.753136" transform="rotate(-0 1038.767045 82.753136)">2026</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_38">
+   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f3a" x="47.39976" y="24.7625" transform="rotate(-0 47.39976 24.7625)">Volební výsledky se mění i bez znalosti osobních křížků</text>
+  </g>
+  <g id="text_39">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586e77" x="47.39976" y="446.99976" transform="rotate(-0 47.39976 446.99976)">DOBŘE: nová listina. Řevnice SPOLEČNĚ: v roce 2026 nekandidovala. Neúplná historie osob; chybějící hodnoty nejsou nuly.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd31635d7ef">
+   <rect x="115.026719" y="51.476574" width="402.361882" height="350.485446"/>
+  </clipPath>
+  <clipPath id="pfb053d753c">
+   <rect x="670.855163" y="51.476574" width="402.361882" height="350.485446"/>
+  </clipPath>
+ </defs>
+</svg>

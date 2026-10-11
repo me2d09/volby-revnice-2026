@@ -1,0 +1,13 @@
+﻿held_out_precinct;model;MAE;RMSE;coverage_95;conditional_on_party_totals;prediction_method
+1;hierarchical;3.997586;5.482012;0.975000;True;rescaled_composition_not_exact_conditional_sampling
+1;city_pooled;3.890447;5.433207;;True;rescaled_composition_not_exact_conditional_sampling
+1;position_only;5.087449;7.187131;;True;rescaled_composition_not_exact_conditional_sampling
+2;hierarchical;4.193174;5.280615;0.966667;True;rescaled_composition_not_exact_conditional_sampling
+2;city_pooled;4.180300;5.309046;;True;rescaled_composition_not_exact_conditional_sampling
+2;position_only;5.526063;7.399837;;True;rescaled_composition_not_exact_conditional_sampling
+3;hierarchical;3.889305;5.147360;0.966667;True;rescaled_composition_not_exact_conditional_sampling
+3;city_pooled;4.012710;5.238323;;True;rescaled_composition_not_exact_conditional_sampling
+3;position_only;5.600988;7.391986;;True;rescaled_composition_not_exact_conditional_sampling
+4;hierarchical;4.121077;5.366792;0.991667;True;rescaled_composition_not_exact_conditional_sampling
+4;city_pooled;4.245363;5.527154;;True;rescaled_composition_not_exact_conditional_sampling
+4;position_only;5.212210;6.764328;;True;rescaled_composition_not_exact_conditional_sampling

@@ -1,0 +1,103 @@
+{
+  "storage_stride": 25,
+  "runs": {
+    "reference": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261010,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "party_first": {
+      "tune": 6000,
+      "draws": 80000,
+      "seed": 20261127,
+      "scenario": "party_first",
+      "no_candidate": false
+    },
+    "personal_long_tail": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261244,
+      "scenario": "personal_long_tail",
+      "no_candidate": false
+    },
+    "weak_position": {
+      "tune": 6000,
+      "draws": 60000,
+      "seed": 20261361,
+      "scenario": "weak_position",
+      "no_candidate": false
+    },
+    "heterogeneous": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261478,
+      "scenario": "heterogeneous",
+      "no_candidate": false
+    },
+    "strong_pooling": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261595,
+      "scenario": "strong_pooling",
+      "no_candidate": false
+    },
+    "poisson_like": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261712,
+      "scenario": "poisson_like",
+      "no_candidate": false
+    },
+    "no_candidate": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 20261800,
+      "scenario": "reference",
+      "no_candidate": true
+    },
+    "recovery_matched": {
+      "tune": 6000,
+      "draws": 20000,
+      "seed": 71000,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "recovery_ballot": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 71001,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "cv_1": {
+      "tune": 6000,
+      "draws": 60000,
+      "seed": 88000,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "cv_2": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 88001,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "cv_3": {
+      "tune": 6000,
+      "draws": 40000,
+      "seed": 88002,
+      "scenario": "reference",
+      "no_candidate": false
+    },
+    "cv_4": {
+      "tune": 6000,
+      "draws": 60000,
+      "seed": 88003,
+      "scenario": "reference",
+      "no_candidate": false
+    }
+  }
+}

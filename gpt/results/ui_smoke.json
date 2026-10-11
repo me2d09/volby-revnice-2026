@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "browser": "140.0.7339.16",
+  "checks": [
+    "index.html: rendered",
+    "candidates.html: rendered",
+    "party dropdown and candidate hover",
+    "candidate_detail.html: rendered",
+    "120 candidates; all eight party filters; search; empty state; plot titles",
+    "desktop and mobile screenshots"
+  ],
+  "javascript_errors": [],
+  "external_network_requests": 0
+}
