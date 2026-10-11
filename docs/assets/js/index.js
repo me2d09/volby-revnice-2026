@@ -58,7 +58,7 @@
       }
       traces.push({
         type: "scatter", mode: "markers", x: xs, y: ys, text: texts, hovertemplate: "%{text}<extra></extra>",
-        marker: { size: Math.max(22, Math.min(46, width / 10)), color: RV.color(p.short), line: { color: RV.token("surface"), width: 2 } },
+        marker: { size: Math.max(18, Math.min(46, width / 12.5)), color: RV.color(p.short), line: { color: RV.token("surface"), width: 2 } },
         name: p.short,
       });
     });

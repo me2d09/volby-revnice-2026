@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pro fajnšmekry · Volby Řevnice 2026</title>
+<meta name="description" content="Celé Jupyter notebooky analýz voleb v Řevnicích 2026, data ke stažení a postup reprodukce.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/common.js"></script>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header data-site-header></header>
+
+<main id="obsah">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Pro fajnšmekry</div>
+      <h1>Notebooky, data a celý postup</h1>
+      <p class="lead">Zajímá vás, <em>proč</em> to tak vyšlo? Tady jsou kompletní analýzy tak, jak je modely napsaly – s kódem,
+        rovnicemi, diagnostikou a všemi testy. Notebooky se otevřou přímo v prohlížeči i s interaktivními grafy.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+    <div class="wrap">
+      <div class="grid g2" id="analyses">
+        <article class="card reveal" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:12px;align-items:center">
+            <span class="author" style="padding:6px 12px 6px 6px"><span class="av" style="background:var(--warm)">C</span><span>Claude<small>Anthropic</small></span></span>
+            <span class="tag tag-bound">hotovo</span>
+          </div>
+          <h2 style="font-size:1.6rem;margin:0">Bayesovský odhad osobních křížků ze 480 okrskových čísel</h2>
+          <p class="ink-2" style="margin:0">Pravidla sčítání s citacemi zákona, dokazatelné dolní meze (včetně lineárního programu),
+            hierarchický generativní model v PyMC, simulační test se známou pravdou, diagnostika MCMC, kontroly modelu,
+            citlivost na předpoklady a srovnání s jednoduššími modely.</p>
+          <dl class="kv" id="claude-run"></dl>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:auto">
+            <a class="btn btn-primary" href="notebooky/claude.html">Otevřít notebook</a>
+            <a class="btn btn-ghost" href="notebooky/claude.ipynb" download="revnice_2026_bayesian_analysis.ipynb">Stáhnout .ipynb</a>
+            <a class="btn btn-ghost" href="https://github.com/me2d09/volby-revnice-2026/tree/main/claude" rel="noopener">Zdroj na GitHubu</a>
+          </div>
+        </article>
+        <article class="card nav-card is-soon reveal" style="gap:14px">
+          <div style="display:flex;gap:12px;align-items:center">
+            <span class="author" style="padding:6px 12px 6px 6px"><span class="av" style="background:var(--river)">G</span><span>GPT<small>OpenAI</small></span></span>
+            <span class="tag tag-soon">připravujeme</span>
+          </div>
+          <h2 style="font-size:1.6rem;margin:0">Druhá, nezávislá analýza</h2>
+          <p class="ink-2" style="margin:0">Stejná data, stejné zadání, jiný model. Jakmile bude notebook hotový, objeví se tady
+            ve stejné podobě – k prohlížení v prohlížeči i ke stažení.</p>
+          <a class="go" href="gpt.html" style="text-decoration:none">Co bude obsahovat →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Obsah notebooku Claude</div>
+        <h2>Co v notebooku najdete</h2>
+      </div>
+      <div class="grid g3">
+        <div class="card fact reveal"><div class="ic">1</div><div><h3>Pravidla a data</h3><p>Přesná mechanika lístku podle zákona č. 491/2001 Sb. a metodiky ČSÚ; kontrolní součty všech 480 čísel.</p></div></div>
+        <div class="card fact reveal"><div class="ic">2</div><div><h3>Co lze dokázat</h3><p>Monotónní mez (1 096 → 1 493) a silnější mez ze zákona zachování hlasů (2 890) řešená lineárním programem.</p></div></div>
+        <div class="card fact reveal"><div class="ic">3</div><div><h3>Generativní model</h3><p>Rozdělení počtu křížků na lístku, lístky bez strany, výhoda pozice, osobní popularita, okrskové odchylky, saturace.</p></div></div>
+        <div class="card fact reveal"><div class="ic warm">4</div><div><h3>Testy modelu</h3><p>Prior predictive checks, simulace lístek po lístku se známou pravdou, R̂, ESS, divergence, posterior predictive checks.</p></div></div>
+        <div class="card fact reveal"><div class="ic warm">5</div><div><h3>Výsledky</h3><p>Kandidáti, kandidátky a okrsky, rozklad hlasů, změny 2022 → 2026 a srovnání se starším scénářovým modelem.</p></div></div>
+        <div class="card fact reveal"><div class="ic river">6</div><div><h3>Poctivost</h3><p>Citlivost na předpoklady, leave-one-precinct-out, limity ekologické inference a co by analýzu nejvíc zpřesnilo.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid g2">
+        <div class="card reveal">
+          <h3>Data ke stažení</h3>
+          <div class="table-wrap">
+            <table class="data">
+              <tbody>
+                <tr><td><a href="data/zakladni.json" download>zakladni.json</a></td><td class="muted">všechna čísla ze stránky „Výsledky v kostce“</td></tr>
+                <tr><td><a href="data/claude.json" download>claude.json</a></td><td class="muted">výběr výsledků analýzy Claude použitý na webu</td></tr>
+                <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/basic" rel="noopener">basic/</a></td><td class="muted">skript a CSV se základními statistikami (mandáty, d’Hondt, zvolení)</td></tr>
+                <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/input/data" rel="noopener">input/data/</a></td><td class="muted">vstupní data z ČSÚ: 480 okrskových řádků, 120 kandidátů, rok 2022</td></tr>
+                <tr><td><a href="https://github.com/me2d09/volby-revnice-2026/tree/main/claude/results" rel="noopener">claude/results/</a></td><td class="muted">všechny tabulky analýzy Claude (posteriory, diagnostika, citlivost)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">Zdroj volebních údajů: ČSÚ / volby.cz. CSV jsou v UTF-8 s oddělovačem „;“.</p>
+        </div>
+        <div class="card reveal prose" style="max-width:none">
+          <h3 style="margin-top:0">Jak vše zopakovat</h3>
+          <p>Základní statistiky a web (bez závislostí kromě <code>nbconvert</code> pro notebooky):</p>
+<pre><code>python basic/prepare_basic.py
+python scripts/build_site.py</code></pre>
+          <p>Analýza Claude (Python 3.13, PyMC; plný běh ~1,5–2 h):</p>
+<pre><code>cd claude
+pip install -r requirements.txt
+python scripts/prepare_and_validate.py
+jupyter lab revnice_2026_bayesian_analysis.ipynb</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Slovníček</div>
+        <h2>Pojmy z notebooků lidsky</h2>
+      </div>
+      <div class="grid g2 prose" style="max-width:none">
+        <div class="card reveal"><h3 style="margin-top:0">Jisté minimum (rigorózní mez)</h3><p>Číslo, které plyne jen z pravidel sčítání – bez jakéhokoli předpokladu o voličích. Skutečnost nemůže být menší.</p></div>
+        <div class="card reveal"><h3 style="margin-top:0">Posterior a 90% interval</h3><p>Co si model „myslí“ po zohlednění dat. V 90% intervalu leží skutečná hodnota s pravděpodobností 90 % – za předpokladu, že model je rozumný.</p></div>
+        <div class="card reveal"><h3 style="margin-top:0">Prior</h3><p>Předpoklad před pohledem na data (např. jak velké bývají rozdíly v popularitě). Citlivostní analýza ukazuje, jak moc na něm výsledek závisí.</p></div>
+        <div class="card reveal"><h3 style="margin-top:0">MCMC, R̂, ESS</h3><p>Algoritmus, který posterior vzorkuje, a kontroly, že vzorkování proběhlo dobře (R̂ blízko 1, dostatečný počet efektivních vzorků).</p></div>
+        <div class="card reveal"><h3 style="margin-top:0">Ekologická inference</h3><p>Usuzování na chování jednotlivců ze souhrnných čísel. Má principiální meze – proto web vždy odděluje fakta, jistá minima a modelové odhady.</p></div>
+        <div class="card reveal"><h3 style="margin-top:0">Osobní efekt (u)</h3><p>O kolik víc nebo míň osobních křížků kandidát dostal oproti typickému kandidátovi na stejném místě stejné kandidátky. Na webu jako násobek „×“.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="data/claude.js"></script>
+<script>
+  (function () {
+    RV.init("notebooky");
+    const C = RV.data.claude;
+    if (!C) return;
+    const r = C.run_info, v = r.versions || {};
+    document.getElementById("claude-run").innerHTML = [
+      ["Software", `PyMC ${v.pymc || "?"}, ArviZ ${v.arviz || "?"}`],
+      ["Parametry modelu", RV.int(r.n_free_params)],
+      ["Vzorkování (hlavní fit)", `${RV.fmt(r.sampling_time_s / 60, 0)} min`],
+      ["Divergence", RV.int(r.divergences)],
+    ].map(([k, val]) => `<div><dt>${k}</dt><dd style="font-size:16px">${RV.esc(val)}</dd></div>`).join("");
+  })();
+</script>
+</body>
+</html>

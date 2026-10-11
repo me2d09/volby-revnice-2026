@@ -189,6 +189,8 @@ HEADER_CSS = """
   .rv-bar .rv-sp{flex:1}
   .jp-RenderedHTMLCommon table{font-size:12px}
   .rv-plotly{width:100%;min-height:420px}
+  body.jp-Notebook{max-width:1180px;margin:0 auto}
+  .rv-bar{margin:0 -20px 12px}
 </style>
 """
 

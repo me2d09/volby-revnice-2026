@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souhrn · Volby Řevnice 2026</title>
+<meta name="description" content="Souhrn obou analýz voleb v Řevnicích 2026: co je jisté, na čem se modely shodují a kde se rozcházejí.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/common.js"></script>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header data-site-header></header>
+
+<main id="obsah">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Kapitola 4 · souhrn</div>
+      <h1>Co z toho všeho plyne</h1>
+      <p class="lead">Až budou hotové obě analýzy, shrneme tady, na čem se Claude a GPT shodnou, kde se liší a čemu lze
+        věřit nejvíc. Část závěrů ale platí už teď – nezávisí totiž na žádném modelu.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Už teď jisté</div>
+        <h2>Fakta a dokázaná minima</h2>
+      </div>
+      <div class="grid g2" id="certain"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Zatím jen podle Claude</div>
+        <h2>Modelové závěry čekající na druhý názor</h2>
+      </div>
+      <div class="grid g2" id="model"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="soon-box reveal">
+        <div class="big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="7" height="14" rx="1.5"/><rect x="13.5" y="5" width="7" height="14" rx="1.5"/><path d="M10.5 12h3"/></svg></div>
+        <span class="tag tag-soon">připravujeme</span>
+        <h2 style="margin-top:12px">Srovnání Claude × GPT</h2>
+        <p>Porovnáme odhady osobních křížků kandidát po kandidátovi, žebříček osobností i celkové počty – a ukážeme,
+          které závěry jsou robustní a které závisí na volbě modelu.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+<script src="data/zakladni.js"></script>
+<script src="data/claude.js"></script>
+<script>
+  (function () {
+    RV.init("souhrn");
+    const B = RV.data.zakladni, C = RV.data.claude;
+    if (!B || !C) return;
+    const T = B.totals, F = B.facts, H = C.headline;
+    const by = Object.fromEntries(B.parties.map((p) => [p.short, p]));
+    const tc = B.candidates.find((c) => c.name === "Terezie Červená");
+    const top = C.candidates.slice().sort((a, b) => b.u - a.u).slice(0, 3);
+    const nm = (c) => B.candidates.find((x) => x.party === (c.party === "Srdce" ? "Srdce Řevnic" : c.party) && x.position === c.position).name;
+    const card = (tag, cls, title, text) =>
+      `<div class="card reveal in"><span class="tag ${cls}">${tag}</span><h3 style="margin-top:10px">${title}</h3><p class="ink-2" style="margin:0">${text}</p></div>`;
+    document.getElementById("certain").innerHTML = [
+      card("fakt", "tag-fact", `DOBŘE vyhrálo s ${RV.pct(by["DOBŘE"].share_2026, 2)}`, `Nová kandidátka získala ${RV.int(by["DOBŘE"].votes_2026)} hlasů a 4 mandáty. Bez okrsku 4 by vedla ŠANCE.`),
+      card("fakt", "tag-fact", `Účast ${RV.pct(B.turnout.turnout_pct, 2)}`, `Proti roku 2022 ${RV.pp(B.turnout.turnout_change_pp)}; hlasů přibylo ${RV.signed(T.change_pct, 2)} %.`),
+      card("fakt", "tag-fact", `ODS chybělo ${F.ods_threshold_votes_new} hlasů`, `S ${RV.pct(F.ods_share_pct, 2)} zůstala pod 5% hranicí: chybělo ${F.ods_threshold_votes_new} nových hlasů, nebo ${F.ods_threshold_votes_moved} přetažených.`),
+      card("jisté minimum", "tag-bound", `Nejméně ${RV.int(H.lb_lp)} osobních křížků`, `To je ${RV.fmt(100 * H.lb_lp_share, 1)} % všech hlasů – dokázáno jen z pravidel sčítání, bez modelu.`),
+      card("jisté minimum", "tag-bound", `Terezie Červená: nejméně ${tc.min_personal_marks} křížků`, `Po okrscích ${tc.min_personal_marks_precincts.join(" + ")}. Z 10. místa se díky nim dostala do zastupitelstva.`),
+      card("fakt", "tag-fact", `${RV.int(T.unused_votes)} nevyužitých hlasů`, `Na lístcích bez zakřížkované strany voliči nevyčerpali všech 15 hlasů – takových lístků bylo nejméně ${Math.ceil(T.unused_votes / 14)}.`),
+    ].join("");
+    document.getElementById("model").innerHTML = [
+      card("model", "tag-model", `≈ ${RV.int(H.total_C)} osobních křížků`, `Asi ${RV.fmt(100 * H.total_C_share, 0)} % hlasů (90 %: ${RV.int(H.total_C_q05)}–${RV.int(H.total_C_q95)}). Celkový počet je nejméně jistá část odhadu.`),
+      card("model", "tag-model", "Osobnosti voleb", `${top.map((c) => `${RV.esc(nm(c))} (${RV.esc(c.party)})`).join(", ")} dostali výrazně víc křížků, než odpovídá jejich pozici.`),
+      card("model", "tag-model", "Malé kandidátky žijí z osobností", "U TOP 09 a ODS tvoří osobní křížky asi polovinu hlasů, u DOBŘE jen asi šestinu."),
+      card("model", "tag-model", "Tři ze čtyř nekřížkují jinde", `Asi ${RV.fmt(100 * H.p_k0, 0)} % voličů, kteří zakřížkují celou kandidátku, nedá křížek nikomu z jiné strany.`),
+    ].join("");
+  })();
+</script>
+</body>
+</html>

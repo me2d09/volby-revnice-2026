@@ -95,12 +95,12 @@
       }],
       layout: {
         height: 340, barcornerradius: 4, bargap: 0.35, margin: { l: 6, r: 10, t: 26, b: 44 },
-        xaxis: { range: [0, narrow ? 12500 : 10500], title: { text: "osobní křížky v celém městě" } },
+        xaxis: { range: [0, narrow ? 11500 : 10500], title: { text: "osobní křížky v celém městě" } },
         yaxis: { tickfont: { color: ink(), size: 13.5 }, showgrid: false, categoryorder: "array", categoryarray: rowsB.map((r) => r.y).concat([yM]) },
         shapes: [{ type: "rect", xref: "x", yref: "y", x0: H.sens_min, x1: H.sens_max, y0: 2.55, y1: 3.45, fillcolor: RV.alpha(warm, 0.13), line: { width: 0 }, layer: "below" }],
         annotations: [
           { x: H.total_C_q95, y: yM, xanchor: "left", xshift: 8, showarrow: false, align: "left", font: { size: 14, color: ink() },
-            text: `≈ ${RV.int(H.total_C)}<br><span style="font-size:11.5px">90 %: ${RV.int(H.total_C_q05)}–${RV.int(H.total_C_q95)}</span>` },
+            text: narrow ? `≈ ${RV.int(H.total_C)}` : `≈ ${RV.int(H.total_C)}<br><span style="font-size:11.5px">90 %: ${RV.int(H.total_C_q05)}–${RV.int(H.total_C_q95)}</span>` },
           { x: (H.sens_min + H.sens_max) / 2, y: 3.45, yanchor: "bottom", showarrow: false, text: `varianty modelu ${RV.int(H.sens_min)}–${RV.int(H.sens_max)}`, font: { size: 11.5, color: muted() } },
         ],
       },

@@ -36,11 +36,12 @@
     const rows = P.slice().reverse();
     const isShare = partiesMode === "share";
     const val = (p) => isShare ? p.share_2026 : p.votes_2026;
-    const xmax = Math.max(...P.map(val)) * (narrow ? 1.6 : 1.42);
-    const label = (p) => (isShare ? RV.pct(p.share_2026, 2) : RV.int(p.votes_2026)) +
-      (p.seats_2026 ? `  ·  ${p.seats_2026} ${RV.plural(p.seats_2026, "mandát", "mandáty", "mandátů")}` : "  ·  bez mandátu");
+    const xmax = Math.max(...P.map(val)) * (narrow ? 1.3 : 1.42);
+    const label = (p) => (isShare ? RV.pct(p.share_2026, 2) : RV.int(p.votes_2026)) + (narrow ? "" :
+      (p.seats_2026 ? `  ·  ${p.seats_2026} ${RV.plural(p.seats_2026, "mandát", "mandáty", "mandátů")}` : "  ·  bez mandátu"));
+    const ylab = (p) => (narrow ? `${p.short} <b>${p.seats_2026}</b>` : p.short);
     const traces = [{
-      type: "bar", orientation: "h", y: rows.map((p) => p.short), x: rows.map(val),
+      type: "bar", orientation: "h", y: rows.map(ylab), x: rows.map(val),
       marker: { color: rows.map((p) => RV.color(p.short)), line: { width: 0 } },
       text: rows.map(label), textposition: "outside", cliponaxis: false,
       textfont: { color: ink(), size: narrow ? 12 : 13.5, family: FONT },
@@ -79,13 +80,13 @@
     const isVotes = changeMode === "votes";
     const rows = D.parties.slice().sort((a, b) => (isVotes ? a.change_votes - b.change_votes : a.change_pp - b.change_pp));
     const val = (p) => (isVotes ? p.change_votes : p.change_pp);
-    const note = (p) => (!p.votes_2022 ? " (nová)" : !p.votes_2026 ? " (nekandidovalo)" : "");
+    const note = (p) => (!p.votes_2022 ? " (nová)" : !p.votes_2026 ? (narrow ? " (2022)" : " (jen 2022)") : "");
     const lo = Math.min(...rows.map(val)), hi = Math.max(...rows.map(val));
     return {
       data: [{
-        type: "bar", orientation: "h", y: rows.map((p) => p.short), x: rows.map(val),
+        type: "bar", orientation: "h", y: rows.map((p) => p.short + note(p)), x: rows.map(val),
         marker: { color: rows.map((p) => RV.color(p.short)) },
-        text: rows.map((p) => (isVotes ? RV.signed(p.change_votes) : RV.pp(p.change_pp)) + note(p)),
+        text: rows.map((p) => (isVotes ? RV.signed(p.change_votes) : RV.pp(p.change_pp, narrow ? 1 : 2))),
         textposition: "outside", cliponaxis: false, textfont: { color: ink(), size: narrow ? 11.5 : 13, family: FONT },
         customdata: rows.map((p) => [p.name, p.votes_2022 ? RV.int(p.votes_2022) : "–", p.votes_2026 ? RV.int(p.votes_2026) : "–", RV.pp(p.change_pp)]),
         hovertemplate: "<b>%{customdata[0]}</b><br>2022: %{customdata[1]} hlasů<br>2026: %{customdata[2]} hlasů<br>podíl: %{customdata[3]}<extra></extra>",
