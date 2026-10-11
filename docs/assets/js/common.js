@@ -139,7 +139,7 @@
     const axis = {
       gridcolor: line, zerolinecolor: strong, linecolor: strong, tickcolor: strong,
       tickfont: { color: muted, size: 12 }, title: { font: { color: ink2, size: 13 } },
-      automargin: true, fixedrange: true, showspikes: false,
+      automargin: true, fixedrange: true, showspikes: false, exponentformat: "none", separatethousands: true,
     };
     return {
       paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",

@@ -53,6 +53,14 @@ def read_csv(path: Path, delimiter: str = ";") -> list[dict]:
         return list(csv.DictReader(f, delimiter=delimiter))
 
 
+def write_data(name: str, obj: dict) -> None:
+    """Uloží data jako JSON (ke stažení) i jako JS (načte se i při otevření z file://)."""
+    txt = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    (DATA / f"{name}.json").write_text(txt, encoding="utf-8")
+    js = f"window.RV_DATA=window.RV_DATA||{{}};window.RV_DATA[{json.dumps(name)}]={txt};\n"
+    (DATA / f"{name}.js").write_text(js, encoding="utf-8")
+
+
 def num(x: str, nd: int | None = None):
     if x in ("", None):
         return None
@@ -67,7 +75,7 @@ def num(x: str, nd: int | None = None):
 def build_basic() -> dict:
     runpy.run_path(str(ROOT / "basic" / "prepare_basic.py"), run_name="__main__")
     data = json.loads((ROOT / "basic" / "zakladni_data.json").read_text(encoding="utf-8"))
-    (DATA / "zakladni.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_data("zakladni", data)
     return data
 
 
@@ -167,7 +175,7 @@ def build_claude(basic: dict) -> None:
                      "sampling_time_s": round(run_info.get("sampling_time_main_s", 0)),
                      "divergences": run_info.get("divergences_main"), "n_free_params": run_info.get("n_free_params")},
     }
-    (DATA / "claude.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_data("claude", out)
 
 
 # ---------------------------------------------------------------- 3. notebooky
@@ -257,9 +265,7 @@ def main() -> None:
             available[key] = (NB_OUT / f"{key}.html").exists()
         else:
             available[key] = render_notebook(key, cfg)
-    (DATA / "analyzy.json").write_text(json.dumps(
-        {k: {"title": ANALYSES[k]["title"], "notebook": available[k]} for k in ANALYSES},
-        ensure_ascii=False, indent=1), encoding="utf-8")
+    write_data("analyzy", {k: {"title": ANALYSES[k]["title"], "notebook": available[k]} for k in ANALYSES})
     print("Hotovo: docs/ je připraveno.")
 
 

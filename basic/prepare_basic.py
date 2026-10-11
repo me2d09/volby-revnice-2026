@@ -129,9 +129,10 @@ def main() -> None:
     by_party: dict[str, list[dict]] = {}
     for c in cands:
         by_party.setdefault(c["party"], []).append(c)
-    pc_votes = {}
+    pc_votes, pc_min = {}, {}
     for r in prec_cands:
         pc_votes.setdefault((r["party"], int(r["position"])), {})[int(r["precinct"])] = int(r["votes"])
+        pc_min.setdefault((r["party"], int(r["position"])), {})[int(r["precinct"])] = int(r["rigorous_min_personal_marks"])
 
     candidates = []
     pref_thresholds = {}
@@ -158,6 +159,7 @@ def main() -> None:
                 "preference": int(c["votes"]) >= thr,
                 "elected": c["name"] in winners,
                 "min_personal_marks": int(c["rigorous_min_personal_marks_sum_precincts"]),
+                "min_personal_marks_precincts": [pc_min[(p, pos)][k] for k in (1, 2, 3, 4)],
             })
         # kontrola proti oficiálnímu výsledku
         official = {c["name"] for c in lst if c["elected_2026"] == "ANO"}

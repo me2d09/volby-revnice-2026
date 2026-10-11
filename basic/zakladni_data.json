@@ -550,7 +550,13 @@
    "share_of_party_pct": 8.31,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -568,7 +574,13 @@
    "share_of_party_pct": 7.38,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -586,7 +598,13 @@
    "share_of_party_pct": 7.44,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    3,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -604,7 +622,13 @@
    "share_of_party_pct": 7.83,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 24
+   "min_personal_marks": 24,
+   "min_personal_marks_precincts": [
+    0,
+    13,
+    6,
+    5
+   ]
   },
   {
    "party": "ŠANCE",
@@ -622,7 +646,13 @@
    "share_of_party_pct": 6.28,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -640,7 +670,13 @@
    "share_of_party_pct": 7.4,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 54
+   "min_personal_marks": 54,
+   "min_personal_marks_precincts": [
+    16,
+    12,
+    16,
+    10
+   ]
   },
   {
    "party": "ŠANCE",
@@ -658,7 +694,13 @@
    "share_of_party_pct": 6.71,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 26
+   "min_personal_marks": 26,
+   "min_personal_marks_precincts": [
+    0,
+    7,
+    8,
+    11
+   ]
   },
   {
    "party": "ŠANCE",
@@ -676,7 +718,13 @@
    "share_of_party_pct": 6.2,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 5
+   "min_personal_marks": 5,
+   "min_personal_marks_precincts": [
+    0,
+    3,
+    0,
+    2
+   ]
   },
   {
    "party": "ŠANCE",
@@ -694,7 +742,13 @@
    "share_of_party_pct": 6.69,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 29
+   "min_personal_marks": 29,
+   "min_personal_marks_precincts": [
+    1,
+    6,
+    17,
+    5
+   ]
   },
   {
    "party": "ŠANCE",
@@ -712,7 +766,13 @@
    "share_of_party_pct": 7.91,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 88
+   "min_personal_marks": 88,
+   "min_personal_marks_precincts": [
+    17,
+    21,
+    28,
+    22
+   ]
   },
   {
    "party": "ŠANCE",
@@ -730,7 +790,13 @@
    "share_of_party_pct": 5.91,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    1
+   ]
   },
   {
    "party": "ŠANCE",
@@ -748,7 +814,13 @@
    "share_of_party_pct": 5.74,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    0,
+    2,
+    0,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -766,7 +838,13 @@
    "share_of_party_pct": 5.64,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    0,
+    2,
+    0,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -784,7 +862,13 @@
    "share_of_party_pct": 5.56,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 3
+   "min_personal_marks": 3,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    2,
+    0
+   ]
   },
   {
    "party": "ŠANCE",
@@ -802,7 +886,13 @@
    "share_of_party_pct": 5.0,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -820,7 +910,13 @@
    "share_of_party_pct": 10.98,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -838,7 +934,13 @@
    "share_of_party_pct": 13.68,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 44
+   "min_personal_marks": 44,
+   "min_personal_marks_precincts": [
+    15,
+    17,
+    12,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -856,7 +958,13 @@
    "share_of_party_pct": 7.61,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -874,7 +982,13 @@
    "share_of_party_pct": 6.75,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 6
+   "min_personal_marks": 6,
+   "min_personal_marks_precincts": [
+    2,
+    0,
+    0,
+    4
+   ]
   },
   {
    "party": "TOP 09",
@@ -892,7 +1006,13 @@
    "share_of_party_pct": 7.48,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 21
+   "min_personal_marks": 21,
+   "min_personal_marks_precincts": [
+    0,
+    12,
+    6,
+    3
+   ]
   },
   {
    "party": "TOP 09",
@@ -910,7 +1030,13 @@
    "share_of_party_pct": 7.3,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 19
+   "min_personal_marks": 19,
+   "min_personal_marks_precincts": [
+    0,
+    7,
+    8,
+    4
+   ]
   },
   {
    "party": "TOP 09",
@@ -928,7 +1054,13 @@
    "share_of_party_pct": 5.03,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -946,7 +1078,13 @@
    "share_of_party_pct": 4.79,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 3
+   "min_personal_marks": 3,
+   "min_personal_marks_precincts": [
+    2,
+    0,
+    1,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -964,7 +1102,13 @@
    "share_of_party_pct": 5.09,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 8
+   "min_personal_marks": 8,
+   "min_personal_marks_precincts": [
+    2,
+    1,
+    3,
+    2
+   ]
   },
   {
    "party": "TOP 09",
@@ -982,7 +1126,13 @@
    "share_of_party_pct": 5.34,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 12
+   "min_personal_marks": 12,
+   "min_personal_marks_precincts": [
+    7,
+    4,
+    1,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -1000,7 +1150,13 @@
    "share_of_party_pct": 5.83,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 20
+   "min_personal_marks": 20,
+   "min_personal_marks_precincts": [
+    9,
+    2,
+    0,
+    9
+   ]
   },
   {
    "party": "TOP 09",
@@ -1018,7 +1174,13 @@
    "share_of_party_pct": 8.4,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 62
+   "min_personal_marks": 62,
+   "min_personal_marks_precincts": [
+    12,
+    14,
+    19,
+    17
+   ]
   },
   {
    "party": "TOP 09",
@@ -1036,7 +1198,13 @@
    "share_of_party_pct": 4.6,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    4
+   ]
   },
   {
    "party": "TOP 09",
@@ -1054,7 +1222,13 @@
    "share_of_party_pct": 4.05,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "TOP 09",
@@ -1072,7 +1246,13 @@
    "share_of_party_pct": 3.07,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1090,7 +1270,13 @@
    "share_of_party_pct": 9.22,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1108,7 +1294,13 @@
    "share_of_party_pct": 8.84,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1126,7 +1318,13 @@
    "share_of_party_pct": 7.87,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1144,7 +1342,13 @@
    "share_of_party_pct": 7.08,
    "preference": false,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1162,7 +1366,13 @@
    "share_of_party_pct": 7.29,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 13
+   "min_personal_marks": 13,
+   "min_personal_marks_precincts": [
+    2,
+    4,
+    7,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1180,7 +1390,13 @@
    "share_of_party_pct": 6.81,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1198,7 +1414,13 @@
    "share_of_party_pct": 6.72,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    1,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1216,7 +1438,13 @@
    "share_of_party_pct": 6.37,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1234,7 +1462,13 @@
    "share_of_party_pct": 6.18,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1252,7 +1486,13 @@
    "share_of_party_pct": 6.37,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 13
+   "min_personal_marks": 13,
+   "min_personal_marks_precincts": [
+    9,
+    0,
+    3,
+    1
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1270,7 +1510,13 @@
    "share_of_party_pct": 5.71,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1288,7 +1534,13 @@
    "share_of_party_pct": 5.85,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 8
+   "min_personal_marks": 8,
+   "min_personal_marks_precincts": [
+    3,
+    0,
+    0,
+    5
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1306,7 +1558,13 @@
    "share_of_party_pct": 5.31,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1324,7 +1582,13 @@
    "share_of_party_pct": 5.33,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    4,
+    0
+   ]
   },
   {
    "party": "DOBŘE",
@@ -1342,7 +1606,13 @@
    "share_of_party_pct": 5.04,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    0,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1360,7 +1630,13 @@
    "share_of_party_pct": 14.34,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1378,7 +1654,13 @@
    "share_of_party_pct": 7.99,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1396,7 +1678,13 @@
    "share_of_party_pct": 10.71,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 30
+   "min_personal_marks": 30,
+   "min_personal_marks_precincts": [
+    6,
+    8,
+    11,
+    5
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1414,7 +1702,13 @@
    "share_of_party_pct": 6.53,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    0,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1432,7 +1726,13 @@
    "share_of_party_pct": 5.99,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    4
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1450,7 +1750,13 @@
    "share_of_party_pct": 5.63,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    2,
+    2,
+    0,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1468,7 +1774,13 @@
    "share_of_party_pct": 5.72,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 7
+   "min_personal_marks": 7,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    0,
+    6
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1486,7 +1798,13 @@
    "share_of_party_pct": 6.35,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 18
+   "min_personal_marks": 18,
+   "min_personal_marks_precincts": [
+    5,
+    0,
+    7,
+    6
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1504,7 +1822,13 @@
    "share_of_party_pct": 4.72,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 1
+   "min_personal_marks": 1,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    1,
+    0
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1522,7 +1846,13 @@
    "share_of_party_pct": 5.54,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 10
+   "min_personal_marks": 10,
+   "min_personal_marks_precincts": [
+    0,
+    2,
+    0,
+    8
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1540,7 +1870,13 @@
    "share_of_party_pct": 4.9,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    1,
+    1,
+    0,
+    2
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1558,7 +1894,13 @@
    "share_of_party_pct": 4.72,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    2,
+    0,
+    0,
+    2
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1576,7 +1918,13 @@
    "share_of_party_pct": 5.99,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 18
+   "min_personal_marks": 18,
+   "min_personal_marks_precincts": [
+    6,
+    6,
+    4,
+    2
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1594,7 +1942,13 @@
    "share_of_party_pct": 5.63,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 14
+   "min_personal_marks": 14,
+   "min_personal_marks_precincts": [
+    1,
+    7,
+    5,
+    1
+   ]
   },
   {
    "party": "Srdce Řevnic",
@@ -1612,7 +1966,13 @@
    "share_of_party_pct": 5.26,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 13
+   "min_personal_marks": 13,
+   "min_personal_marks_precincts": [
+    5,
+    4,
+    4,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1630,7 +1990,13 @@
    "share_of_party_pct": 11.49,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1648,7 +2014,13 @@
    "share_of_party_pct": 8.45,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1666,7 +2038,13 @@
    "share_of_party_pct": 7.73,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1684,7 +2062,13 @@
    "share_of_party_pct": 6.69,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1702,7 +2086,13 @@
    "share_of_party_pct": 7.13,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 14
+   "min_personal_marks": 14,
+   "min_personal_marks_precincts": [
+    1,
+    2,
+    11,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1720,7 +2110,13 @@
    "share_of_party_pct": 8.57,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 50
+   "min_personal_marks": 50,
+   "min_personal_marks_precincts": [
+    11,
+    22,
+    11,
+    6
+   ]
   },
   {
    "party": "PRO",
@@ -1738,7 +2134,13 @@
    "share_of_party_pct": 5.76,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    2,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1756,7 +2158,13 @@
    "share_of_party_pct": 5.32,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 3
+   "min_personal_marks": 3,
+   "min_personal_marks_precincts": [
+    0,
+    3,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1774,7 +2182,13 @@
    "share_of_party_pct": 7.05,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 46
+   "min_personal_marks": 46,
+   "min_personal_marks_precincts": [
+    17,
+    6,
+    9,
+    14
+   ]
   },
   {
    "party": "PRO",
@@ -1792,7 +2206,13 @@
    "share_of_party_pct": 4.76,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "PRO",
@@ -1810,7 +2230,13 @@
    "share_of_party_pct": 6.24,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 37
+   "min_personal_marks": 37,
+   "min_personal_marks_precincts": [
+    13,
+    2,
+    10,
+    12
+   ]
   },
   {
    "party": "PRO",
@@ -1828,7 +2254,13 @@
    "share_of_party_pct": 5.44,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 17
+   "min_personal_marks": 17,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    7,
+    10
+   ]
   },
   {
    "party": "PRO",
@@ -1846,7 +2278,13 @@
    "share_of_party_pct": 5.04,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 9
+   "min_personal_marks": 9,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    3,
+    6
+   ]
   },
   {
    "party": "PRO",
@@ -1864,7 +2302,13 @@
    "share_of_party_pct": 5.08,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 11
+   "min_personal_marks": 11,
+   "min_personal_marks_precincts": [
+    4,
+    0,
+    6,
+    1
+   ]
   },
   {
    "party": "PRO",
@@ -1882,7 +2326,13 @@
    "share_of_party_pct": 5.24,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 18
+   "min_personal_marks": 18,
+   "min_personal_marks_precincts": [
+    10,
+    0,
+    0,
+    8
+   ]
   },
   {
    "party": "ODS",
@@ -1900,7 +2350,13 @@
    "share_of_party_pct": 8.88,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "ODS",
@@ -1918,7 +2374,13 @@
    "share_of_party_pct": 9.64,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 12
+   "min_personal_marks": 12,
+   "min_personal_marks_precincts": [
+    6,
+    1,
+    5,
+    0
+   ]
   },
   {
    "party": "ODS",
@@ -1936,7 +2398,13 @@
    "share_of_party_pct": 6.94,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "ODS",
@@ -1954,7 +2422,13 @@
    "share_of_party_pct": 7.11,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 7
+   "min_personal_marks": 7,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    3,
+    4
+   ]
   },
   {
    "party": "ODS",
@@ -1972,7 +2446,13 @@
    "share_of_party_pct": 6.85,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 8
+   "min_personal_marks": 8,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    4,
+    3
+   ]
   },
   {
    "party": "ODS",
@@ -1990,7 +2470,13 @@
    "share_of_party_pct": 7.45,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 15
+   "min_personal_marks": 15,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    9,
+    5
+   ]
   },
   {
    "party": "ODS",
@@ -2008,7 +2494,13 @@
    "share_of_party_pct": 10.32,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 49
+   "min_personal_marks": 49,
+   "min_personal_marks_precincts": [
+    8,
+    3,
+    16,
+    22
+   ]
   },
   {
    "party": "ODS",
@@ -2026,7 +2518,13 @@
    "share_of_party_pct": 5.41,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    2,
+    0
+   ]
   },
   {
    "party": "ODS",
@@ -2044,7 +2542,13 @@
    "share_of_party_pct": 5.16,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 7
+   "min_personal_marks": 7,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    7
+   ]
   },
   {
    "party": "ODS",
@@ -2062,7 +2566,13 @@
    "share_of_party_pct": 4.74,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    1,
+    0,
+    0,
+    1
+   ]
   },
   {
    "party": "ODS",
@@ -2080,7 +2590,13 @@
    "share_of_party_pct": 7.28,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 32
+   "min_personal_marks": 32,
+   "min_personal_marks_precincts": [
+    6,
+    2,
+    10,
+    14
+   ]
   },
   {
    "party": "ODS",
@@ -2098,7 +2614,13 @@
    "share_of_party_pct": 5.5,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 13
+   "min_personal_marks": 13,
+   "min_personal_marks_precincts": [
+    4,
+    0,
+    1,
+    8
+   ]
   },
   {
    "party": "ODS",
@@ -2116,7 +2638,13 @@
    "share_of_party_pct": 5.33,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 12
+   "min_personal_marks": 12,
+   "min_personal_marks_precincts": [
+    0,
+    9,
+    0,
+    3
+   ]
   },
   {
    "party": "ODS",
@@ -2134,7 +2662,13 @@
    "share_of_party_pct": 5.25,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 11
+   "min_personal_marks": 11,
+   "min_personal_marks_precincts": [
+    0,
+    4,
+    2,
+    5
+   ]
   },
   {
    "party": "ODS",
@@ -2152,7 +2686,13 @@
    "share_of_party_pct": 4.15,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 4
+   "min_personal_marks": 4,
+   "min_personal_marks_precincts": [
+    1,
+    3,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2170,7 +2710,13 @@
    "share_of_party_pct": 8.48,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2188,7 +2734,13 @@
    "share_of_party_pct": 8.05,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 3
+   "min_personal_marks": 3,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    3,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2206,7 +2758,13 @@
    "share_of_party_pct": 7.35,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2224,7 +2782,13 @@
    "share_of_party_pct": 7.84,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 25
+   "min_personal_marks": 25,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    14,
+    11
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2242,7 +2806,13 @@
    "share_of_party_pct": 7.17,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 7
+   "min_personal_marks": 7,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    7,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2260,7 +2830,13 @@
    "share_of_party_pct": 6.98,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 6
+   "min_personal_marks": 6,
+   "min_personal_marks_precincts": [
+    0,
+    6,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2278,7 +2854,13 @@
    "share_of_party_pct": 7.09,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 26
+   "min_personal_marks": 26,
+   "min_personal_marks_precincts": [
+    12,
+    0,
+    0,
+    14
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2296,7 +2878,13 @@
    "share_of_party_pct": 6.81,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 19
+   "min_personal_marks": 19,
+   "min_personal_marks_precincts": [
+    19,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2314,7 +2902,13 @@
    "share_of_party_pct": 5.79,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2332,7 +2926,13 @@
    "share_of_party_pct": 7.07,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 60
+   "min_personal_marks": 60,
+   "min_personal_marks_precincts": [
+    9,
+    19,
+    13,
+    19
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2350,7 +2950,13 @@
    "share_of_party_pct": 5.66,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 2
+   "min_personal_marks": 2,
+   "min_personal_marks_precincts": [
+    0,
+    1,
+    0,
+    1
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2368,7 +2974,13 @@
    "share_of_party_pct": 5.49,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 3
+   "min_personal_marks": 3,
+   "min_personal_marks_precincts": [
+    2,
+    0,
+    1,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2386,7 +2998,13 @@
    "share_of_party_pct": 6.58,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 54
+   "min_personal_marks": 54,
+   "min_personal_marks_precincts": [
+    9,
+    24,
+    9,
+    12
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2404,7 +3022,13 @@
    "share_of_party_pct": 4.89,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Perspektiva",
@@ -2422,7 +3046,13 @@
    "share_of_party_pct": 4.76,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2440,7 +3070,13 @@
    "share_of_party_pct": 10.69,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2458,7 +3094,13 @@
    "share_of_party_pct": 7.67,
    "preference": true,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2476,7 +3118,13 @@
    "share_of_party_pct": 9.71,
    "preference": true,
    "elected": true,
-   "min_personal_marks": 50
+   "min_personal_marks": 50,
+   "min_personal_marks_precincts": [
+    17,
+    17,
+    5,
+    11
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2494,7 +3142,13 @@
    "share_of_party_pct": 7.22,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 10
+   "min_personal_marks": 10,
+   "min_personal_marks_precincts": [
+    5,
+    0,
+    0,
+    5
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2512,7 +3166,13 @@
    "share_of_party_pct": 5.79,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 0
+   "min_personal_marks": 0,
+   "min_personal_marks_precincts": [
+    0,
+    0,
+    0,
+    0
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2530,7 +3190,13 @@
    "share_of_party_pct": 6.49,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 17
+   "min_personal_marks": 17,
+   "min_personal_marks_precincts": [
+    5,
+    0,
+    5,
+    7
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2548,7 +3214,13 @@
    "share_of_party_pct": 5.3,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 6
+   "min_personal_marks": 6,
+   "min_personal_marks_precincts": [
+    3,
+    0,
+    3,
+    0
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2566,7 +3238,13 @@
    "share_of_party_pct": 6.24,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 29
+   "min_personal_marks": 29,
+   "min_personal_marks_precincts": [
+    7,
+    8,
+    5,
+    9
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2584,7 +3262,13 @@
    "share_of_party_pct": 6.53,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 36
+   "min_personal_marks": 36,
+   "min_personal_marks_precincts": [
+    13,
+    9,
+    5,
+    9
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2602,7 +3286,13 @@
    "share_of_party_pct": 5.3,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 12
+   "min_personal_marks": 12,
+   "min_personal_marks_precincts": [
+    0,
+    7,
+    0,
+    5
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2620,7 +3310,13 @@
    "share_of_party_pct": 5.39,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 17
+   "min_personal_marks": 17,
+   "min_personal_marks_precincts": [
+    5,
+    1,
+    0,
+    11
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2638,7 +3334,13 @@
    "share_of_party_pct": 5.83,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 28
+   "min_personal_marks": 28,
+   "min_personal_marks_precincts": [
+    7,
+    10,
+    3,
+    8
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2656,7 +3358,13 @@
    "share_of_party_pct": 5.88,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 29
+   "min_personal_marks": 29,
+   "min_personal_marks_precincts": [
+    4,
+    9,
+    6,
+    10
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2674,7 +3382,13 @@
    "share_of_party_pct": 6.98,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 56
+   "min_personal_marks": 56,
+   "min_personal_marks_precincts": [
+    14,
+    18,
+    10,
+    14
+   ]
   },
   {
    "party": "Naše Řevnice",
@@ -2692,7 +3406,13 @@
    "share_of_party_pct": 4.98,
    "preference": false,
    "elected": false,
-   "min_personal_marks": 9
+   "min_personal_marks": 9,
+   "min_personal_marks_precincts": [
+    0,
+    4,
+    0,
+    5
+   ]
   }
  ],
  "elected": [
