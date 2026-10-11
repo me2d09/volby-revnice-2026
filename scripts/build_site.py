@@ -23,7 +23,6 @@ import json
 import runpy
 import shutil
 import sys
-import uuid
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -201,8 +200,8 @@ def notebook_header(title: str, ipynb_name: str) -> str:
             f'<a href="{html.escape(ipynb_name)}" download>Stáhnout .ipynb</a></div>')
 
 
-def plotly_to_html(fig: dict) -> str:
-    div = f"rvplot-{uuid.uuid4().hex[:10]}"
+def plotly_to_html(fig: dict, n: int) -> str:
+    div = f"rvplot-{n}"
     height = fig.get("layout", {}).get("height", 480)
     payload = json.dumps({"data": fig.get("data", []), "layout": fig.get("layout", {})}, ensure_ascii=False)
     payload = payload.replace("</", "<\\/")
@@ -228,8 +227,8 @@ def render_notebook(key: str, cfg: dict) -> bool:
             if "application/vnd.plotly.v1+json" in data:
                 fig = data.pop("application/vnd.plotly.v1+json")
                 data.pop("text/html", None)
-                data["text/html"] = plotly_to_html(fig)
                 n_plotly += 1
+                data["text/html"] = plotly_to_html(fig, n_plotly)
     exporter = HTMLExporter(template_name="lab")
     body, _ = exporter.from_notebook_node(nb)
     ipynb_name = f"{key}.ipynb"
