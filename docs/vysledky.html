@@ -24,7 +24,7 @@
       <p class="lead">Všechno podstatné z voleb na jedné stránce – stejná čísla jako v infografice, jen si s nimi můžete hrát.
         Tady nic neodhadujeme: vše je spočítané přímo z výsledků ČSÚ.</p>
       <nav class="toc" aria-label="Obsah kapitoly">
-        <a href="#cisla">Rychlá čísla</a><a href="#kandidatky">Kandidátky</a><a href="#zmena">Změna proti 2022</a>
+        <a href="#cisla">Rychlá čísla</a><a href="#kandidatky">Kandidátky</a><a href="#reprezentace">Kdo koho zastupuje</a><a href="#zmena">Změna proti 2022</a>
         <a href="#okrsky">Okrsky</a><a href="#zvoleni">Zvolení</a><a href="#kandidati">Kandidáti zblízka</a>
         <a href="#osobni">Osobní změny</a><a href="#tesne">Těsné momenty</a><a href="#kalkulacka">Kalkulačka</a><a href="#infografika">Infografika</a>
       </nav>
@@ -62,11 +62,34 @@
     </div>
   </section>
 
-  <!-- 3 změna -->
+  <!-- 3 kdo reprezentuje kolik voličů -->
+  <section class="section" id="reprezentace">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="n">3</span>Kdo reprezentuje kolik voličů</div>
+        <h2>Žádná kandidátka nemluví za většinu Řevnic</h2>
+        <p>Každý volič mohl rozdat až 15 hlasů, takže hlasy kandidátky dělené patnácti dávají hrubý počet „celých voličů“, kteří za ní stojí.
+          Za 100&nbsp;% bereme všech <span data-k="registered"></span> voličů v seznamu. I vítězné DOBŘE tak odpovídá jen
+          asi <strong data-k="top_share"></strong> všech voličů.</p>
+      </div>
+      <div class="grid g2">
+        <div class="card chart-card reveal">
+          <header><div><h3>Hrubý ekvivalent voličů</h3><p>100&nbsp;% = <span data-k="registered"></span> voličů v seznamu</p></div></header>
+          <div id="rep-chart" class="chart" role="img" aria-label="Koláčový graf: kolik voličů odpovídá hlasům jednotlivých kandidátek"></div>
+        </div>
+        <div class="card reveal">
+          <div class="table-wrap" id="rep-table"></div>
+          <p class="chart-note" id="rep-note"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 změna -->
   <section class="section" id="zmena">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">3</span>Změna proti roku 2022</div>
+        <div class="eyebrow"><span class="n">4</span>Změna proti roku 2022</div>
         <h2>DOBŘE přišlo, Perspektiva ztratila nejvíc</h2>
         <p>Hlasů celkem přibylo (+<span data-k="change_pct"></span>&nbsp;%), přesto téměř všechny zavedené kandidátky oslabily –
           nová kandidátka DOBŘE si vzala skoro čtvrtinu hlasů. Řevnice SPOLEČNĚ v roce 2026 nekandidovalo.</p>
@@ -84,11 +107,11 @@
     </div>
   </section>
 
-  <!-- 4 okrsky -->
+  <!-- 5 okrsky -->
   <section class="section" id="okrsky">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">4</span>Okrsky</div>
+        <div class="eyebrow"><span class="n">5</span>Okrsky</div>
         <h2>Čtyři okrsky, dva různí vítězové</h2>
         <p>Na severu a ve středu města vyhrála ŠANCE, na západě a hlavně na východě DOBŘE. Klikněte na okrsek ve schématu.
           Vyberte kandidátku a schéma ukáže, kde byla nejsilnější.</p>
@@ -155,11 +178,11 @@
     </div>
   </section>
 
-  <!-- 5 zvolení -->
+  <!-- 6 zvolení -->
   <section class="section" id="zvoleni">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">5</span>Zvolení zastupitelé</div>
+        <div class="eyebrow"><span class="n">6</span>Zvolení zastupitelé</div>
         <h2>Patnáct jmen, seřazeno podle hlasů</h2>
         <p><span id="jumped-text">Několik zvolených</span> se do zastupitelstva dostalo z nižšího místa, než by jim „patřilo“ podle pořadí na kandidátce –
           díky preferenčním hlasům. Klikněte na jméno a uvidíte celou kandidátku.</p>
@@ -168,11 +191,11 @@
     </div>
   </section>
 
-  <!-- 6 kandidáti -->
+  <!-- 7 kandidáti -->
   <section class="section" id="kandidati">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">6</span>Kandidáti zblízka</div>
+        <div class="eyebrow"><span class="n">7</span>Kandidáti zblízka</div>
         <h2>Jak se z 10. místa stát zastupitelkou</h2>
         <p>Mandáty uvnitř kandidátky dostávají přednostně ti, kdo mají alespoň o 10&nbsp;% víc hlasů, než je průměr na jednoho
           kandidáta dané kandidátky (čárkovaná čára). Teprve zbylé mandáty jdou podle pořadí na lístku.</p>
@@ -192,11 +215,11 @@
     </div>
   </section>
 
-  <!-- 7 osobní změny -->
+  <!-- 8 osobní změny -->
   <section class="section" id="osobni">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">7</span>Osobní změny proti roku 2022</div>
+        <div class="eyebrow"><span class="n">8</span>Osobní změny proti roku 2022</div>
         <h2>Znovu zvolení: kdo posílil a kdo oslabil</h2>
         <p>Osm zastupitelů bylo zvoleno už v roce 2022. Přestože hlasů celkově přibylo o 10&nbsp;%, lídři Perspektivy osobně ztratili.
           Nejvíc si polepšili Markéta Sedláčková Davidová (dříve ODS) a Pavel Hartmann z TOP&nbsp;09.</p>
@@ -208,11 +231,11 @@
     </div>
   </section>
 
-  <!-- 8 těsné momenty -->
+  <!-- 9 těsné momenty -->
   <section class="section" id="tesne">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">8</span>Těsné momenty a zajímavosti</div>
+        <div class="eyebrow"><span class="n">9</span>Těsné momenty a zajímavosti</div>
         <h2>O mandátech rozhodovaly desítky hlasů</h2>
       </div>
       <div class="grid g3" id="facts"></div>
@@ -233,11 +256,11 @@
     </div>
   </section>
 
-  <!-- 9 kalkulačka -->
+  <!-- 10 kalkulačka -->
   <section class="section" id="kalkulacka">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow"><span class="n">9</span>Mandátová kalkulačka</div>
+        <div class="eyebrow"><span class="n">10</span>Mandátová kalkulačka</div>
         <h2>Co kdyby se pár voličů rozhodlo jinak?</h2>
         <p>Přesuňte voliče od jedné kandidátky k jiné. Počítáme, že každý z nich zakřížkoval celou kandidátku, tedy přesouvá 15 hlasů.</p>
       </div>
@@ -258,7 +281,7 @@
     </div>
   </section>
 
-  <!-- 10 infografika -->
+  <!-- 11 infografika -->
   <section class="section" id="infografika">
     <div class="wrap">
       <div class="card download reveal">

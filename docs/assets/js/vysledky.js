@@ -73,7 +73,52 @@
       `<td class="r">${p.votes_2022 ? RV.int(p.votes_2022) : "–"}</td><td class="r">${p.votes_2022 ? RV.pct(p.share_2022, 2) : "–"}</td><td class="r">${p.votes_2022 ? p.seats_2022 : "–"}</td></tr>`).join("") +
     `</tbody></table><p class="chart-note">* mandáty 2022 přepočtené d’Hondtovou metodou ze zveřejněných hlasů.</p>`;
 
-  /* =========================================================== 3 změna proti 2022 */
+  /* =========================================================== 3 kdo reprezentuje kolik voličů */
+  // Hrubý ekvivalent voličů: hlasy kandidátky / 15. Zbytek do voličů v seznamu = nepřišli + nevyužité hlasy.
+  const SEATS = D.meta.seats;
+  const REG = TU.registered_voters;
+  const invalid = TU.envelopes_submitted - TU.valid_ballots;      // odevzdané obálky bez platného hlasu
+  const notSubmitted = TU.envelopes - TU.envelopes_submitted;      // obálku si vzal, ale neodevzdal → nechtěl volit
+  const absent = REG - TU.envelopes_submitted;
+  const unusedEq = T.unused_votes / SEATS;
+  const REST = "Nechtějí ostatním přikazovat, jak mají žít";
+  const repRows = P.map((p) => ({ key: p.short, label: p.short, n: p.votes_2026 / SEATS, seats: p.seats_2026, color: () => RV.color(p.short), css: RV.cssColor(p.short), light: p.short === "ŠANCE" }))
+    .concat([
+      { key: "invalid", label: "Neplatné hlasy", n: invalid, seats: null, color: () => RV.token("muted"), css: "var(--muted)" },
+      { key: "rest", label: REST, n: REG - T.votes_2026 / SEATS - invalid, seats: null, color: () => RV.token("line-strong"), css: "var(--line-strong)", light: true },
+    ]);
+  repRows.forEach((r) => { r.pct = 100 * r.n / REG; });
+  document.querySelectorAll('[data-k="registered"]').forEach((e) => { e.textContent = RV.int(REG); });
+  document.querySelectorAll('[data-k="top_share"]').forEach((e) => { e.textContent = RV.pct(repRows[0].pct, 1); });
+  RV.plot("#rep-chart", (w) => {
+    const narrow = w < 460;
+    const big = (r) => r.pct >= (narrow ? 8 : 5);
+    return {
+      data: [{
+        type: "pie", sort: false, direction: "clockwise", rotation: 0, hole: 0,
+        labels: repRows.map((r) => r.label), values: repRows.map((r) => r.n),
+        marker: { colors: repRows.map((r) => r.color()), line: { color: surface(), width: 2 } },
+        text: repRows.map((r) => (big(r) ? (r.key === "rest" ? (narrow ? "Nechtějí ostatním<br>přikazovat,<br>jak mají žít" : "Nechtějí ostatním<br>přikazovat, jak mají žít") + `<br><b>${RV.pct(r.pct, 1)}</b>` : `<b>${RV.esc(r.label)}</b><br>${RV.pct(r.pct, 1)}`) : "")),
+        textinfo: "text", textposition: "inside", insidetextorientation: "horizontal",
+        insidetextfont: { family: FONT, size: narrow ? 13 : 15, color: repRows.map((r) => (r.light ? ink() : "#ffffff")) },
+        customdata: repRows.map((r) => [RV.fmt(r.n, 1), RV.pct(r.pct, 1)]),
+        hovertemplate: "<b>%{label}</b><br>≈ %{customdata[0]} voličů · %{customdata[1]}<extra></extra>",
+      }],
+      layout: { height: narrow ? 360 : 460, margin: { l: 8, r: 8, t: 8, b: 8 } },
+    };
+  });
+  document.getElementById("rep-table").innerHTML =
+    `<table class="data"><thead><tr><th>Koho volili</th><th class="r">Voličů ≈</th><th class="r">Podíl</th><th class="r">Mandáty</th></tr></thead><tbody>` +
+    repRows.map((r) => `<tr${r.key === "rest" ? ' style="font-weight:650"' : ""}><td><span class="party"${r.key === "rest" ? ' style="white-space:normal"' : ""}><span class="sw" style="--c:${r.css}"></span>${RV.esc(r.label)}</span></td>` +
+      `<td class="r">${RV.fmt(r.n, 1)}</td><td class="r">${RV.pct(r.pct, 1)}</td><td class="r">${r.seats == null ? "" : r.seats}</td></tr>`).join("") +
+    `</tbody></table>`;
+  document.getElementById("rep-note").innerHTML =
+    `Metodika: hlasy kandidátky / ${SEATS} = hrubý odhad počtu voličů. Kdo nevyužil všech ${SEATS} hlasů, ten se svými nevyužitými hlasy ` +
+    `počítá do skupiny „${REST}“ – stejně jako ti, kdo k volbám nepřišli. Ta skupina tedy zahrnuje ${RV.int(absent)} voličů, kteří neodevzdali obálku ` +
+    `(z toho ${RV.int(notSubmitted)} si obálku vzal, ale do urny ji nevhodil), a ${RV.fmt(unusedEq, 1)} voliče jako ekvivalent ${RV.int(T.unused_votes)} nevyužitých hlasů. ` +
+    `Neplatné hlasy = ${RV.int(TU.envelopes_submitted)} odevzdaných obálek minus ${RV.int(TU.valid_ballots)} lístků s platným hlasem.`;
+
+  /* =========================================================== 4 změna proti 2022 */
   let changeMode = "votes";
   const drawChange = RV.plot("#change-chart", (w) => {
     const narrow = w < 560;
@@ -104,7 +149,7 @@
     drawChange();
   });
 
-  /* =========================================================== 4 okrsky */
+  /* =========================================================== 5 okrsky */
   let selPc = 4, mapMode = "winner";
   const mapModeEl = document.getElementById("map-mode");
   mapModeEl.innerHTML = `<button type="button" class="chip" data-v="winner" aria-pressed="true">Vítěz okrsku</button>` +
@@ -237,7 +282,7 @@
   paintMap(); renderWhatIf(); pcTable();
   document.addEventListener("rv-theme", paintMap);
 
-  /* =========================================================== 5 zvolení */
+  /* =========================================================== 6 zvolení */
   const jumped = D.elected.filter((e) => e.jumped).length;
   document.getElementById("jumped-text").textContent =
     `${["Žádný", "Jeden", "Dva", "Tři", "Čtyři", "Pět", "Šest", "Sedm"][jumped] || jumped} ${RV.plural(jumped, "zvolený", "zvolení", "zvolených")}`;
@@ -253,7 +298,7 @@
     document.getElementById("kandidati").scrollIntoView({ behavior: "smooth" });
   }));
 
-  /* =========================================================== 6 kandidáti zblízka */
+  /* =========================================================== 7 kandidáti zblízka */
   let candParty = "ŠANCE", candHl = 10, candScope = "city";
   const cp = document.getElementById("cand-party");
   cp.innerHTML = P.map((p) => `<button type="button" class="chip" data-v="${RV.esc(p.short)}" aria-pressed="${p.short === candParty}"><span class="sw" style="--c:${RV.cssColor(p.short)}"></span>${RV.esc(p.short)}</button>`).join("");
@@ -324,7 +369,7 @@
     `<div class="card reveal in" style="grid-column:1/-1"><span class="label muted" style="font-size:13.5px;font-weight:560">Průměrný věk kandidátky</span>
      <div class="chips" style="margin-top:8px">${ageByParty.map((p) => `<span class="chip" style="cursor:default"><span class="sw" style="--c:${RV.cssColor(p.short)}"></span>${RV.esc(p.short)} <strong>${RV.fmt(p.avg_age, 1)}</strong></span>`).join("")}</div></div>`;
 
-  /* =========================================================== 7 osobní změny */
+  /* =========================================================== 8 osobní změny */
   RV.plot("#personal-chart", (w) => {
     const narrow = w < 560;
     const rows = D.elected.filter((e) => e.votes_2022).map((e) => Object.assign({ d: e.votes - e.votes_2022 }, e)).sort((a, b) => a.d - b.d);
@@ -349,7 +394,7 @@
     };
   });
 
-  /* =========================================================== 8 těsné momenty */
+  /* =========================================================== 9 těsné momenty */
   const naseLose = byShort["Naše Řevnice"].votes_to_lose_seat;
   const sanceGain = byShort["ŠANCE"].votes_to_next_seat;
   const srdce = byShort["Srdce Řevnic"], total = T.votes_2026;
@@ -402,7 +447,7 @@
       `<td class="r">${Math.ceil(p.votes_to_next_seat / 15)}</td><td class="r">${p.votes_to_lose_seat ? RV.int(p.votes_to_lose_seat) + " hlasů" : "–"}</td></tr>`).join("") +
     `</tbody></table>`;
 
-  /* =========================================================== 9 kalkulačka */
+  /* =========================================================== 10 kalkulačka */
   const real = Object.fromEntries(P.map((p) => [p.short, p.votes_2026]));
   const realSeats = RV.dhondt(real).seats;
   const fromEl = document.getElementById("calc-from"), toEl = document.getElementById("calc-to"), nEl = document.getElementById("calc-n");
